@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
+		1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
+		1A83A63A152BBF1600532D8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A639152BBF1600532D8E /* CoreGraphics.framework */; };
+		1A83A63C152BBF1600532D8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A63B152BBF1600532D8E /* CoreData.framework */; };
+		1A83A642152BBF1600532D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A640152BBF1600532D8E /* InfoPlist.strings */; };
+		1A83A644152BBF1600532D8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A643152BBF1600532D8E /* main.m */; };
+		1A83A648152BBF1600532D8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A647152BBF1600532D8E /* AppDelegate.m */; };
+		1A83A64B152BBF1600532D8E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */; };
+		1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */; };
+		1A83A651152BBF1700532D8E /* SonnensMouth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */; };
+		1A83A654152BBF1700532D8E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A653152BBF1700532D8E /* MainViewController.m */; };
+		1A83A657152BBF1700532D8E /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A656152BBF1700532D8E /* FlipsideViewController.m */; };
+		1A83A65F152BBF1700532D8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A65E152BBF1700532D8E /* SenTestingKit.framework */; };
+		1A83A660152BBF1700532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
+		1A83A661152BBF1700532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
+		1A83A662152BBF1700532D8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A63B152BBF1600532D8E /* CoreData.framework */; };
+		1A83A66A152BBF1700532D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A668152BBF1700532D8E /* InfoPlist.strings */; };
+		1A83A66D152BBF1700532D8E /* SonnensMouthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A83A663152BBF1700532D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A83A628152BBF1500532D8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A83A630152BBF1600532D8E;
+			remoteInfo = SonnensMouth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A83A631152BBF1600532D8E /* SonnensMouth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnensMouth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A83A635152BBF1600532D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A83A637152BBF1600532D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A83A639152BBF1600532D8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A83A63B152BBF1600532D8E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */ = {isa = PBXFileReference; path = "SonnensMouth-Info.plist"; sourceTree = "<group>"; };
+		1A83A641152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A83A643152BBF1600532D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */ = {isa = PBXFileReference; path = "SonnensMouth-Prefix.pch"; sourceTree = "<group>"; };
+		1A83A646152BBF1600532D8E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A83A647152BBF1600532D8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A83A64A152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1A83A64D152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SonnensMouth.xcdatamodel; sourceTree = "<group>"; };
+		1A83A652152BBF1700532D8E /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		1A83A653152BBF1700532D8E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1A83A655152BBF1700532D8E /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		1A83A656152BBF1700532D8E /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnensMouthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A83A65E152BBF1700532D8E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */ = {isa = PBXFileReference; path = "SonnensMouthTests-Info.plist"; sourceTree = "<group>"; };
+		1A83A669152BBF1700532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A83A66B152BBF1700532D8E /* SonnensMouthTests.h */ = {isa = PBXFileReference; path = SonnensMouthTests.h; sourceTree = "<group>"; };
+		1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonnensMouthTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A83A62E152BBF1600532D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */,
+				1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */,
+				1A83A63A152BBF1600532D8E /* CoreGraphics.framework in Frameworks */,
+				1A83A63C152BBF1600532D8E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A83A659152BBF1700532D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A65F152BBF1700532D8E /* SenTestingKit.framework in Frameworks */,
+				1A83A660152BBF1700532D8E /* UIKit.framework in Frameworks */,
+				1A83A661152BBF1700532D8E /* Foundation.framework in Frameworks */,
+				1A83A662152BBF1700532D8E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A83A626152BBF1500532D8E = {
+			isa = PBXGroup;
+			children = (
+				1A83A63D152BBF1600532D8E /* SonnensMouth */,
+				1A83A665152BBF1700532D8E /* SonnensMouthTests */,
+				1A83A634152BBF1600532D8E /* Frameworks */,
+				1A83A632152BBF1600532D8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A83A632152BBF1600532D8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A631152BBF1600532D8E /* SonnensMouth.app */,
+				1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A83A634152BBF1600532D8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A635152BBF1600532D8E /* UIKit.framework */,
+				1A83A637152BBF1600532D8E /* Foundation.framework */,
+				1A83A639152BBF1600532D8E /* CoreGraphics.framework */,
+				1A83A63B152BBF1600532D8E /* CoreData.framework */,
+				1A83A65E152BBF1700532D8E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A83A63D152BBF1600532D8E /* SonnensMouth */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A646152BBF1600532D8E /* AppDelegate.h */,
+				1A83A647152BBF1600532D8E /* AppDelegate.m */,
+				1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */,
+				1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */,
+				1A83A652152BBF1700532D8E /* MainViewController.h */,
+				1A83A653152BBF1700532D8E /* MainViewController.m */,
+				1A83A655152BBF1700532D8E /* FlipsideViewController.h */,
+				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
+				1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */,
+				1A83A63E152BBF1600532D8E /* Supporting Files */,
+			);
+			path = SonnensMouth;
+			sourceTree = "<group>";
+		};
+		1A83A63E152BBF1600532D8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */,
+				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
+				1A83A643152BBF1600532D8E /* main.m */,
+				1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A83A665152BBF1700532D8E /* SonnensMouthTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A66B152BBF1700532D8E /* SonnensMouthTests.h */,
+				1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */,
+				1A83A666152BBF1700532D8E /* Supporting Files */,
+			);
+			path = SonnensMouthTests;
+			sourceTree = "<group>";
+		};
+		1A83A666152BBF1700532D8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */,
+				1A83A668152BBF1700532D8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A83A630152BBF1600532D8E /* SonnensMouth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouth" */;
+			buildPhases = (
+				1A83A62D152BBF1600532D8E /* Sources */,
+				1A83A62E152BBF1600532D8E /* Frameworks */,
+				1A83A62F152BBF1600532D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonnensMouth;
+			productName = SonnensMouth;
+			productReference = 1A83A631152BBF1600532D8E /* SonnensMouth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A83A65C152BBF1700532D8E /* SonnensMouthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouthTests" */;
+			buildPhases = (
+				1A83A658152BBF1700532D8E /* Sources */,
+				1A83A659152BBF1700532D8E /* Frameworks */,
+				1A83A65A152BBF1700532D8E /* Resources */,
+				1A83A65B152BBF1700532D8E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A83A664152BBF1700532D8E /* PBXTargetDependency */,
+			);
+			name = SonnensMouthTests;
+			productName = SonnensMouthTests;
+			productReference = 1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A83A628152BBF1500532D8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = das;
+			};
+			buildConfigurationList = 1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnensMouth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A83A626152BBF1500532D8E;
+			productRefGroup = 1A83A632152BBF1600532D8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A83A630152BBF1600532D8E /* SonnensMouth */,
+				1A83A65C152BBF1700532D8E /* SonnensMouthTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A83A62F152BBF1600532D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A642152BBF1600532D8E /* InfoPlist.strings in Resources */,
+				1A83A64B152BBF1600532D8E /* MainStoryboard_iPhone.storyboard in Resources */,
+				1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A83A65A152BBF1700532D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A66A152BBF1700532D8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A83A65B152BBF1700532D8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A83A62D152BBF1600532D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A644152BBF1600532D8E /* main.m in Sources */,
+				1A83A648152BBF1600532D8E /* AppDelegate.m in Sources */,
+				1A83A651152BBF1700532D8E /* SonnensMouth.xcdatamodeld in Sources */,
+				1A83A654152BBF1700532D8E /* MainViewController.m in Sources */,
+				1A83A657152BBF1700532D8E /* FlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A83A658152BBF1700532D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A83A66D152BBF1700532D8E /* SonnensMouthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A83A664152BBF1700532D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A83A630152BBF1600532D8E /* SonnensMouth */;
+			targetProxy = 1A83A663152BBF1700532D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A83A640152BBF1600532D8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A83A641152BBF1600532D8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A83A64A152BBF1600532D8E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A83A64D152BBF1600532D8E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1A83A668152BBF1700532D8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A83A669152BBF1700532D8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A83A66E152BBF1700532D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A83A66F152BBF1700532D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A83A671152BBF1700532D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A83A672152BBF1700532D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A83A674152BBF1700532D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SonnensMouth.app/SonnensMouth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouthTests/SonnensMouthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1A83A675152BBF1700532D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SonnensMouth.app/SonnensMouth";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouthTests/SonnensMouthTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnensMouth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A83A66E152BBF1700532D8E /* Debug */,
+				1A83A66F152BBF1700532D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A83A671152BBF1700532D8E /* Debug */,
+				1A83A672152BBF1700532D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A83A674152BBF1700532D8E /* Debug */,
+				1A83A675152BBF1700532D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */,
+			);
+			currentVersion = 1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */;
+			path = SonnensMouth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A83A628152BBF1500532D8E /* Project object */;
+}
