@@ -25,6 +25,8 @@
 		1A83A662152BBF1700532D8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A63B152BBF1600532D8E /* CoreData.framework */; };
 		1A83A66A152BBF1700532D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A668152BBF1700532D8E /* InfoPlist.strings */; };
 		1A83A66D152BBF1700532D8E /* SonnensMouthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */; };
+		1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */; };
+		1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,25 +45,28 @@
 		1A83A637152BBF1600532D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A83A639152BBF1600532D8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1A83A63B152BBF1600532D8E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */ = {isa = PBXFileReference; path = "SonnensMouth-Info.plist"; sourceTree = "<group>"; };
+		1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnensMouth-Info.plist"; sourceTree = "<group>"; };
 		1A83A641152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A83A643152BBF1600532D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */ = {isa = PBXFileReference; path = "SonnensMouth-Prefix.pch"; sourceTree = "<group>"; };
-		1A83A646152BBF1600532D8E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonnensMouth-Prefix.pch"; sourceTree = "<group>"; };
+		1A83A646152BBF1600532D8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A83A647152BBF1600532D8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A83A64A152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1A83A64D152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SonnensMouth.xcdatamodel; sourceTree = "<group>"; };
-		1A83A652152BBF1700532D8E /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		1A83A652152BBF1700532D8E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1A83A653152BBF1700532D8E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1A83A655152BBF1700532D8E /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		1A83A655152BBF1700532D8E /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		1A83A656152BBF1700532D8E /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnensMouthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A65E152BBF1700532D8E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */ = {isa = PBXFileReference; path = "SonnensMouthTests-Info.plist"; sourceTree = "<group>"; };
+		1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnensMouthTests-Info.plist"; sourceTree = "<group>"; };
 		1A83A669152BBF1700532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1A83A66B152BBF1700532D8E /* SonnensMouthTests.h */ = {isa = PBXFileReference; path = SonnensMouthTests.h; sourceTree = "<group>"; };
+		1A83A66B152BBF1700532D8E /* SonnensMouthTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonnensMouthTests.h; sourceTree = "<group>"; };
 		1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonnensMouthTests.m; sourceTree = "<group>"; };
+		1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sonnen_smiling_messedup.jpg; sourceTree = "<group>"; };
+		1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sonnen_smiling.jpg; sourceTree = "<group>"; };
+		1A83A67C152BDA7400532D8E /* SonnensMouth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonnensMouth.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,7 @@
 				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
 				1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */,
 				1A83A63E152BBF1600532D8E /* Supporting Files */,
+				1A83A67C152BDA7400532D8E /* SonnensMouth.h */,
 			);
 			path = SonnensMouth;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 		1A83A63E152BBF1600532D8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A83A677152BD4A100532D8E /* sounds */,
+				1A83A676152BD49500532D8E /* images */,
 				1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */,
 				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
 				1A83A643152BBF1600532D8E /* main.m */,
@@ -166,6 +174,22 @@
 				1A83A668152BBF1700532D8E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A83A676152BD49500532D8E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */,
+				1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		1A83A677152BD4A100532D8E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +266,8 @@
 				1A83A642152BBF1600532D8E /* InfoPlist.strings in Resources */,
 				1A83A64B152BBF1600532D8E /* MainStoryboard_iPhone.storyboard in Resources */,
 				1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */,
+				1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */,
+				1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

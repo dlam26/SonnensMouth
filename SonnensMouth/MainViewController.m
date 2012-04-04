@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "SonnensMouth.h"
 
 @implementation MainViewController
 
@@ -25,6 +26,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    NSString *smilingPic = [[NSBundle mainBundle] pathForResource:@"sonnen_smiling" ofType:@"jpg"];
+    NSString *messedUpFacePic = [[NSBundle mainBundle] pathForResource:@"sonnen_smiling_messedup" ofType:@"jpg"];
+    
+    smilingChael  = [UIImage imageWithContentsOfFile:smilingPic];
+    bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];
+    
+    background.image = smilingChael;
 }
 
 - (void)viewDidUnload
@@ -102,6 +112,14 @@
     } else {
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
+}
+
+// 4/3/12 - From a UISwitch
+// 
+-(IBAction)switchBackground:(id)sender
+{
+    DebugLog(@" switchin' the background...");    
+    background.image = (background.image == smilingChael) ? bustedUpChael : smilingChael;
 }
 
 @end

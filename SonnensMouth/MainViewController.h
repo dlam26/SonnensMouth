@@ -9,9 +9,17 @@
 #import "FlipsideViewController.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+{
+    IBOutlet UIImageView *background;
+    IBOutlet UISwitch *backgroundSwitch;
+    
+    UIImage *smilingChael;
+    UIImage *bustedUpChael;
+}
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+
+-(IBAction)switchBackground:(id)sender;
 
 @end
