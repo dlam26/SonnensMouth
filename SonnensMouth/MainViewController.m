@@ -17,6 +17,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -36,7 +37,7 @@
     
     background.image = smilingChael;
 }
-
+    
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -114,6 +115,8 @@
     }
 }
 
+#pragma mark  IBAction's
+
 // 4/3/12 - From a UISwitch
 // 
 -(IBAction)switchBackground:(id)sender
@@ -121,5 +124,29 @@
     DebugLog(@" switchin' the background...");    
     background.image = (background.image == smilingChael) ? bustedUpChael : smilingChael;
 }
+
+
+-(IBAction)playSound:(id)sender
+{
+    PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:b.soundName ofType:@"m4a"];
+    
+    if(soundFilePath) {        
+        DebugLog(@"   playing sound: \"%@\"", b.soundName);
+        
+        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
+        NSError *err;
+        
+        if([fileURL checkResourceIsReachableAndReturnError:&err] == YES) {
+            
+            AVAudioPlayer *newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];    
+            [newPlayer play];
+        }
+    }
+    else {
+        DebugLog(@"No sound named, %@", b.soundName);
+    }
+}
+
 
 @end

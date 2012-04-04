@@ -27,6 +27,11 @@
 		1A83A66D152BBF1700532D8E /* SonnensMouthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A66C152BBF1700532D8E /* SonnensMouthTests.m */; };
 		1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */; };
 		1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */; };
+		1A83A683152C259800532D8E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A681152C259800532D8E /* AudioToolbox.framework */; };
+		1A83A684152C259800532D8E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A682152C259800532D8E /* AVFoundation.framework */; };
+		1A83A689152C5F9500532D8E /* PlaySoundUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */; };
+		1A83A68F152C63AA00532D8E /* SonnensMouth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A68E152C63AA00532D8E /* SonnensMouth.m */; };
+		1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,12 @@
 		1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sonnen_smiling_messedup.jpg; sourceTree = "<group>"; };
 		1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sonnen_smiling.jpg; sourceTree = "<group>"; };
 		1A83A67C152BDA7400532D8E /* SonnensMouth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonnensMouth.h; sourceTree = "<group>"; };
+		1A83A681152C259800532D8E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1A83A682152C259800532D8E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1A83A687152C5F9400532D8E /* PlaySoundUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySoundUIButton.h; sourceTree = "<group>"; };
+		1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySoundUIButton.m; sourceTree = "<group>"; };
+		1A83A68E152C63AA00532D8E /* SonnensMouth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonnensMouth.m; sourceTree = "<group>"; };
+		1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "erect-statue-and-bow.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A83A683152C259800532D8E /* AudioToolbox.framework in Frameworks */,
+				1A83A684152C259800532D8E /* AVFoundation.framework in Frameworks */,
 				1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */,
 				1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */,
 				1A83A63A152BBF1600532D8E /* CoreGraphics.framework in Frameworks */,
@@ -117,6 +130,8 @@
 		1A83A634152BBF1600532D8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A83A681152C259800532D8E /* AudioToolbox.framework */,
+				1A83A682152C259800532D8E /* AVFoundation.framework */,
 				1A83A635152BBF1600532D8E /* UIKit.framework */,
 				1A83A637152BBF1600532D8E /* Foundation.framework */,
 				1A83A639152BBF1600532D8E /* CoreGraphics.framework */,
@@ -135,11 +150,14 @@
 				1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */,
 				1A83A652152BBF1700532D8E /* MainViewController.h */,
 				1A83A653152BBF1700532D8E /* MainViewController.m */,
+				1A83A687152C5F9400532D8E /* PlaySoundUIButton.h */,
+				1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */,
 				1A83A655152BBF1700532D8E /* FlipsideViewController.h */,
 				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
+				1A83A67C152BDA7400532D8E /* SonnensMouth.h */,
+				1A83A68E152C63AA00532D8E /* SonnensMouth.m */,
 				1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */,
 				1A83A63E152BBF1600532D8E /* Supporting Files */,
-				1A83A67C152BDA7400532D8E /* SonnensMouth.h */,
 			);
 			path = SonnensMouth;
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 		1A83A677152BD4A100532D8E /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -238,7 +257,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = das;
+				ORGANIZATIONNAME = dlam.me;
 			};
 			buildConfigurationList = 1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnensMouth" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -268,6 +287,7 @@
 				1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */,
 				1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */,
 				1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */,
+				1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +327,8 @@
 				1A83A651152BBF1700532D8E /* SonnensMouth.xcdatamodeld in Sources */,
 				1A83A654152BBF1700532D8E /* MainViewController.m in Sources */,
 				1A83A657152BBF1700532D8E /* FlipsideViewController.m in Sources */,
+				1A83A689152C5F9500532D8E /* PlaySoundUIButton.m in Sources */,
+				1A83A68F152C63AA00532D8E /* SonnensMouth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +439,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
 				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,6 +451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
 				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -486,6 +510,7 @@
 				1A83A672152BBF1700532D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouthTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +519,7 @@
 				1A83A675152BBF1700532D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

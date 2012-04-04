@@ -6,7 +6,12 @@
 //  Copyright (c) 2012 das. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVAudioPlayer.h>
+
 #import "FlipsideViewController.h"
+#import "PlaySoundUIButton.h"
+
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
 {
@@ -21,5 +26,6 @@
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
 -(IBAction)switchBackground:(id)sender;
+-(IBAction)playSound:(id)sender;
 
 @end
