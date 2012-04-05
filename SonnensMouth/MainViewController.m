@@ -132,15 +132,23 @@
     NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:b.soundName ofType:@"m4a"];
     
     if(soundFilePath) {        
-        DebugLog(@"   playing sound: \"%@\"", b.soundName);
         
         NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
         NSError *err;
         
         if([fileURL checkResourceIsReachableAndReturnError:&err] == YES) {
+           
+            DebugLog(@"   playing sound: \"%@\"", b.soundName);
             
-            AVAudioPlayer *newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];    
-            [newPlayer play];
+//            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];    
+//            //            [player setDelegate:self];
+//            [player play];
+
+            NSURL *soundEffectURL = [[NSBundle mainBundle] URLForResource: b.soundName withExtension:@"m4a"];
+            CFURLRef soundURL = (__bridge CFURLRef) soundEffectURL;
+            SystemSoundID soundID;
+            AudioServicesCreateSystemSoundID(soundURL, &soundID);
+            AudioServicesPlaySystemSound(soundID);
         }
     }
     else {
