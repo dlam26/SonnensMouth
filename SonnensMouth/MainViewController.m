@@ -103,6 +103,12 @@
             popoverController.delegate = self;
         }
     }
+    else {
+        // 4/16/2012 david set delegate when you push the info button
+        
+        FlipsideViewController *fvc = segue.destinationViewController;
+        fvc.delegate = self;
+    }
 }
 
 - (IBAction)togglePopover:(id)sender
@@ -115,7 +121,7 @@
     }
 }
 
-#pragma mark  IBAction's
+#pragma mark -  IBAction's
 
 // 4/3/12 - From a UISwitch
 // 
@@ -155,6 +161,7 @@
         DebugLog(@"No sound named, %@", b.soundName);
     }
 }
+
 
 
 @end
