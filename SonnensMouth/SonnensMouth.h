@@ -14,6 +14,8 @@
 #define DebugLog(...) do {} while (0)
 #endif
 
+#define TWEETS_URL @"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sonnench"
+
 //  #import <Foundation/Foundation.h>
 
 @interface SonnensMouth : NSObject {

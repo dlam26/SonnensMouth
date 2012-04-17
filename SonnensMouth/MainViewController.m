@@ -103,11 +103,17 @@
             popoverController.delegate = self;
         }
     }
-    else {
+    else if ([[segue identifier] isEqualToString:@"info"]) {
         // 4/16/2012 david set delegate when you push the info button
         
         FlipsideViewController *fvc = segue.destinationViewController;
         fvc.delegate = self;
+    }
+    else if ([[segue identifier] isEqualToString:@"tweets"]) {
+
+    }
+    else {        
+        DebugLog(@"did segue with unknown identifier: %@", [segue identifier]);
     }
 }
 
