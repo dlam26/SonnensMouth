@@ -112,6 +112,10 @@
     else if ([[segue identifier] isEqualToString:@"tweets"]) {
 
     }
+    else if ([[segue identifier] isEqualToString:@"tabbar"]) {
+        ActionsViewController *avc = segue.destinationViewController;
+        avc.actionsDelegate = self;
+    }
     else {        
         DebugLog(@"did segue with unknown identifier: %@", [segue identifier]);
     }
@@ -126,6 +130,15 @@
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
 }
+
+#pragma mark - ActionsViewController  delegate stuff
+
+-(void)actionsViewControllerDidFinish:(ActionsViewController *)controller
+{
+    DebugLog();
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 
 #pragma mark -  IBAction's
 

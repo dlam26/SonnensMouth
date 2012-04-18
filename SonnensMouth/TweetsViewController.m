@@ -106,7 +106,8 @@
 {
 //    static NSString *CellIdentifier = @"Cell";
 
-    static NSString *CellIdentifier = @"tweets reuse cell identifier";
+    // hardcoded in storyboard
+    static NSString *CellIdentifier = @"tweets reuse cell identifier"; 
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {

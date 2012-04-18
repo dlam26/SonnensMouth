@@ -10,10 +10,11 @@
 #import <AVFoundation/AVAudioPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "FlipsideViewController.h"
+#import "ActionsViewController.h"
 #import "PlaySoundUIButton.h"
 
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, ActionsViewControllerDelegate, UIPopoverControllerDelegate>
 {
     IBOutlet UIImageView *background;
     IBOutlet UISwitch *backgroundSwitch;
