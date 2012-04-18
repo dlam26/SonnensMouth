@@ -141,9 +141,9 @@
  */
 -(NSString *)dateDiff:(NSString *)origDate {
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-//    [df setDateFormat:@"EEE, dd MMM yy HH:mm:ss VVVV"];     // Thu, 21 May 09 19:10:09 -0700
-    [df setDateFormat:@"EEE MMM dd HH:mm:ss VVVV YYYY"];
-    NSDate *convertedDate = [df dateFromString:origDate];     // Sun Apr 15 05:06:03 +0000 2012
+//  [df setDateFormat:@"EEE, dd MMM yy HH:mm:ss VVVV"];       // Thu, 21 May 09 19:10:09 -0700
+    [df setDateFormat:@"EEE MMM dd HH:mm:ss VVVV yyyy"];      // Sun Apr 15 05:06:03 +0000 2012
+    NSDate *convertedDate = [df dateFromString:origDate];     
     NSDate *todayDate = [NSDate date];
     double ti = [convertedDate timeIntervalSinceDate:todayDate];
     ti = ti * -1;
