@@ -17,8 +17,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0Kn-bi-Mhm" userLabel="Info Button">
-                                <rect key="frame" x="282" y="421" width="18" height="19"/>
+                            <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0Kn-bi-Mhm" userLabel="Info Button">
+                                <rect key="frame" x="252" y="421" width="18" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal">
@@ -58,10 +58,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w6R-xO-zaC" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="203" y="125" width="72" height="37"/>
+                                <rect key="frame" x="188" y="125" width="102" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="bb">
+                                <state key="normal" title="perfection!">
                                     <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -69,17 +69,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="bbb"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="chael-p-sonnen-and-the-p-stands-for-perfection"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="Tdc-h2-xe2"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="ZhY-9g-4Lh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dta-f2-Vmx">
-                                <rect key="frame" x="20" y="415" width="29" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="adS-ho-hAG" userLabel="GotoTabBar Button">
+                                <rect key="frame" x="282" y="421" width="18" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" image="sonnen_smiling.jpg">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x5W-Dh-G8t" kind="modal" identifier="tweets" modalTransitionStyle="partialCurl" id="7HK-YB-Bbk"/>
+                                    <segue destination="vqf-Wy-BeF" kind="modal" identifier="tabbar" id="Kgl-HM-H2K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,39 +100,6 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
-        </scene>
-        <scene sceneID="afh-1C-Y9h">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujb-Tv-ejT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController modalTransitionStyle="partialCurl" id="x5W-Dh-G8t" customClass="TweetsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mot-KC-ZzM">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweets reuse cell identifier" textLabel="KDK-EC-DbO" rowHeight="61" style="IBUITableViewCellStyleDefault" id="b5a-hf-Veq">
-                                <rect key="frame" x="0.0" y="22" width="320" height="61"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Tweet text here" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KDK-EC-DbO">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="332" y="794"/>
         </scene>
         <scene sceneID="9">
             <objects>
@@ -149,7 +116,7 @@
                                     <navigationItem title="Title" id="13">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="14">
                                             <connections>
-                                                <action selector="done:" destination="6" id="16"/>
+                                                <action selector="done:" destination="6" id="3W0-MC-GDj"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -162,11 +129,142 @@
             </objects>
             <point key="canvasLocation" x="428" y="182"/>
         </scene>
+        <scene sceneID="EGr-b3-wJs">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWl-QE-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0sd-NW-9jl" customClass="TweetsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="ezM-62-eEN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweets reuse cell identifier" textLabel="fJg-rm-1HV" rowHeight="61" style="IBUITableViewCellStyleDefault" id="x86-0v-4Ui">
+                                <rect key="frame" x="0.0" y="22" width="320" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Tweet text here" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJg-rm-1HV">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="@sonnench" id="z6W-k2-jrm"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-392"/>
+        </scene>
+        <scene sceneID="AhV-po-0Rd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BfM-Vh-u55" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="bQJ-8g-Ncf" customClass="SaidSoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uvk-eR-HZ4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="GjZ-8f-MWv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Quotes" id="Zgt-Qt-E4L">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ilf-XB-1Wb">
+                                            <connections>
+                                                <action selector="done:" destination="bQJ-8g-Ncf" id="663-RT-8Ug"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Talk!" id="Xlz-bO-4oi" userLabel="Talk Bar Button Item">
+                                            <connections>
+                                                <action selector="nextQuote:" destination="bQJ-8g-Ncf" id="Al4-Qf-b6A"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" id="nCP-gk-2z4">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="chaelsonnensaidso.com" lineBreakMode="tailTruncation" minimumFontSize="10" id="f7a-4x-SiL">
+                                <rect key="frame" x="10" y="49" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sonnen Said So" id="hjX-rb-ub9"/>
+                    <connections>
+                        <outlet property="sonnenSaidSoWebView" destination="nCP-gk-2z4" id="5L0-ee-Ufe"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="956" y="-974"/>
+        </scene>
+        <scene sceneID="tfO-qV-0b0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkO-0n-rJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController definesPresentationContext="YES" id="vqf-Wy-BeF" customClass="ActionsViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xk7-v0-LZf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bP5-Jm-Q2P">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bQJ-8g-Ncf" kind="relationship" relationship="viewControllers" id="Py2-dz-KBG"/>
+                        <segue destination="Iys-no-2Jc" kind="relationship" relationship="viewControllers" id="OQD-wf-XoC"/>
+                        <segue destination="0sd-NW-9jl" kind="relationship" relationship="viewControllers" id="qbQ-QX-xgx"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="668" y="-423"/>
+        </scene>
+        <scene sceneID="Qhv-5Y-G3H">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOI-cd-ucc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Iys-no-2Jc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGf-aF-oqR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="dJ2-Cv-WsR">
+                                <rect key="frame" x="124" y="31" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="Hs0-XP-PuT"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1232" y="208"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="sonnen_smiling.jpg" width="420" height="540"/>
-    </resources>
     <classes>
+        <class className="ActionsViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActionsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="actionsDelegate"/>
+            </relationships>
+        </class>
         <class className="FlipsideViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipsideViewController.h"/>
             <relationships>
@@ -185,6 +283,14 @@
         </class>
         <class className="PlaySoundUIButton" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySoundUIButton.h"/>
+        </class>
+        <class className="SaidSoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SaidSoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="nextQuote:"/>
+                <relationship kind="outlet" name="sonnenSaidSoWebView" candidateClass="UIWebView"/>
+            </relationships>
         </class>
         <class className="TweetsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetsViewController.h"/>

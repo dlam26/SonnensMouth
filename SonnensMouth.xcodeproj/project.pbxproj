@@ -36,6 +36,7 @@
 		1A92B826153D3EAD001BE1C7 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */; };
 		1A92B82E153E8902001BE1C7 /* SaidSoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */; };
 		1A92B834153EA275001BE1C7 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B833153EA275001BE1C7 /* ActionsViewController.m */; };
+		1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaidSoViewController.m; sourceTree = "<group>"; };
 		1A92B832153EA275001BE1C7 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
 		1A92B833153EA275001BE1C7 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chael-p-sonnen-and-the-p-stands-for-perfection.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		1A83A677152BD4A100532D8E /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
 			);
 			name = sounds;
@@ -307,6 +310,7 @@
 				1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */,
 				1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */,
 				1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */,
+				1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
