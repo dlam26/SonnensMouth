@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SaidSoViewController.h"
 
 @class ActionsViewController;
 
@@ -17,6 +18,8 @@
 @interface ActionsViewController : UITabBarController
 {
     IBOutlet id <ActionsViewControllerDelegate> actionsDelegate;
+    
+    UIInterfaceOrientation newOrientation;
     
 }
 

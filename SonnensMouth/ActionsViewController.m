@@ -56,9 +56,30 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+
+    return YES;
+    
+    /*
+    return (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+     */
 }
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    newOrientation = toInterfaceOrientation;
+}
+
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{   
+    BOOL onSonnenSaidSoTab = self.selectedIndex == 0;
+    
+    if(onSonnenSaidSoTab) {
+        
+        SaidSoViewController *s = (SaidSoViewController *)self.selectedViewController;
+        [s fit];
+    }
+}
 
 #pragma mark - Actions
 

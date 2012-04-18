@@ -13,12 +13,20 @@
 @class SaidSoViewController;
 
 
-@interface SaidSoViewController : UIViewController {
+@interface SaidSoViewController : UIViewController <UIWebViewDelegate, UIScrollViewDelegate> {
     
-
+    IBOutlet UIWebView *sonnenSaidSoWebView;    
+    int webViewLoads;
+    CGFloat accumulatedZoomScale;
 }
 
+@property(nonatomic,retain) IBOutlet UIWebView *sonnenSaidSoWebView;
+
+
 - (IBAction)done:(id)sender;
+- (IBAction)nextQuote:(id)sender;
+
+- (void)fit;
 
 
 @end
