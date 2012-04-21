@@ -18,6 +18,15 @@
 
 //  #import <Foundation/Foundation.h>
 
+#import <CoreFoundation/CoreFoundation.h>
+
+
+#import <AudioToolbox/AudioToolbox.h>
+
+#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVAudioPlayer.h>
+
+
 @interface SonnensMouth : NSObject {
  
     
@@ -25,6 +34,7 @@
 
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
++(void)playSound:(NSString *)soundName;
 
 @end
 
