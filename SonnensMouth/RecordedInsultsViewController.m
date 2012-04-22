@@ -85,7 +85,7 @@
     
     // Create a directory to put a file in    
 //    NSString *dir = @"/davidsounds";
-    NSString *dir = @"/";
+//    NSString *dir = @"/";
     
 //    NSFileManager *fileManager = [NSFileManager defaultManager];
 //    NSError *fileManagerError;

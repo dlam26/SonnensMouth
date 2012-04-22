@@ -33,9 +33,16 @@
     NSString *messedUpFacePic = [[NSBundle mainBundle] pathForResource:@"sonnen_smiling_messedup" ofType:@"jpg"];
     
     smilingChael  = [UIImage imageWithContentsOfFile:smilingPic];
-    bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];
-    
+    bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];    
     background.image = smilingChael;
+    
+    [background.layer setOpacity:0.2];
+    
+    /*
+     // blur  http://www.dimzzy.com/blog/2010/11/blur-effect-for-uiview/
+    [background.layer setRasterizationScale:0.3];
+    [background.layer setShouldRasterize:YES];
+     */
 }
     
 - (void)viewDidUnload
@@ -151,14 +158,26 @@
 }
 
 
-// https://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6
-// 
--(IBAction)playSound:(id)sender
+
+
+-(IBAction)soundButtonTouchDown:(id)sender
 {
+    DebugLog();    
+    UIButton *soundButton = (UIButton *)sender;    
+    UIFont *biggerFont = [soundButton.titleLabel.font fontWithSize:18.0];
+    soundButton.titleLabel.font = biggerFont;
+}
+
+-(IBAction)soundButtonTouchUp:(id)sender
+{
+    UIButton *soundButton = (UIButton *)sender;    
+    UIFont *biggerFont = [soundButton.titleLabel.font fontWithSize:12.0];
+    soundButton.titleLabel.font = biggerFont;
+
+//    https://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6
     PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
     [SonnensMouth playSound:b.soundName];
 }
-
 
 
 @end

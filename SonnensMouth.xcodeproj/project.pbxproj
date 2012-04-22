@@ -33,13 +33,32 @@
 		1A83A689152C5F9500532D8E /* PlaySoundUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */; };
 		1A83A68F152C63AA00532D8E /* SonnensMouth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A68E152C63AA00532D8E /* SonnensMouth.m */; };
 		1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */; };
+		1A8423211543A4E300582779 /* anderson-silva.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84231E1543A4E300582779 /* anderson-silva.m4a */; };
+		1A8423221543A4E300582779 /* lyoto-machida.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84231F1543A4E300582779 /* lyoto-machida.m4a */; };
+		1A8423251543A71500582779 /* guess-what.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423241543A71500582779 /* guess-what.m4a */; };
+		1A8423281543A76A00582779 /* im-like-facing-four-men.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */; };
+		1A8423291543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */; };
+		1A84232B1543A9CB00582779 /* this-guy-is-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */; };
+		1A84232D1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */; };
+		1A84232F1543AE4400582779 /* ah-uh-eh-oh-uh-ah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */; };
+		1A8423331543BA4C00582779 /* grease-saint-pierre.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */; };
+		1A8423351543BD9400582779 /* wanderlei.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423341543BD9400582779 /* wanderlei.m4a */; };
+		1A8423371543BEF500582779 /* i-heard-that-dur-dur-dur.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */; };
+		1A8423391543C85700582779 /* never-piss-of-a-gangster.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423381543C85700582779 /* never-piss-of-a-gangster.m4a */; };
+		1A84233B1543D0C200582779 /* ahh-you-know.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84233A1543D0C200582779 /* ahh-you-know.m4a */; };
+		1A84233D1543D38800582779 /* he-tried-to-feed-a-bus-a-carrot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */; };
+		1A84233F1544113700582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84233E1544113600582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a */; };
+		1A842345154418E200582779 /* i-am-a-gangster-from-america.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */; };
+		1A84234715441A3200582779 /* lyoto-machida.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84234615441A3200582779 /* lyoto-machida.m4a */; };
+		1A84234B15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */; };
+		1A84234D1544234E00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */; };
+		1A84234F154428DF00582779 /* whoahhh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84234E154428DE00582779 /* whoahhh.m4a */; };
+		1A84235115442F4600582779 /* anderson-anderson.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84235015442F4400582779 /* anderson-anderson.m4a */; };
 		1A92B826153D3EAD001BE1C7 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */; };
 		1A92B82E153E8902001BE1C7 /* SaidSoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */; };
 		1A92B834153EA275001BE1C7 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B833153EA275001BE1C7 /* ActionsViewController.m */; };
 		1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */; };
 		1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */; };
-		1AC6D3AC154277FA004A74D0 /* i-am-a-gangster-from-america.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AA154277FA004A74D0 /* i-am-a-gangster-from-america.m4a */; };
-		1AC6D3AD154277FA004A74D0 /* you-are-an-immigrant-from-brazil.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AB154277FA004A74D0 /* you-are-an-immigrant-from-brazil.m4a */; };
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +108,27 @@
 		1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySoundUIButton.m; sourceTree = "<group>"; };
 		1A83A68E152C63AA00532D8E /* SonnensMouth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonnensMouth.m; sourceTree = "<group>"; };
 		1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "erect-statue-and-bow.m4a"; sourceTree = "<group>"; };
+		1A84231E1543A4E300582779 /* anderson-silva.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "anderson-silva.m4a"; path = "../../../sonnenstuff/sounds/anderson-silva.m4a"; sourceTree = "<group>"; };
+		1A84231F1543A4E300582779 /* lyoto-machida.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyoto-machida.m4a"; path = "../../../sonnenstuff/sounds/lyoto-machida.m4a"; sourceTree = "<group>"; };
+		1A8423241543A71500582779 /* guess-what.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "guess-what.m4a"; path = "../../../sonnenstuff/sounds/guess-what.m4a"; sourceTree = "<group>"; };
+		1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "im-like-facing-four-men.m4a"; path = "../../../sonnenstuff/sounds/im-like-facing-four-men.m4a"; sourceTree = "<group>"; };
+		1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "im-the-baddest-man-god-ever-made.m4a"; path = "../../../sonnenstuff/sounds/im-the-baddest-man-god-ever-made.m4a"; sourceTree = "<group>"; };
+		1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "this-guy-is-delusional.m4a"; path = "../../../sonnenstuff/sounds/this-guy-is-delusional.m4a"; sourceTree = "<group>"; };
+		1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "tried-to-feed-a-bus-a-carrot.m4a"; path = "../../../sonnenstuff/sounds/tried-to-feed-a-bus-a-carrot.m4a"; sourceTree = "<group>"; };
+		1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ah-uh-eh-oh-uh-ah.m4a"; path = "../../../sonnenstuff/sounds/ah-uh-eh-oh-uh-ah.m4a"; sourceTree = "<group>"; };
+		1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grease-saint-pierre.m4a"; sourceTree = "<group>"; };
+		1A8423341543BD9400582779 /* wanderlei.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei.m4a; sourceTree = "<group>"; };
+		1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-heard-that-dur-dur-dur.m4a"; sourceTree = "<group>"; };
+		1A8423381543C85700582779 /* never-piss-of-a-gangster.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "never-piss-of-a-gangster.m4a"; sourceTree = "<group>"; };
+		1A84233A1543D0C200582779 /* ahh-you-know.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ahh-you-know.m4a"; sourceTree = "<group>"; };
+		1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "he-tried-to-feed-a-bus-a-carrot.m4a"; sourceTree = "<group>"; };
+		1A84233E1544113600582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "well-ah-eh-oh-i-dont-know-i-eh.m4a"; sourceTree = "<group>"; };
+		1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-am-a-gangster-from-america.m4a"; sourceTree = "<group>"; };
+		1A84234615441A3200582779 /* lyoto-machida.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lyoto-machida.m4a"; sourceTree = "<group>"; };
+		1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hes-not-qualified-to-make-a-sandwhich.m4a"; sourceTree = "<group>"; };
+		1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "you-could-download-an-app-on-your-iphone-and-replace.m4a"; sourceTree = "<group>"; };
+		1A84234E154428DE00582779 /* whoahhh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = whoahhh.m4a; sourceTree = "<group>"; };
+		1A84235015442F4400582779 /* anderson-anderson.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "anderson-anderson.m4a"; sourceTree = "<group>"; };
 		1A92B824153D3EAD001BE1C7 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
 		1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
 		1A92B82C153E8901001BE1C7 /* SaidSoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaidSoViewController.h; sourceTree = "<group>"; };
@@ -98,8 +138,6 @@
 		1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chael-p-sonnen-and-the-p-stands-for-perfection.m4a"; sourceTree = "<group>"; };
 		1AC6D3A615427596004A74D0 /* RecordedInsultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordedInsultsViewController.h; sourceTree = "<group>"; };
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
-		1AC6D3AA154277FA004A74D0 /* i-am-a-gangster-from-america.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-am-a-gangster-from-america.m4a"; sourceTree = "<group>"; };
-		1AC6D3AB154277FA004A74D0 /* you-are-an-immigrant-from-brazil.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "you-are-an-immigrant-from-brazil.m4a"; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -242,11 +280,30 @@
 		1A83A677152BD4A100532D8E /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */,
-				1AC6D3AA154277FA004A74D0 /* i-am-a-gangster-from-america.m4a */,
-				1AC6D3AB154277FA004A74D0 /* you-are-an-immigrant-from-brazil.m4a */,
+				1A84233A1543D0C200582779 /* ahh-you-know.m4a */,
+				1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */,
+				1A84235015442F4400582779 /* anderson-anderson.m4a */,
+				1A84231E1543A4E300582779 /* anderson-silva.m4a */,
 				1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
+				1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */,
+				1A8423241543A71500582779 /* guess-what.m4a */,
+				1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */,
+				1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */,
+				1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */,
+				1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */,
+				1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */,
+				1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */,
+				1A84234615441A3200582779 /* lyoto-machida.m4a */,
+				1A84231F1543A4E300582779 /* lyoto-machida.m4a */,
+				1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */,
+				1A8423381543C85700582779 /* never-piss-of-a-gangster.m4a */,
+				1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */,
+				1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */,
+				1A8423341543BD9400582779 /* wanderlei.m4a */,
+				1A84234E154428DE00582779 /* whoahhh.m4a */,
+				1A84233E1544113600582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a */,
+				1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -329,9 +386,28 @@
 				1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */,
 				1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */,
 				1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
-				1AC6D3AC154277FA004A74D0 /* i-am-a-gangster-from-america.m4a in Resources */,
-				1AC6D3AD154277FA004A74D0 /* you-are-an-immigrant-from-brazil.m4a in Resources */,
 				1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */,
+				1A8423211543A4E300582779 /* anderson-silva.m4a in Resources */,
+				1A8423221543A4E300582779 /* lyoto-machida.m4a in Resources */,
+				1A8423251543A71500582779 /* guess-what.m4a in Resources */,
+				1A8423281543A76A00582779 /* im-like-facing-four-men.m4a in Resources */,
+				1A8423291543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a in Resources */,
+				1A84232B1543A9CB00582779 /* this-guy-is-delusional.m4a in Resources */,
+				1A84232D1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */,
+				1A84232F1543AE4400582779 /* ah-uh-eh-oh-uh-ah.m4a in Resources */,
+				1A8423331543BA4C00582779 /* grease-saint-pierre.m4a in Resources */,
+				1A8423351543BD9400582779 /* wanderlei.m4a in Resources */,
+				1A8423371543BEF500582779 /* i-heard-that-dur-dur-dur.m4a in Resources */,
+				1A8423391543C85700582779 /* never-piss-of-a-gangster.m4a in Resources */,
+				1A84233B1543D0C200582779 /* ahh-you-know.m4a in Resources */,
+				1A84233D1543D38800582779 /* he-tried-to-feed-a-bus-a-carrot.m4a in Resources */,
+				1A84233F1544113700582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a in Resources */,
+				1A842345154418E200582779 /* i-am-a-gangster-from-america.m4a in Resources */,
+				1A84234715441A3200582779 /* lyoto-machida.m4a in Resources */,
+				1A84234B15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a in Resources */,
+				1A84234D1544234E00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a in Resources */,
+				1A84234F154428DF00582779 /* whoahhh.m4a in Resources */,
+				1A84235115442F4600582779 /* anderson-anderson.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +531,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "Chael Sonnen";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,6 +552,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Chael Sonnen";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
