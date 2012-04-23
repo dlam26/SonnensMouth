@@ -159,24 +159,28 @@
 
 
 
-
--(IBAction)soundButtonTouchDown:(id)sender
+/*  
+    Make a sound button big when you tap on it...  e.g.  soundButtonTouchDown 
+ */
+-(IBAction)makeButtonTextBig:(id)sender
 {
     DebugLog();    
-    UIButton *soundButton = (UIButton *)sender;    
-    UIFont *biggerFont = [soundButton.titleLabel.font fontWithSize:18.0];
-    soundButton.titleLabel.font = biggerFont;
+    UIButton *soundButton = (UIButton *)sender;
+    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
 }
 
--(IBAction)soundButtonTouchUp:(id)sender
+-(IBAction)makeButtonTextSmall:(id)sender
 {
-    UIButton *soundButton = (UIButton *)sender;    
-    UIFont *biggerFont = [soundButton.titleLabel.font fontWithSize:12.0];
-    soundButton.titleLabel.font = biggerFont;
+    UIButton *soundButton = (UIButton *)sender;
+    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
 
 //    https://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6
+}
+
+-(IBAction)playSound:(id)sender
+{
     PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
-    [SonnensMouth playSound:b.soundName];
+    [SonnensMouth playSound:b.soundName];    
 }
 
 

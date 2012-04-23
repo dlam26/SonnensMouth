@@ -27,7 +27,8 @@
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
 -(IBAction)switchBackground:(id)sender;
--(IBAction)soundButtonTouchDown:(id)sender;
--(IBAction)soundButtonTouchUp:(id)sender;
+-(IBAction)makeButtonTextBig:(id)sender;
+-(IBAction)makeButtonTextSmall:(id)sender;
+-(IBAction)playSound:(id)sender;
 
 @end
