@@ -12,11 +12,13 @@
 #import "SonnensMouth.h"
 
 
-@interface TweetsViewController : UITableViewController <NSURLConnectionDelegate>
+//@interface TweetsViewController : UITableViewController <NSURLConnectionDelegate>
+@interface TweetsViewController : UIViewController <NSURLConnectionDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *tweets;
-    
     NSMutableData *tweetsData;
+    
+    IBOutlet UITableView *tableView;
 }
 
 @property(nonatomic,retain) NSArray *tweets;

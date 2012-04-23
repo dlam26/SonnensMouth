@@ -12,14 +12,7 @@
 
 @synthesize tweets;
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -102,14 +95,14 @@
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    static NSString *CellIdentifier = @"Cell";
 
     // hardcoded in storyboard
     static NSString *CellIdentifier = @"tweets reuse cell identifier"; 
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
@@ -252,8 +245,10 @@
     NSError *error;
     tweets = [NSJSONSerialization JSONObjectWithData:tweetsData options:kNilOptions error:&error];
     
-    [[self tableView] reloadData];
-    [[self tableView] setNeedsDisplay];
+    DebugLog();
+    
+    [tableView reloadData];
+    [tableView setNeedsDisplay];
 }
 
 // TODO: show UIAlertView if it fails
