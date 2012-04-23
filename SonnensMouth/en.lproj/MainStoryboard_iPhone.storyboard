@@ -42,14 +42,14 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ti-Kc-dEk" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="176" y="304" width="110" height="18"/>
+                                <rect key="frame" x="191" y="304" width="129" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="i'm a gangster">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
@@ -73,7 +73,7 @@
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="dont piss of a gangster">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
@@ -90,14 +90,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tqf-ds-3ov" userLabel="&quot;Foreman&quot;?" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="182" y="356" width="88" height="18"/>
+                                <rect key="frame" x="212" y="356" width="102" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="&quot;foreman&quot;?">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Uil-JW-g1C" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="20" y="32" width="130" height="18"/>
+                                <rect key="frame" x="4" y="32" width="146" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="flt-Ib-uuD" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="33" y="58" width="130" height="18"/>
+                                <rect key="frame" x="20" y="58" width="143" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -249,7 +249,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Ljg-EH-pnq" userLabel="guess what" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="111" y="141" width="100" height="18"/>
+                                <rect key="frame" x="111" y="141" width="116" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -273,13 +273,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="e9d-62-CcD" userLabel="ahh you know.." customClass="PlaySoundUIButton">
-                                <rect key="frame" x="63" y="167" width="132" height="18"/>
+                                <rect key="frame" x="63" y="167" width="148" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <state key="normal" title="ahh you know...">
+                                <state key="normal" title="AHH yannow">
                                     <color key="titleColor" red="0.99576783180236816" green="0.0046592950820922852" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -297,7 +297,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Rr2-1n-91Z" userLabel="this guy is delusional" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="170" y="198" width="100" height="18"/>
+                                <rect key="frame" x="170" y="198" width="130" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -311,7 +311,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="this-guy-is-delusional"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="this-guys-delusional"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="b3L-RX-Dny"/>
@@ -321,7 +321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="16X-8x-eBd" userLabel="he tried to feed a bus a carrot" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="125" y="224" width="184" height="18"/>
+                                <rect key="frame" x="118" y="224" width="202" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -345,7 +345,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="R9R-9Y-42F" userLabel="hes not qualified to make a sandwhich" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="133" y="250" width="197" height="18"/>
+                                <rect key="frame" x="123" y="250" width="197" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -393,7 +393,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="tah-95-cgw" userLabel="joo•jitsu" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="-5" y="418" width="84" height="18"/>
+                                <rect key="frame" x="4" y="418" width="84" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -417,7 +417,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="oby-QJ-FjF" userLabel="joo•jitsu" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="56" y="435" width="84" height="18"/>
+                                <rect key="frame" x="55" y="435" width="95" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -441,7 +441,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="H9h-0D-gqn" userLabel="ah •o•uhm" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="-5" y="344" width="96" height="18"/>
+                                <rect key="frame" x="-5" y="344" width="110" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -465,7 +465,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="56k-0O-Eu4" userLabel="i•heard•dur•dur" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="18" y="370" width="134" height="18"/>
+                                <rect key="frame" x="18" y="370" width="145" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -489,7 +489,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Q5K-3z-odV" userLabel="well•err•Idunno•eh" customClass="PlaySoundUIButton" colorLabel="IBBuiltInLabel-Yellow">
-                                <rect key="frame" x="4" y="396" width="163" height="18"/>
+                                <rect key="frame" x="4" y="396" width="178" height="18"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -550,42 +550,70 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="428" y="182"/>
+            <point key="canvasLocation" x="-34" y="1034"/>
         </scene>
         <!--Tweets View Controller - @sonnench-->
         <scene sceneID="EGr-b3-wJs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWl-QE-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="0sd-NW-9jl" customClass="TweetsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="ezM-62-eEN">
+                    <view key="view" contentMode="scaleToFill" id="vWK-Vm-9NX">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweets reuse cell identifier" textLabel="fJg-rm-1HV" rowHeight="61" style="IBUITableViewCellStyleDefault" id="x86-0v-4Ui">
-                                <rect key="frame" x="0.0" y="22" width="320" height="61"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Tweet text here" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJg-rm-1HV">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="ZX0-Wu-iWn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Tweets ^^" id="waX-lo-FCJ"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="4mo-xT-7yy">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweets reuse cell identifier" textLabel="pt4-UE-B6v" rowHeight="61" style="IBUITableViewCellStyleDefault" id="rSE-Tt-GWy">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Tweet text here" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pt4-UE-B6v">
+                                                    <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0sd-NW-9jl" id="vTw-as-K9a"/>
+                                    <outlet property="delegate" destination="0sd-NW-9jl" id="VKZ-RQ-TCf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
                     <tabBarItem key="tabBarItem" title="@sonnench" id="z6W-k2-jrm"/>
+                    <connections>
+                        <outlet property="tableView" destination="4mo-xT-7yy" id="cgU-x8-77b"/>
+                    </connections>
                 </viewController>
+                <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="rnA-bQ-U3v">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Chaels Tweets ^^" id="4aU-30-S2y"/>
+                    </items>
+                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="1204" y="-392"/>
+            <point key="canvasLocation" x="1248" y="-166"/>
         </scene>
         <!--Said So View Controller - Sonnen Said So-->
         <scene sceneID="AhV-po-0Rd">
@@ -684,6 +712,13 @@
                                     <action selector="playGeneratedFile:" destination="ode-mO-hNw" eventType="touchUpInside" id="oqo-z8-Fua"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="PSJ-7g-FjN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Recorded Insults" id="oPV-H5-mfk"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -706,37 +741,159 @@
                     </tabBar>
                     <connections>
                         <segue destination="bQJ-8g-Ncf" kind="relationship" relationship="viewControllers" id="Py2-dz-KBG"/>
-                        <segue destination="Iys-no-2Jc" kind="relationship" relationship="viewControllers" id="OQD-wf-XoC"/>
                         <segue destination="0sd-NW-9jl" kind="relationship" relationship="viewControllers" id="qbQ-QX-xgx"/>
                         <segue destination="ode-mO-hNw" kind="relationship" relationship="viewControllers" id="TKa-k0-UG9"/>
+                        <segue destination="HGh-Tc-coK" kind="relationship" relationship="viewControllers" id="o1s-ve-vzi"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="668" y="-423"/>
+            <point key="canvasLocation" x="514" y="187"/>
         </scene>
-        <!--View Controller - Settings-->
+        <!--More View Controller - More-->
+        <scene sceneID="4De-IT-a9B">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Pz-dt-TMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="More" id="aHm-kO-CBL" customClass="MoreViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ggz-BW-Zte">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="fAl-Nj-QII">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="d4n-j8-sIR">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="XYk-H5-LA3"/>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1173" y="889"/>
+        </scene>
+        <!--Directory List View Controller-->
+        <scene sceneID="T4g-M6-NyJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVu-n4-iYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="DirectoryList" id="9w1-2K-SxQ" customClass="DirectoryListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3vt-CZ-hCx">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7KM-9z-6eh">
+                                <rect key="frame" x="27" y="124" width="273" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ucU-X1-nnB">
+                                <rect key="frame" x="44" y="204" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewDirectory:" destination="9w1-2K-SxQ" eventType="touchUpInside" id="EpY-Tz-IcL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jmV-Jm-mEl">
+                                <rect key="frame" x="75" y="257" width="101" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="put in path">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="putInPath:" destination="9w1-2K-SxQ" eventType="touchUpInside" id="A6X-uE-Ugz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2WW-vK-wzE">
+                                <rect key="frame" x="112" y="302" width="119" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="put in doc dir">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="putInDocumentDirectory:" destination="9w1-2K-SxQ" eventType="touchUpInside" id="Hf4-jK-dB7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="directoryInput" destination="7KM-9z-6eh" id="Z7R-u1-scv"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1635" y="1323"/>
+        </scene>
+        <!--Navigation Controller - More-->
+        <scene sceneID="jQU-qB-zOg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trg-Qf-FQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController title="More" definesPresentationContext="YES" id="HGh-Tc-coK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" id="szc-a1-5R6"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Jmb-Xl-eCr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aHm-kO-CBL" kind="relationship" relationship="rootViewController" id="UFk-hJ-KH1"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="707" y="889"/>
+        </scene>
+        <!--View Controller - About-->
         <scene sceneID="Qhv-5Y-G3H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOI-cd-ucc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Iys-no-2Jc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="About" id="Iys-no-2Jc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGf-aF-oqR">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="dJ2-Cv-WsR">
-                                <rect key="frame" x="124" y="31" width="63" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About/settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="dJ2-Cv-WsR">
+                                <rect key="frame" x="129" y="112" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="4u2-1P-MRH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="About" id="yBh-tp-7VF"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="Hs0-XP-PuT"/>
+                    <tabBarItem key="tabBarItem" title="About" id="Hs0-XP-PuT"/>
+                    <navigationItem key="navigationItem" id="GVn-q2-OkB"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1232" y="208"/>
+            <point key="canvasLocation" x="1640" y="718"/>
         </scene>
     </scenes>
     <classes>
@@ -745,6 +902,16 @@
             <relationships>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="outlet" name="actionsDelegate"/>
+            </relationships>
+        </class>
+        <class className="DirectoryListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DirectoryListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="putInDocumentDirectory:"/>
+                <relationship kind="action" name="putInPath:"/>
+                <relationship kind="action" name="viewDirectory:"/>
+                <relationship kind="outlet" name="directoryInput" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="viewButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="FlipsideViewController" superclassName="UIViewController">
@@ -765,6 +932,9 @@
                 <relationship kind="outlet" name="backgroundSwitch" candidateClass="UISwitch"/>
             </relationships>
         </class>
+        <class className="MoreViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreViewController.h"/>
+        </class>
         <class className="PlaySoundUIButton" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySoundUIButton.h"/>
         </class>
@@ -783,8 +953,11 @@
                 <relationship kind="outlet" name="sonnenSaidSoWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
-        <class className="TweetsViewController" superclassName="UITableViewController">
+        <class className="TweetsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
