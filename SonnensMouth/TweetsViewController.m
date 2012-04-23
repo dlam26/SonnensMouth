@@ -51,7 +51,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewWillAppear:animated];    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -242,6 +243,8 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
     NSError *error;
     tweets = [NSJSONSerialization JSONObjectWithData:tweetsData options:kNilOptions error:&error];
     [tableView reloadData];
@@ -251,6 +254,8 @@
 // TODO: show UIAlertView if it fails
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
     UIAlertView *av = [SonnensMouth newNoInternetConnectionAlertView];    
     [av show];
 }
@@ -264,5 +269,10 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://twitter.com/sonnench"]];
 }
 
+-(IBAction)done:(id)sender
+{
+    SaidSoViewController *s = [[[self tabBarController] viewControllers] objectAtIndex:0];
+    [s done:sender];
+}
 
 @end

@@ -140,4 +140,12 @@
     [[SonnensMouth sonnensMouth ]playSound:@"aaa"];
 }
 
+- (IBAction)done:(id)sender
+{
+    ActionsViewController *avc = (ActionsViewController *)[self tabBarController];    
+    [[avc actionsDelegate] actionsViewControllerDidFinish:avc];
+}
+
+
+
 @end

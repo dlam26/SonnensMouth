@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SonnensMouth.h"
 #import "DirectoryListViewController.h"
+#import "ActionsViewController.h"
 
 #define DIRECTORY_LIST_ROW 2
 #define ABOUT_LIST_ROW 3
@@ -17,5 +18,7 @@
     
     
 }
+
+- (IBAction)done:(id)sender;
 
 @end

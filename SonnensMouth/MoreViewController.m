@@ -64,7 +64,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DebugLog();
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -161,8 +160,14 @@
             DebugLog();
             break;
     }
-    
-    
+}
+
+#pragma mark - IBAction's
+
+- (IBAction)done:(id)sender
+{
+    ActionsViewController *avc = (ActionsViewController *)[self tabBarController];    
+    [[avc actionsDelegate] actionsViewControllerDidFinish:avc];
 }
 
 @end

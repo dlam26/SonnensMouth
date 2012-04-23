@@ -18,6 +18,8 @@
     
     UIImage *smilingChael;
     UIImage *bustedUpChael;
+    
+    ActionsViewController *actionsViewController;
 }
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

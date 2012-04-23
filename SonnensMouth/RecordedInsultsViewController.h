@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SonnensMouth.h"
 #import <AVFoundation/AVFoundation.h>
+
+#import "SonnensMouth.h"
+#import "ActionsViewController.h"
 
 
 @interface RecordedInsultsViewController : UIViewController {
@@ -20,4 +22,6 @@
 
 - (IBAction)playGeneratedFile:(id)sender;
 
+- (IBAction)done:(id)sender;
+    
 @end

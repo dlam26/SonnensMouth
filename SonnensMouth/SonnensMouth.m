@@ -92,10 +92,20 @@ static SonnensMouth* _sonnensMouth = nil;
                 DebugLog(@"Error when playing with AVAudioPlayer: %@", err);
             }
             else {
-                [audioPlayer setDelegate:self];
-                [audioPlayer setNumberOfLoops:0];   // default
-                [audioPlayer prepareToPlay];
-                [audioPlayer play];
+                @try {
+                    //  4/23/12  Throwing exception in simulator but not device!
+                    [audioPlayer setDelegate:self];
+                    [audioPlayer setNumberOfLoops:0];   // default
+                    [audioPlayer prepareToPlay];
+                    [audioPlayer play];
+                }
+                @catch (NSException *exception) {
+                    
+                }
+                @finally {
+                    
+                }
+
             }
 
            

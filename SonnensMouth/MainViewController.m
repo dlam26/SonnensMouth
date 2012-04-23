@@ -121,6 +121,7 @@
     }
     else if ([[segue identifier] isEqualToString:@"tabbar"]) {
         ActionsViewController *avc = segue.destinationViewController;
+        avc.selectedIndex   = actionsViewController.selectedIndex;
         avc.actionsDelegate = self;
     }
     else {        
@@ -142,7 +143,8 @@
 
 -(void)actionsViewControllerDidFinish:(ActionsViewController *)controller
 {
-    DebugLog();
+    actionsViewController = controller;
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -158,10 +160,6 @@
 }
 
 
-
-/*  
-    Make a sound button big when you tap on it...  e.g.  soundButtonTouchDown 
- */
 -(IBAction)makeButtonTextBig:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
@@ -171,9 +169,7 @@
 -(IBAction)makeButtonTextSmall:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
-    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
-
-//    https://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW6
+    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:12.0];
 }
 
 -(IBAction)playSound:(id)sender

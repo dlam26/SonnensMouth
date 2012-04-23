@@ -21,9 +21,14 @@
     
     UIInterfaceOrientation newOrientation;
     
+    // holds the selectedIndex when you push the done button, so that
+    // the previous state is shown if you come back to ActionsViewController
+    NSInteger activeSelectedIndex;
+    
 }
 
 @property (weak, nonatomic) IBOutlet id <ActionsViewControllerDelegate> actionsDelegate;
+
 
 - (IBAction)done:(id)sender;
 

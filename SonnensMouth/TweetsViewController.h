@@ -10,9 +10,10 @@
 #import <UIKit/UIKit.h>
 
 #import "SonnensMouth.h"
+#import "SaidSoViewController.h"
 
 
-//@interface TweetsViewController : UITableViewController <NSURLConnectionDelegate>
+
 @interface TweetsViewController : UIViewController <NSURLConnectionDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *tweets;

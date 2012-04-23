@@ -53,6 +53,16 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (activeSelectedIndex) {
+        self.selectedIndex = activeSelectedIndex;
+    }
+    
+    [super viewWillAppear:animated];
+}
+
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -86,6 +96,7 @@
 - (IBAction)done:(id)sender
 {
     [self.actionsDelegate actionsViewControllerDidFinish:self];
+    activeSelectedIndex = self.selectedIndex;
 }
 
 
