@@ -14,15 +14,17 @@
 #define DebugLog(...) do {} while (0)
 #endif
 
-#define TWEETS_URL @"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sonnench"
+#define TWEETS_API_URL @"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sonnench"
+
+
+// identifier in Interface Builder
+#define IDENTIFIER_DIRECTORY_LIST @"Directory List"
+#define IDENTIFIER_ABOUT @"About"
 
 //  #import <Foundation/Foundation.h>
 
 #import <CoreFoundation/CoreFoundation.h>
-
-
 #import <AudioToolbox/AudioToolbox.h>
-
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVAudioPlayer.h>
 
@@ -38,6 +40,9 @@
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
 -(void)playSound:(NSString *)soundName;
+
++(UIAlertView *)newNoInternetConnectionAlertView;
++(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage;
 
 @end
 

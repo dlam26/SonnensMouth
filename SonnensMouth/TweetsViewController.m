@@ -34,7 +34,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:TWEETS_URL]];
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:TWEETS_API_URL]];
     
     NSURLConnection *conn = [NSURLConnection connectionWithRequest:req delegate:self];
     [conn start];
@@ -244,9 +244,6 @@
 {
     NSError *error;
     tweets = [NSJSONSerialization JSONObjectWithData:tweetsData options:kNilOptions error:&error];
-    
-    DebugLog();
-    
     [tableView reloadData];
     [tableView setNeedsDisplay];
 }
@@ -254,7 +251,18 @@
 // TODO: show UIAlertView if it fails
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-
+    UIAlertView *av = [SonnensMouth newNoInternetConnectionAlertView];    
+    [av show];
 }
+
+
+
+#pragma mark - IBAction's
+
+-(IBAction)openInSafari:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://twitter.com/sonnench"]];
+}
+
 
 @end

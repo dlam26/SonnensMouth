@@ -32,6 +32,18 @@ static SonnensMouth* _sonnensMouth = nil;
     }
 }
 
++(UIAlertView *)newNoInternetConnectionAlertView
+{    
+    return [SonnensMouth newNoInternetConnectionAlertView:@"Error loading, check if you have an internet connection."];
+}
+
++(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oh snap!" message:errorMessage delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];    
+    return alertView;
+}
+
+
 -(void)playSound:(NSString *)soundName 
 {
     NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:soundName ofType:@"m4a"];
@@ -100,6 +112,8 @@ static SonnensMouth* _sonnensMouth = nil;
         }
     }
 }
+
+
 
 #pragma mark - <AVAudioPlayerDelegate>
 

@@ -25,4 +25,6 @@
 
 -(NSString *)dateDiff:(NSString *)origDate;
 
+-(IBAction)openInSafari:(id)sender;
+
 @end

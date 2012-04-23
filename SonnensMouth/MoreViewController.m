@@ -152,7 +152,7 @@
     switch (indexPath.row) {    
         case DIRECTORY_LIST_ROW:
             DebugLog();
-            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"Directory List"] animated:YES];
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_DIRECTORY_LIST] animated:YES];
             break;
         case ABOUT_LIST_ROW:
             [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"About"] animated:YES];
