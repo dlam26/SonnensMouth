@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development version="4200" defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -57,8 +59,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="i-am-a-gangster-from-america"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="mpB-t5-FKu"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="I9u-xE-Anz"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="P3P-le-OdI"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="D0w-hb-hhN"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="pHs-eb-Dj4"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="fgG-Hk-9xc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uuv-i1-14E" customClass="PlaySoundUIButton">
@@ -79,8 +83,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="never-piss-of-a-gangster"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="1ye-Fn-Jdm"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="cEg-HU-xwd"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="75w-oD-9DX"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="RYg-Pu-P1i"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="X5D-jE-vU9"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="n6V-Ve-Bml"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tqf-ds-3ov" userLabel="&quot;Foreman&quot;?" customClass="PlaySoundUIButton">
@@ -101,8 +107,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="im-like-facing-four-men"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="gM8-cP-J5W"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="ZmR-NE-VW6"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="Kd0-i0-5hg"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="PiT-eI-4b1"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="bEv-ef-j2B"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="Wev-Ko-XZN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="adS-ho-hAG" userLabel="GotoTabBar Button">
@@ -138,8 +146,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="anderson-silva"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="P6G-Hb-ghp"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="Mnz-fO-nyq"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="dnR-kT-3xH"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="9ca-Sy-JSL"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="QvL-Yl-Asy"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="Crq-nd-YcA"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="ATe-x9-FZa" customClass="PlaySoundUIButton">
@@ -160,8 +170,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="anderson-anderson"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="gvX-hE-3Qp"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="feQ-BL-ZXa"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="vgh-11-Vpu"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="6jf-lw-nhw"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="tMl-v3-JAb"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="OqN-Kv-H7d"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="flt-Ib-uuD" customClass="PlaySoundUIButton">
@@ -182,8 +194,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="lyoto-machida"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="unY-MP-pb5"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="54L-gl-cdz"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="ZXu-kx-6xE"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="BIX-RN-M74"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="C2X-Ja-gtN"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="KlE-Oq-0ZT"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="8na-iE-3Uf" userLabel="wanderlei" customClass="PlaySoundUIButton">
@@ -204,8 +218,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="wanderlei"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="8Qk-OQ-INo"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="5Wo-0L-9K4"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="sVB-en-u4o"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="7hu-9u-ET0"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="joj-0A-Ddz"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="tgd-7B-wbR"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="IEj-gB-qRT" userLabel="GSP" customClass="PlaySoundUIButton">
@@ -226,8 +242,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="grease-saint-pierre"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="Lyh-9A-hZs"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="OrS-xM-Ud6"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="jc1-tP-xTP"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="kNp-Ke-RcG"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="ro4-VP-Rzs"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="b8b-IL-Y7q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Ljg-EH-pnq" userLabel="guess what" customClass="PlaySoundUIButton">
@@ -248,8 +266,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="guess-what"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="7Nc-Ar-vGu"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="1RT-1f-85T"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="kui-no-4yb"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="Y2G-PK-2WL"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="riA-XV-l4K"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="XwU-65-D1a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="e9d-62-CcD" userLabel="ahh you know.." customClass="PlaySoundUIButton">
@@ -270,8 +290,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="ahh-you-know"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="KPD-aU-R96"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="m5d-g9-NBc"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="Hp3-sQ-9mC"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="RJ4-mA-7Tr"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="n9o-Ou-KnR"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="Vkz-h3-gYs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Rr2-1n-91Z" userLabel="this guy is delusional" customClass="PlaySoundUIButton">
@@ -292,8 +314,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="this-guy-is-delusional"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="apF-VQ-4i6"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="0WC-rP-zOx"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="b3L-RX-Dny"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="73o-pA-TLa"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="fUC-8G-iib"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="yr1-2b-v5c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="16X-8x-eBd" userLabel="he tried to feed a bus a carrot" customClass="PlaySoundUIButton">
@@ -314,8 +338,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="he-tried-to-feed-a-bus-a-carrot"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="Cr5-pb-yVa"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="vrp-Lc-AHo"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="w0C-lS-8fV"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="0VK-pB-kdf"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="fyc-sf-5fY"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="J0K-JM-woQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="R9R-9Y-42F" userLabel="hes not qualified to make a sandwhich" customClass="PlaySoundUIButton">
@@ -336,8 +362,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="hes-not-qualified-to-make-a-sandwhich"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="TTy-8D-vUy"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="R0T-QR-GKS"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="wZC-0f-jSI"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="cN0-8u-2TU"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="rNw-VK-jok"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="4Ll-ZK-0K2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="cv8-5a-0Eg" userLabel="download app to replace" customClass="PlaySoundUIButton">
@@ -358,8 +386,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="you-could-download-an-app-on-your-iphone-and-replace"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="eyX-4d-2Bi"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="6Eh-u2-M91"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="11e-PH-7QT"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="DqP-W4-R6z"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="KgY-4g-jSa"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="Td7-r7-hdG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="tah-95-cgw" userLabel="joo•jitsu" customClass="PlaySoundUIButton">
@@ -380,8 +410,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="joo-jeet-su"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="lbe-jN-fYw"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="RHQ-aH-rah"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="3c1-4o-lRW"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="GeX-Qc-WLn"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="ni8-7s-c4u"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="gtg-f2-vst"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="oby-QJ-FjF" userLabel="joo•jitsu" customClass="PlaySoundUIButton">
@@ -402,8 +434,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="whoahhh"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="9ln-gD-flm"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="vKW-Wb-uE3"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="PSe-sc-Z6f"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="M8Z-r5-Elv"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="ScM-tV-3Td"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="nga-gG-baT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="H9h-0D-gqn" userLabel="ah •o•uhm" customClass="PlaySoundUIButton">
@@ -424,8 +458,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="ah-eh-oh-uh-ah-uhm"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="Ldz-Ic-fcb"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="BIA-bU-qcL"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="YSv-gd-LdX"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="D9G-Ux-sDQ"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="ZhX-UU-tZc"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="aci-yp-vEl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="56k-0O-Eu4" userLabel="i•heard•dur•dur" customClass="PlaySoundUIButton">
@@ -446,8 +482,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="i-heard-that-dur-dur-dur"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="u1m-4a-PM1"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="sDS-qA-LS1"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="xhD-gZ-FT9"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="2bk-5e-dqv"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="3Ed-tq-HcV"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="dE9-oj-sDF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Q5K-3z-odV" userLabel="well•err•Idunno•eh" customClass="PlaySoundUIButton" colorLabel="IBBuiltInLabel-Yellow">
@@ -468,8 +506,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="soundName" value="well-ah-eh-oh-i-dont-know-i-eh"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="soundButtonTouchDown:" destination="2" eventType="touchDown" id="mqN-gb-3In"/>
-                                    <action selector="soundButtonTouchUp:" destination="2" eventType="touchUpInside" id="JTP-GA-BHT"/>
+                                    <action selector="makeButtonTextBig:" destination="2" eventType="touchDown" id="xKW-CL-MMm"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchDragExit" id="77m-7s-7xD"/>
+                                    <action selector="makeButtonTextSmall:" destination="2" eventType="touchUpInside" id="GF8-FE-LMM"/>
+                                    <action selector="playSound:" destination="2" eventType="touchUpInside" id="hku-ak-VH6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -483,6 +523,7 @@
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
         </scene>
+        <!--Flipside View Controller-->
         <scene sceneID="9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8" sceneMemberID="firstResponder"/>
@@ -511,6 +552,7 @@
             </objects>
             <point key="canvasLocation" x="428" y="182"/>
         </scene>
+        <!--Tweets View Controller - @sonnench-->
         <scene sceneID="EGr-b3-wJs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWl-QE-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -545,6 +587,7 @@
             </objects>
             <point key="canvasLocation" x="1204" y="-392"/>
         </scene>
+        <!--Said So View Controller - Sonnen Said So-->
         <scene sceneID="AhV-po-0Rd">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfM-Vh-u55" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,6 +638,7 @@
             </objects>
             <point key="canvasLocation" x="956" y="-974"/>
         </scene>
+        <!--Recorded Insults View Controller - Recorded Insults-->
         <scene sceneID="tL9-y3-tJ6">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfe-Mr-gRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -648,6 +692,7 @@
             </objects>
             <point key="canvasLocation" x="1414" y="-974"/>
         </scene>
+        <!--Actions View Controller-->
         <scene sceneID="tfO-qV-0b0">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkO-0n-rJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -669,6 +714,7 @@
             </objects>
             <point key="canvasLocation" x="668" y="-423"/>
         </scene>
+        <!--View Controller - Settings-->
         <scene sceneID="Qhv-5Y-G3H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOI-cd-ucc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -711,8 +757,9 @@
         <class className="MainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
-                <relationship kind="action" name="soundButtonTouchDown:"/>
-                <relationship kind="action" name="soundButtonTouchUp:"/>
+                <relationship kind="action" name="makeButtonTextBig:"/>
+                <relationship kind="action" name="makeButtonTextSmall:"/>
+                <relationship kind="action" name="playSound:"/>
                 <relationship kind="action" name="switchBackground:"/>
                 <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="backgroundSwitch" candidateClass="UISwitch"/>
