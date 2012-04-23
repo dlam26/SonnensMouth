@@ -33,14 +33,6 @@
 		1A83A689152C5F9500532D8E /* PlaySoundUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */; };
 		1A83A68F152C63AA00532D8E /* SonnensMouth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A68E152C63AA00532D8E /* SonnensMouth.m */; };
 		1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */; };
-		1A8423211543A4E300582779 /* anderson-silva.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84231E1543A4E300582779 /* anderson-silva.m4a */; };
-		1A8423221543A4E300582779 /* lyoto-machida.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84231F1543A4E300582779 /* lyoto-machida.m4a */; };
-		1A8423251543A71500582779 /* guess-what.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423241543A71500582779 /* guess-what.m4a */; };
-		1A8423281543A76A00582779 /* im-like-facing-four-men.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */; };
-		1A8423291543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */; };
-		1A84232B1543A9CB00582779 /* this-guy-is-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */; };
-		1A84232D1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */; };
-		1A84232F1543AE4400582779 /* ah-uh-eh-oh-uh-ah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */; };
 		1A8423331543BA4C00582779 /* grease-saint-pierre.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */; };
 		1A8423351543BD9400582779 /* wanderlei.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423341543BD9400582779 /* wanderlei.m4a */; };
 		1A8423371543BEF500582779 /* i-heard-that-dur-dur-dur.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */; };
@@ -61,6 +53,13 @@
 		1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */; };
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
+		645795181544E89500FD5DB7 /* im-like-facing-four-men.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795161544E89500FD5DB7 /* im-like-facing-four-men.m4a */; };
+		645795191544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795171544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a */; };
+		6457951C1544E8AE00FD5DB7 /* this-guys-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6457951A1544E8AE00FD5DB7 /* this-guys-delusional.m4a */; };
+		6457951D1544E8AE00FD5DB7 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6457951B1544E8AE00FD5DB7 /* tried-to-feed-a-bus-a-carrot.m4a */; };
+		6457951F1544E8B800FD5DB7 /* anderson-silva.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6457951E1544E8B800FD5DB7 /* anderson-silva.m4a */; };
+		645795211544E8BF00FD5DB7 /* guess-what.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795201544E8BF00FD5DB7 /* guess-what.m4a */; };
+		645795231544EA3C00FD5DB7 /* ah-eh-oh-uh-ah-uhm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795221544EA3C00FD5DB7 /* ah-eh-oh-uh-ah-uhm.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,14 +107,6 @@
 		1A83A688152C5F9500532D8E /* PlaySoundUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySoundUIButton.m; sourceTree = "<group>"; };
 		1A83A68E152C63AA00532D8E /* SonnensMouth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonnensMouth.m; sourceTree = "<group>"; };
 		1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "erect-statue-and-bow.m4a"; sourceTree = "<group>"; };
-		1A84231E1543A4E300582779 /* anderson-silva.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "anderson-silva.m4a"; path = "../../../sonnenstuff/sounds/anderson-silva.m4a"; sourceTree = "<group>"; };
-		1A84231F1543A4E300582779 /* lyoto-machida.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "lyoto-machida.m4a"; path = "../../../sonnenstuff/sounds/lyoto-machida.m4a"; sourceTree = "<group>"; };
-		1A8423241543A71500582779 /* guess-what.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "guess-what.m4a"; path = "../../../sonnenstuff/sounds/guess-what.m4a"; sourceTree = "<group>"; };
-		1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "im-like-facing-four-men.m4a"; path = "../../../sonnenstuff/sounds/im-like-facing-four-men.m4a"; sourceTree = "<group>"; };
-		1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "im-the-baddest-man-god-ever-made.m4a"; path = "../../../sonnenstuff/sounds/im-the-baddest-man-god-ever-made.m4a"; sourceTree = "<group>"; };
-		1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "this-guy-is-delusional.m4a"; path = "../../../sonnenstuff/sounds/this-guy-is-delusional.m4a"; sourceTree = "<group>"; };
-		1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "tried-to-feed-a-bus-a-carrot.m4a"; path = "../../../sonnenstuff/sounds/tried-to-feed-a-bus-a-carrot.m4a"; sourceTree = "<group>"; };
-		1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ah-uh-eh-oh-uh-ah.m4a"; path = "../../../sonnenstuff/sounds/ah-uh-eh-oh-uh-ah.m4a"; sourceTree = "<group>"; };
 		1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grease-saint-pierre.m4a"; sourceTree = "<group>"; };
 		1A8423341543BD9400582779 /* wanderlei.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei.m4a; sourceTree = "<group>"; };
 		1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-heard-that-dur-dur-dur.m4a"; sourceTree = "<group>"; };
@@ -140,6 +131,13 @@
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		645795161544E89500FD5DB7 /* im-like-facing-four-men.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "im-like-facing-four-men.m4a"; sourceTree = "<group>"; };
+		645795171544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "im-the-baddest-man-god-ever-made.m4a"; sourceTree = "<group>"; };
+		6457951A1544E8AE00FD5DB7 /* this-guys-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "this-guys-delusional.m4a"; sourceTree = "<group>"; };
+		6457951B1544E8AE00FD5DB7 /* tried-to-feed-a-bus-a-carrot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tried-to-feed-a-bus-a-carrot.m4a"; sourceTree = "<group>"; };
+		6457951E1544E8B800FD5DB7 /* anderson-silva.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "anderson-silva.m4a"; sourceTree = "<group>"; };
+		645795201544E8BF00FD5DB7 /* guess-what.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "guess-what.m4a"; sourceTree = "<group>"; };
+		645795221544EA3C00FD5DB7 /* ah-eh-oh-uh-ah-uhm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ah-eh-oh-uh-ah-uhm.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,25 +279,24 @@
 			isa = PBXGroup;
 			children = (
 				1A84233A1543D0C200582779 /* ahh-you-know.m4a */,
-				1A84232E1543AE4300582779 /* ah-uh-eh-oh-uh-ah.m4a */,
+				645795221544EA3C00FD5DB7 /* ah-eh-oh-uh-ah-uhm.m4a */,
 				1A84235015442F4400582779 /* anderson-anderson.m4a */,
-				1A84231E1543A4E300582779 /* anderson-silva.m4a */,
+				6457951E1544E8B800FD5DB7 /* anderson-silva.m4a */,
 				1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
 				1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */,
-				1A8423241543A71500582779 /* guess-what.m4a */,
+				645795201544E8BF00FD5DB7 /* guess-what.m4a */,
 				1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */,
 				1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */,
 				1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */,
 				1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */,
-				1A8423261543A76A00582779 /* im-like-facing-four-men.m4a */,
-				1A8423271543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a */,
+				645795161544E89500FD5DB7 /* im-like-facing-four-men.m4a */,
+				645795171544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a */,
 				1A84234615441A3200582779 /* lyoto-machida.m4a */,
-				1A84231F1543A4E300582779 /* lyoto-machida.m4a */,
 				1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */,
 				1A8423381543C85700582779 /* never-piss-of-a-gangster.m4a */,
-				1A84232A1543A9CB00582779 /* this-guy-is-delusional.m4a */,
-				1A84232C1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a */,
+				6457951A1544E8AE00FD5DB7 /* this-guys-delusional.m4a */,
+				6457951B1544E8AE00FD5DB7 /* tried-to-feed-a-bus-a-carrot.m4a */,
 				1A8423341543BD9400582779 /* wanderlei.m4a */,
 				1A84234E154428DE00582779 /* whoahhh.m4a */,
 				1A84233E1544113600582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a */,
@@ -387,14 +384,6 @@
 				1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */,
 				1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
 				1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */,
-				1A8423211543A4E300582779 /* anderson-silva.m4a in Resources */,
-				1A8423221543A4E300582779 /* lyoto-machida.m4a in Resources */,
-				1A8423251543A71500582779 /* guess-what.m4a in Resources */,
-				1A8423281543A76A00582779 /* im-like-facing-four-men.m4a in Resources */,
-				1A8423291543A76A00582779 /* im-the-baddest-man-god-ever-made.m4a in Resources */,
-				1A84232B1543A9CB00582779 /* this-guy-is-delusional.m4a in Resources */,
-				1A84232D1543AC3D00582779 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */,
-				1A84232F1543AE4400582779 /* ah-uh-eh-oh-uh-ah.m4a in Resources */,
 				1A8423331543BA4C00582779 /* grease-saint-pierre.m4a in Resources */,
 				1A8423351543BD9400582779 /* wanderlei.m4a in Resources */,
 				1A8423371543BEF500582779 /* i-heard-that-dur-dur-dur.m4a in Resources */,
@@ -408,6 +397,13 @@
 				1A84234D1544234E00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a in Resources */,
 				1A84234F154428DF00582779 /* whoahhh.m4a in Resources */,
 				1A84235115442F4600582779 /* anderson-anderson.m4a in Resources */,
+				645795181544E89500FD5DB7 /* im-like-facing-four-men.m4a in Resources */,
+				645795191544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a in Resources */,
+				6457951C1544E8AE00FD5DB7 /* this-guys-delusional.m4a in Resources */,
+				6457951D1544E8AE00FD5DB7 /* tried-to-feed-a-bus-a-carrot.m4a in Resources */,
+				6457951F1544E8B800FD5DB7 /* anderson-silva.m4a in Resources */,
+				645795211544E8BF00FD5DB7 /* guess-what.m4a in Resources */,
+				645795231544EA3C00FD5DB7 /* ah-eh-oh-uh-ah-uhm.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
