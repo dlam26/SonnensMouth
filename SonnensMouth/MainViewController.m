@@ -164,7 +164,6 @@
  */
 -(IBAction)makeButtonTextBig:(id)sender
 {
-    DebugLog();    
     UIButton *soundButton = (UIButton *)sender;
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
 }
@@ -180,7 +179,7 @@
 -(IBAction)playSound:(id)sender
 {
     PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
-    [SonnensMouth playSound:b.soundName];    
+    [[SonnensMouth sonnensMouth] playSound:b.soundName];    
 }
 
 

@@ -27,14 +27,17 @@
 #import <AVFoundation/AVAudioPlayer.h>
 
 
-@interface SonnensMouth : NSObject {
+@interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
  
-    
+    AVAudioPlayer *audioPlayer;
 }
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+
 
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
-+(void)playSound:(NSString *)soundName;
+-(void)playSound:(NSString *)soundName;
 
 @end
 

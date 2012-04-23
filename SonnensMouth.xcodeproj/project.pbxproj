@@ -53,6 +53,7 @@
 		1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */; };
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
+		6430339B1545115A0084D366 /* DirectoryListViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6430339A1545115A0084D366 /* DirectoryListViewControllerViewController.m */; };
 		645795181544E89500FD5DB7 /* im-like-facing-four-men.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795161544E89500FD5DB7 /* im-like-facing-four-men.m4a */; };
 		645795191544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 645795171544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a */; };
 		6457951C1544E8AE00FD5DB7 /* this-guys-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6457951A1544E8AE00FD5DB7 /* this-guys-delusional.m4a */; };
@@ -131,6 +132,8 @@
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		643033991545115A0084D366 /* DirectoryListViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryListViewControllerViewController.h; sourceTree = "<group>"; };
+		6430339A1545115A0084D366 /* DirectoryListViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryListViewControllerViewController.m; sourceTree = "<group>"; };
 		645795161544E89500FD5DB7 /* im-like-facing-four-men.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "im-like-facing-four-men.m4a"; sourceTree = "<group>"; };
 		645795171544E89500FD5DB7 /* im-the-baddest-man-god-ever-made.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "im-the-baddest-man-god-ever-made.m4a"; sourceTree = "<group>"; };
 		6457951A1544E8AE00FD5DB7 /* this-guys-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "this-guys-delusional.m4a"; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				1A83A647152BBF1600532D8E /* AppDelegate.m */,
 				1A92B832153EA275001BE1C7 /* ActionsViewController.h */,
 				1A92B833153EA275001BE1C7 /* ActionsViewController.m */,
+				643033991545115A0084D366 /* DirectoryListViewControllerViewController.h */,
+				6430339A1545115A0084D366 /* DirectoryListViewControllerViewController.m */,
 				1A83A655152BBF1700532D8E /* FlipsideViewController.h */,
 				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
 				1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */,
@@ -449,6 +454,7 @@
 				1A92B82E153E8902001BE1C7 /* SaidSoViewController.m in Sources */,
 				1A92B834153EA275001BE1C7 /* ActionsViewController.m in Sources */,
 				1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */,
+				6430339B1545115A0084D366 /* DirectoryListViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

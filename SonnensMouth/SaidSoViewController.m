@@ -126,7 +126,7 @@
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale
 {
-    DebugLog(@"  atScale: %f", scale);
+//    DebugLog(@"  atScale: %f", scale);
 }
 
 

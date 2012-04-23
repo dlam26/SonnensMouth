@@ -6,9 +6,6 @@
 //  Copyright (c) 2012 das. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <AVFoundation/AVAudioPlayer.h>
-#import <AudioToolbox/AudioToolbox.h>
 #import "FlipsideViewController.h"
 #import "ActionsViewController.h"
 #import "PlaySoundUIButton.h"
