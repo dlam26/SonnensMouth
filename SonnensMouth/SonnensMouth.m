@@ -72,7 +72,7 @@ static SonnensMouth* _sonnensMouth = nil;
                         
         }
         else {
-            DebugLog(@"No soundData, so couldn't play it at path: %@", p);
+            DebugLog(@"No soundData, so couldn't play it at path: %@   soundFilePath was: %@   soundName: %@", p, soundFilePath, soundName);
         }
     }
     else {

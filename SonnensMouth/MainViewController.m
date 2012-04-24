@@ -34,9 +34,9 @@
     
     smilingChael  = [UIImage imageWithContentsOfFile:smilingPic];
     bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];    
-    background.image = smilingChael;
-    
+    background.image = bustedUpChael;
     [background.layer setOpacity:0.2];
+    recordingLabel.textColor = [UIColor grayColor];
     
     /*
      // blur  http://www.dimzzy.com/blog/2010/11/blur-effect-for-uiview/
@@ -139,6 +139,46 @@
     }
 }
 
+#pragma mark - <UIActionSheetDelegate>
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    DebugLog(@"Clicked button #%d", buttonIndex);
+    
+    if(buttonIndex == 0) {
+        // save it in core data!
+
+        id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
+        
+        for (PlayedSound *s in playedSounds) {
+            
+            // persists all the playedsounds
+            
+            [NSManagedObject insertPlayedSoundWithName:s.soundName orWithSoundData:s.soundData inManagedObjectContext:context];
+        }
+        
+        // persist a barrage!
+        
+        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize        
+        [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:playedSounds inManagedObjectContext:context];        
+        NSError *err = nil;
+         
+         if(![context save:&err]) {
+             DebugLog(@"Error persisting recording: %@", err);
+         }
+    }
+    else if(buttonIndex == 1) {
+        // clicked the preview button        
+        [self previewRecording];
+        [self showSaveRecordingActionSheet];
+    }
+    else {
+        
+    }
+}
+
+
+
 #pragma mark - ActionsViewController  delegate stuff
 
 -(void)actionsViewControllerDidFinish:(ActionsViewController *)controller
@@ -151,12 +191,77 @@
 
 #pragma mark -  IBAction's
 
-// 4/3/12 - From a UISwitch
-// 
--(IBAction)switchBackground:(id)sender
+-(IBAction)toggleRecording:(id)sender
 {
-    DebugLog(@" switchin' the background...");    
-    background.image = (background.image == smilingChael) ? bustedUpChael : smilingChael;
+    UISwitch *theSwitch = (UISwitch *)sender;
+    
+    if([theSwitch isOn]) {
+        // start recording
+        isRecording = YES;
+        recordingLabel.text = @"Recording";
+        recordingLabel.textColor = [UIColor redColor];        
+        playedSounds = [NSMutableArray array];
+
+    }
+    else {
+        // stop recording
+        isRecording = NO;
+        recordingLabel.text = @"Not recording";
+        recordingLabel.textColor = [UIColor lightGrayColor];
+        
+        [self showSaveRecordingActionSheet];
+    }
+    
+    // old stuff, when it just changed the background
+//    background.image = (background.image == smilingChael) ? bustedUpChael : smilingChael;
+}
+
+-(void)showSaveRecordingActionSheet
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save recording?" 
+                                                             delegate:self 
+                                                    cancelButtonTitle:@"Nah"
+                                               destructiveButtonTitle:@"Yah, save it"
+                                                    otherButtonTitles:@"Preview", nil];
+    [actionSheet showInView:self.view];
+}
+
+/* 
+    Iterates through the played sounds and plays em'!
+ */
+-(void)previewRecording 
+{
+    for (int i=0; i < [playedSounds count]; i++) {
+        
+        PlayedSound *curr = [playedSounds objectAtIndex:i];
+        NSString *soundName = curr.soundName;
+        
+        //NSLog(@"SonnensMouthViewController.m:175   i:%d    Date: %@.  Time: %@.   Sound: %@", i, [dateFormat stringFromDate:when], [timeFormat stringFromDate:when], soundName);
+        
+        NSTimeInterval sleepDuration = 0.0;
+        
+        if(i == 0) {
+            // play sound after (when - recordStart) seconds
+            
+            sleepDuration = [curr.date timeIntervalSinceNow] - [recordStart timeIntervalSinceNow];
+        }
+        else {
+            // play sound after (when - prevWhen) seconds
+            PlayedSound *prevSound = [playedSounds objectAtIndex:i-1];
+            NSDate *prevWhen = prevSound.date;
+            
+            if(prevWhen) {
+                sleepDuration = [curr.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
+            }
+        }
+        
+        //NSLog(@"SonnensMouthViewController.m:197  playRecording()   sleeping for %f seconds", sleepDuration);
+        
+        [NSThread sleepForTimeInterval:sleepDuration];
+        
+        [[SonnensMouth sonnensMouth] playSound:soundName];
+    }
+
 }
 
 
@@ -175,8 +280,14 @@
 -(IBAction)playSound:(id)sender
 {
     PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
-    [[SonnensMouth sonnensMouth] playSound:b.soundName];    
-}
+    [[SonnensMouth sonnensMouth] playSound:b.soundName];
+    
+    if (isRecording) {  
+        id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];        
+        PlayedSound *newPlayedSound = [NSManagedObject insertPlayedSoundWithName:b.soundName orWithSoundData:nil inManagedObjectContext:context];         
+        [playedSounds addObject:newPlayedSound];
 
+    }
+}
 
 @end
