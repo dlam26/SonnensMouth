@@ -16,6 +16,7 @@
 
 +(PlayedSound * )insertPlayedSoundWithName:(NSString *)soundName 
              orWithSoundData:(NSData *)data
+                    andOrder:(NSNumber *)order
       inManagedObjectContext:(NSManagedObjectContext *)context;
 
 

@@ -228,37 +228,7 @@
  */
 -(void)previewRecording 
 {
-    for (int i=0; i < [playedSounds count]; i++) {
-        
-        PlayedSound *curr = [playedSounds objectAtIndex:i];
-        NSString *soundName = curr.soundName;
-        
-        //NSLog(@"SonnensMouthViewController.m:175   i:%d    Date: %@.  Time: %@.   Sound: %@", i, [dateFormat stringFromDate:when], [timeFormat stringFromDate:when], soundName);
-        
-        NSTimeInterval sleepDuration = 0.0;
-        
-        if(i == 0) {
-            // play sound after (when - recordStart) seconds
-            
-            sleepDuration = [curr.date timeIntervalSinceNow] - [recordStart timeIntervalSinceNow];
-        }
-        else {
-            // play sound after (when - prevWhen) seconds
-            PlayedSound *prevSound = [playedSounds objectAtIndex:i-1];
-            NSDate *prevWhen = prevSound.date;
-            
-            if(prevWhen) {
-                sleepDuration = [curr.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
-            }
-        }
-        
-        //NSLog(@"SonnensMouthViewController.m:197  playRecording()   sleeping for %f seconds", sleepDuration);
-        
-        [NSThread sleepForTimeInterval:sleepDuration];
-        
-        [[SonnensMouth sonnensMouth] playSound:soundName];
-    }
-
+    [[SonnensMouth sonnensMouth] playArrayOfSounds:playedSounds withStart:recordStart];
 }
 
 /*
@@ -324,7 +294,7 @@
     
     if (isRecording) {  
         id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];        
-        PlayedSound *newPlayedSound = [NSManagedObject insertPlayedSoundWithName:b.soundName orWithSoundData:nil inManagedObjectContext:context];         
+        PlayedSound *newPlayedSound = [NSManagedObject insertPlayedSoundWithName:b.soundName orWithSoundData:nil andOrder:[NSNumber numberWithInteger:[playedSounds count]] inManagedObjectContext:context];
         [playedSounds addObject:newPlayedSound];
 
     }

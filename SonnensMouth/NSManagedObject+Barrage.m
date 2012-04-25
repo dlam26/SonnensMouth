@@ -19,6 +19,7 @@
     Barrage *newBarrage = (Barrage *)[NSEntityDescription insertNewObjectForEntityForName:@"Barrage" inManagedObjectContext:context];   
     newBarrage.title = title;
     newBarrage.sounds = sounds;
+    newBarrage.created = [NSDate date];
     return newBarrage;
 }
 

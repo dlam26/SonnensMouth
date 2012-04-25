@@ -15,9 +15,15 @@
 
 @class PlayedSound;
 
-@interface Barrage : NSManagedObject
+@interface Barrage : NSManagedObject {
+    
+}
 
-@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSSet *sounds;     // of PlayedSound's
+@property (nonatomic, retain) NSDate *created;
+
+-(NSString *)createdAsString;
+
 
 @end

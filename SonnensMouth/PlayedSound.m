@@ -13,7 +13,8 @@
 
 @dynamic soundName;
 @dynamic date;
-@dynamic barrages;
+@dynamic order;
 @dynamic soundData;
+@dynamic barrages;
 
 @end

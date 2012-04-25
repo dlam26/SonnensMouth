@@ -9,19 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+#import "AppDelegate.h"
+#import "Barrage.h"
 #import "SonnensMouth.h"
 #import "ActionsViewController.h"
 
 
-@interface RecordedInsultsViewController : UIViewController {
+@interface RecordedInsultsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate> {
     
-    
+    IBOutlet UITableView *recordings;
+    NSFetchedResultsController *fetchedResultController;
+
 }
 
 - (IBAction)test:(id)sender;
-
 - (IBAction)playGeneratedFile:(id)sender;
-
 - (IBAction)done:(id)sender;
     
 @end

@@ -230,10 +230,9 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)theData
 {
-    NSString *serverResponse = [[NSString alloc] initWithData:theData encoding:NSUTF8StringEncoding];
-    
     // this will return the webpage HTML at the URL for example!    
-    DebugLog(@"serverResponse: %@", serverResponse);
+//        NSString *serverResponse = [[NSString alloc] initWithData:theData encoding:NSUTF8StringEncoding];
+//    DebugLog(@"serverResponse: %@", serverResponse);
 
     if(!tweetsData)
         tweetsData = [NSMutableData dataWithData:theData];

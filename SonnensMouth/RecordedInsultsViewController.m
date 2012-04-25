@@ -8,6 +8,8 @@
 
 #import "RecordedInsultsViewController.h"
 
+#import "NSManagedObject+Barrage.h"
+
 @implementation RecordedInsultsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,13 +38,35 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    recordings.dataSource = self;
+    recordings.delegate = self;
+    
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];    
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Barrage"];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES];
+    fetchRequest.sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+//    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"soundName = %@", @"blahh"];    
+    NSString *cacheName = @"RecordedInsultsCache";
+
+    fetchedResultController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:cacheName];    
+//    fetchedResultController.delegate = self;    
+    
+    NSError *fetchError;
+    [fetchedResultController performFetch:&fetchError];
+    
+    if (fetchError) {
+        DebugLog(@"Got fetchError: %@", fetchError);
+    }
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -147,6 +171,57 @@
     [[avc actionsDelegate] actionsViewControllerDidFinish:avc];
 }
 
+
+
+#pragma mark - <UITableViewDataSource>
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+//    return [[fetchedResultController sections] count];
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+//    return [[[fetchedResultController sections] objectAtIndex:section] numberOfObjects];
+    
+    return [[fetchedResultController fetchedObjects] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"RecordingsCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];
+    
+//    NSArray *sounds = [[b sounds] sortedArrayUsingDescriptors:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
+            
+    cell.textLabel.text = b.title;
+    cell.detailTextLabel.text = [b createdAsString];    
+    return cell;
+}
+
+
+#pragma mark - <UITableViewDelegate>
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    DebugLog(@"Clicked on accessory at row #%d", indexPath.row);
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DebugLog(@"Clicked row #%d", indexPath.row);
+    
+    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];
+    
+    if(b) {
+        NSArray *sounds = [[b sounds] sortedArrayUsingDescriptors:[NSArray arrayWithObject: [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]]];        
+        
+        [[SonnensMouth sonnensMouth] playArrayOfSounds:sounds withStart:b.created];
+    }
+}
 
 
 @end

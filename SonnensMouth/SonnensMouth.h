@@ -30,6 +30,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVAudioPlayer.h>
 
+#import "PlayedSound.h"
+
 
 @interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
  
@@ -42,6 +44,7 @@
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
 -(void)playSound:(NSString *)soundName;
+-(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate;
 
 +(UIAlertView *)newNoInternetConnectionAlertView;
 +(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage;

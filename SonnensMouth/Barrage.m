@@ -14,5 +14,15 @@
 
 @dynamic title;
 @dynamic sounds;
+@dynamic created;
+
+
+-(NSString *)createdAsString
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+    return [formatter stringFromDate:self.created];
+}
 
 @end

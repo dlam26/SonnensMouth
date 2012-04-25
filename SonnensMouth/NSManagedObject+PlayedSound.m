@@ -14,6 +14,7 @@
 
 +(PlayedSound * )insertPlayedSoundWithName:(NSString *)soundName 
              orWithSoundData:(NSData *)data
+                    andOrder:(NSNumber *)order
       inManagedObjectContext:(NSManagedObjectContext *)context
 {
     PlayedSound *newPlayedSound = (PlayedSound *) [NSEntityDescription insertNewObjectForEntityForName:@"PlayedSound" inManagedObjectContext:context];   
@@ -25,7 +26,8 @@
         newPlayedSound.soundData = data;
     }
     
-    newPlayedSound.date = [NSDate date];    
+    newPlayedSound.date  = [NSDate date];
+    newPlayedSound.order = order;    
     
     return newPlayedSound;
 }
