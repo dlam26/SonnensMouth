@@ -302,6 +302,8 @@
     CGRect widerFrame = CGRectMake(originalButtonFrame.origin.x-adjustment, originalButtonFrame.origin.y, originalButtonFrame.size.width*2, originalButtonFrame.size.height);
     
     soundButton.frame = widerFrame;
+    
+    [self.view bringSubviewToFront:soundButton];
 }
 
 -(IBAction)makeButtonTextSmall:(id)sender
@@ -311,6 +313,7 @@
 //    [soundButton sizeToFit];
     
     soundButton.frame = originalButtonFrame;
+
 
 }
 
