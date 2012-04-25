@@ -79,7 +79,8 @@
     NSError *error;
     
     [track insertTimeRange:CMTimeRangeMake(kCMTimeZero, aa1.duration) ofTrack:[[aa1 tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:kCMTimeZero error:&error];
-
+    
+    // Delay 2 seconds :o
     [track insertEmptyTimeRange:CMTimeRangeMake(kCMTimeZero, CMTimeMake(2.0, 1.0))];
     
     [track insertTimeRange:CMTimeRangeMake(kCMTimeZero, aa2.duration) ofTrack:[[aa2 tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:aa1.duration error:&error];

@@ -264,17 +264,57 @@
 
 }
 
+/*
+    Returns the right bound of the button by calling NSString sizeWithFont  
+    on the buttons titleLabel text.
+ */
+-(CGFloat)calculateRightBound:(UIButton *)button
+{
+    CGFloat buttonX = button.frame.origin.x;
+    CGFloat buttonWidth = [button.titleLabel.text sizeWithFont:button.titleLabel.font].width;
+    CGFloat rightBound = buttonX + buttonWidth;
+    
+//    DebugLog(@"button.frame: %@    buttonX: %f    buttonWidth: %f   rightBound: %f", NSStringFromCGRect(button.frame), buttonX, buttonWidth, rightBound);
 
+    return rightBound;
+}
+
+/*
+    320 x 480 points
+  */
 -(IBAction)makeButtonTextBig:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
+    originalButtonFrame = soundButton.frame;
+        
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
+
+    // this dosent work to maintain the same font color for some reason =
+    soundButton.titleLabel.textColor = soundButton.titleLabel.textColor;
+    
+    CGFloat newRightBound = [self calculateRightBound:soundButton];
+
+    // Calculate x-axis adjustment so that it dosen't get cut off to the right or left
+    CGFloat adjustment = 0.0;
+    CGFloat additionalRightAdjustment = 60.0;
+    
+    if (newRightBound > 320.0) {
+        adjustment = newRightBound - 320.0 + additionalRightAdjustment;
+    }
+    
+    CGRect widerFrame = CGRectMake(originalButtonFrame.origin.x-adjustment, originalButtonFrame.origin.y, originalButtonFrame.size.width*2, originalButtonFrame.size.height);
+    
+    soundButton.frame = widerFrame;
 }
 
 -(IBAction)makeButtonTextSmall:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
-    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:12.0];
+    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
+//    [soundButton sizeToFit];
+    
+    soundButton.frame = originalButtonFrame;
+
 }
 
 -(IBAction)playSound:(id)sender

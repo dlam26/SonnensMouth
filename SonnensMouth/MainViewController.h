@@ -26,6 +26,8 @@
     NSMutableArray *playedSounds;
     NSDate *recordStart;
     
+    CGRect originalButtonFrame;
+    
     ActionsViewController *actionsViewController;
 }
 
@@ -38,5 +40,8 @@
 
 -(IBAction)toggleRecording:(id)sender;
 -(void)showSaveRecordingActionSheet;
+-(void)previewRecording;
+
+-(CGFloat)calculateRightBound:(UIButton *)button;
 
 @end

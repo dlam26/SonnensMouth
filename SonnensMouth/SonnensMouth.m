@@ -84,38 +84,41 @@ static SonnensMouth* _sonnensMouth = nil;
             
         if([fileURL checkResourceIsReachableAndReturnError:&err] == YES) {
             
-            DebugLog(@"   Playing sound using AVAudioPlayer: \"%@\"", soundName);
-            
-            audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&err];
-            
-            if(err) {
-                DebugLog(@"Error when playing with AVAudioPlayer: %@", err);
+            if(USE_AV_AUDIO_PLAYER) {
+                
+                DebugLog(@"   Playing sound using AVAudioPlayer: \"%@\"", soundName);
+                
+                audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&err];
+                
+                if(err) {
+                    DebugLog(@"Error when playing with AVAudioPlayer: %@", err);
+                }
+                else {
+                    @try {
+                        //  4/23/12  Throwing exception in simulator but not device!
+                        [audioPlayer setDelegate:self];
+                        [audioPlayer setNumberOfLoops:0];   // default
+                        [audioPlayer prepareToPlay];
+                        [audioPlayer play];
+                    }
+                    @catch (NSException *exception) {
+                        
+                    }
+                    @finally {
+                        
+                    }                    
+                }                
             }
             else {
-                @try {
-                    //  4/23/12  Throwing exception in simulator but not device!
-                    [audioPlayer setDelegate:self];
-                    [audioPlayer setNumberOfLoops:0];   // default
-                    [audioPlayer prepareToPlay];
-                    [audioPlayer play];
-                }
-                @catch (NSException *exception) {
-                    
-                }
-                @finally {
-                    
-                }
-
+                DebugLog(@"   Playing sound using AudioToolbox: \"%@\"", soundName);
+                
+                NSURL *soundEffectURL = [[NSBundle mainBundle] URLForResource: soundName withExtension:@"m4a"];
+                CFURLRef soundURL = (__bridge CFURLRef) soundEffectURL;
+                SystemSoundID soundID;
+                AudioServicesCreateSystemSoundID(soundURL, &soundID);
+                AudioServicesPlaySystemSound(soundID);     
             }
-
            
-//            DebugLog(@"   Playing sound using AudioToolbox: \"%@\"", soundName);
-//            
-//            NSURL *soundEffectURL = [[NSBundle mainBundle] URLForResource: soundName withExtension:@"m4a"];
-//            CFURLRef soundURL = (__bridge CFURLRef) soundEffectURL;
-//            SystemSoundID soundID;
-//            AudioServicesCreateSystemSoundID(soundURL, &soundID);
-//            AudioServicesPlaySystemSound(soundID);            
         }
         else {
             DebugLog(@"No sound named, %@", soundName);
