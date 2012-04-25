@@ -76,7 +76,9 @@
 {
     // Return YES for supported orientations
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+//        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+        
+        return YES;   //  4/24/12  all orientations supported on iphone
     } else {
         return YES;
     }
@@ -150,17 +152,12 @@
 
         id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
         
-        for (PlayedSound *s in playedSounds) {
-            
-            // persists all the playedsounds
-            
-            [NSManagedObject insertPlayedSoundWithName:s.soundName orWithSoundData:s.soundData inManagedObjectContext:context];
-        }
         
-        // persist a barrage!
+        // persist all the played sounds and the barrage!
         
-        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize        
-        [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:playedSounds inManagedObjectContext:context];        
+        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize       
+        
+        [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:[NSSet setWithArray:playedSounds] inManagedObjectContext:context];
         NSError *err = nil;
          
          if(![context save:&err]) {
@@ -289,7 +286,7 @@
         
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
 
-    // this dosent work to maintain the same font color for some reason =
+    // FIXME this dosent work to maintain the same font color for some reason =
     soundButton.titleLabel.textColor = soundButton.titleLabel.textColor;
     
     CGFloat newRightBound = [self calculateRightBound:soundButton];

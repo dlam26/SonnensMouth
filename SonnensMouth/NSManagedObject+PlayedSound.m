@@ -16,7 +16,7 @@
              orWithSoundData:(NSData *)data
       inManagedObjectContext:(NSManagedObjectContext *)context
 {
-    PlayedSound *newPlayedSound = [NSEntityDescription insertNewObjectForEntityForName:@"PlayedSound" inManagedObjectContext:context];   
+    PlayedSound *newPlayedSound = (PlayedSound *) [NSEntityDescription insertNewObjectForEntityForName:@"PlayedSound" inManagedObjectContext:context];   
 
     if(soundName) {
         newPlayedSound.soundName = soundName;

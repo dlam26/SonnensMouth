@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Barrage" representedClassName="Barrage" syncable="YES">
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="sounds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayedSound" inverseName="barrages" inverseEntity="PlayedSound" syncable="YES"/>
@@ -11,7 +11,7 @@
         <relationship name="barrages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barrage" inverseName="sounds" inverseEntity="Barrage" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlayedSound" positionX="153" positionY="90" width="128" height="105"/>
         <element name="Barrage" positionX="-227" positionY="135" width="128" height="75"/>
+        <element name="PlayedSound" positionX="-27" positionY="66" width="128" height="105"/>
     </elements>
 </model>

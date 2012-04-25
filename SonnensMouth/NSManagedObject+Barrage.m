@@ -12,11 +12,11 @@
 
 
 +(Barrage *)insertBarrageWithTtitle:(NSString *)title
-                          andSounds:(NSArray *)sounds
+                          andSounds:(NSSet *)sounds
              inManagedObjectContext:(NSManagedObjectContext *)context
 {
     
-    Barrage *newBarrage = [NSEntityDescription insertNewObjectForEntityForName:@"Barrage" inManagedObjectContext:context];   
+    Barrage *newBarrage = (Barrage *)[NSEntityDescription insertNewObjectForEntityForName:@"Barrage" inManagedObjectContext:context];   
     newBarrage.title = title;
     newBarrage.sounds = sounds;
     return newBarrage;

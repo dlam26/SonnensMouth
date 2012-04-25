@@ -13,7 +13,7 @@
 }
 
 +(Barrage *)insertBarrageWithTtitle:(NSString *)title
-                           andSounds:(NSArray *)sounds
+                           andSounds:(NSSet *)sounds
              inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end

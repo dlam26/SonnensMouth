@@ -6,6 +6,10 @@
 //  Copyright (c) 2012 dlam.me. All rights reserved.
 //
 
+// many-to-many relationship with PlayedSound s!    
+
+//  https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreData/Articles/cdRelationships.html
+
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
@@ -14,6 +18,6 @@
 @interface Barrage : NSManagedObject
 
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSArray *sounds;
+@property (nonatomic, retain) NSSet *sounds;     // of PlayedSound's
 
 @end
