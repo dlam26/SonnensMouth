@@ -44,21 +44,21 @@
 {
     [super viewDidLoad];
     
+    self.title = @"Edit";
+    
     [deleteButton setBackgroundImage:[[UIImage imageNamed:@"delete_button.png"]
                          stretchableImageWithLeftCapWidth:8.0f
                                              topCapHeight:0.0f]
                                                  forState:UIControlStateNormal];    
     [deleteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    deleteButton.titleLabel.font = [UIFont boldSystemFontOfSize:20];
-    deleteButton.titleLabel.shadowColor = [UIColor lightGrayColor];
-    deleteButton.titleLabel.shadowOffset = CGSizeMake(0, -1);
-    deleteButton.titleLabel.text = @"Delete Recording";
-    deleteButton.titleLabel.textColor = [UIColor whiteColor];
+    [deleteButton setTitle:@"Delete Recording" forState:UIControlStateNormal];
+    deleteButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
     
     titleTextField.text   = [barrage getTitle];
     createdDateLabel.text = [barrage createdAsString];
+    updatedDateLabel.text = [barrage updatedAsString];
     
-    
+    // hide keyboard when tapping off a focused text field
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputs)];
     tapGr.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapGr];
@@ -106,8 +106,24 @@
 }
 
 -(IBAction)deleteRecording:(id)sender
-{
-    DebugLog();
+{ 
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Really delete?" message:@"This will delete the recording permanently!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
+    [alertView show];
 }
+
+
+#pragma mark - <UIAlertViewDelegate>
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    // buttonIndex 0 is the cancel button
+    // buttonIndex 1 is the delete button
+    //
+    if(buttonIndex == 1) {
+        [self.barrage.managedObjectContext deleteObject:barrage];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 
 @end

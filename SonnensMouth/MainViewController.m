@@ -84,25 +84,8 @@
     }
 }
 
-#pragma mark - Flipside View Controller
-
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        [self dismissModalViewControllerAnimated:YES];
-    } else {
-        [self.flipsidePopoverController dismissPopoverAnimated:YES];
-        self.flipsidePopoverController = nil;
-    }
-}
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
-{
-    self.flipsidePopoverController = nil;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
         
@@ -112,14 +95,8 @@
             popoverController.delegate = self;
         }
     }
-    else if ([[segue identifier] isEqualToString:@"info"]) {
-        // 4/16/2012 david set delegate when you push the info button
-        
-        FlipsideViewController *fvc = segue.destinationViewController;
-        fvc.delegate = self;
-    }
     else if ([[segue identifier] isEqualToString:@"tweets"]) {
-
+        
     }
     else if ([[segue identifier] isEqualToString:@"tabbar"]) {
         ActionsViewController *avc = segue.destinationViewController;
@@ -131,15 +108,7 @@
     }
 }
 
-- (IBAction)togglePopover:(id)sender
-{
-    if (self.flipsidePopoverController) {
-        [self.flipsidePopoverController dismissPopoverAnimated:YES];
-        self.flipsidePopoverController = nil;
-    } else {
-        [self performSegueWithIdentifier:@"showAlternate" sender:sender];
-    }
-}
+
 
 #pragma mark - <UIActionSheetDelegate>
 

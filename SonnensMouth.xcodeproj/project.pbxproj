@@ -22,7 +22,6 @@
 		1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */; };
 		1A83A651152BBF1700532D8E /* SonnensMouth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A64F152BBF1700532D8E /* SonnensMouth.xcdatamodeld */; };
 		1A83A654152BBF1700532D8E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A653152BBF1700532D8E /* MainViewController.m */; };
-		1A83A657152BBF1700532D8E /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83A656152BBF1700532D8E /* FlipsideViewController.m */; };
 		1A83A65F152BBF1700532D8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A65E152BBF1700532D8E /* SenTestingKit.framework */; };
 		1A83A660152BBF1700532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
 		1A83A661152BBF1700532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
@@ -104,8 +103,6 @@
 		1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SonnensMouth.xcdatamodel; sourceTree = "<group>"; };
 		1A83A652152BBF1700532D8E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1A83A653152BBF1700532D8E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1A83A655152BBF1700532D8E /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		1A83A656152BBF1700532D8E /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnensMouthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A65E152BBF1700532D8E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnensMouthTests-Info.plist"; sourceTree = "<group>"; };
@@ -246,8 +243,6 @@
 				1AB6CA5B15476FA300D7924B /* DirectoryListViewController.h */,
 				1A04C8F31548874100873C7A /* EditRecordedInsultViewController.h */,
 				1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */,
-				1A83A655152BBF1700532D8E /* FlipsideViewController.h */,
-				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
 				1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */,
 				1A83A64C152BBF1600532D8E /* MainStoryboard_iPad.storyboard */,
 				1A83A652152BBF1700532D8E /* MainViewController.h */,
@@ -491,7 +486,6 @@
 				1A83A648152BBF1600532D8E /* AppDelegate.m in Sources */,
 				1A83A651152BBF1700532D8E /* SonnensMouth.xcdatamodeld in Sources */,
 				1A83A654152BBF1700532D8E /* MainViewController.m in Sources */,
-				1A83A657152BBF1700532D8E /* FlipsideViewController.m in Sources */,
 				1A83A689152C5F9500532D8E /* PlaySoundUIButton.m in Sources */,
 				1A83A68F152C63AA00532D8E /* SonnensMouth.m in Sources */,
 				1A92B826153D3EAD001BE1C7 /* TweetsViewController.m in Sources */,

@@ -270,7 +270,7 @@
 
 -(IBAction)done:(id)sender
 {
-    SaidSoViewController *s = [[[self tabBarController] viewControllers] objectAtIndex:0];
+    SaidSoViewController *s = [[[self tabBarController] viewControllers] objectAtIndex:1];
     [s done:sender];
 }
 

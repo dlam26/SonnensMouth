@@ -32,8 +32,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
 }
 
 - (void)viewDidUnload
@@ -144,17 +146,15 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-    DebugLog(@"indexPath.row: %d", indexPath.row);
-    
-    
+        
     switch (indexPath.row) {    
         case DIRECTORY_LIST_ROW:
-            DebugLog();
-            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_DIRECTORY_LIST] animated:YES];
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_DIRECTORY_LIST] animated:YES];            
+            self.navigationItem.title = @"Directory List";
             break;
         case ABOUT_LIST_ROW:
             [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"About"] animated:YES];
+            self.navigationItem.title = @"About";
             break;
         default:
             DebugLog();

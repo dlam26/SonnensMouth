@@ -15,6 +15,7 @@
     
     IBOutlet UITextField *titleTextField;
     IBOutlet UILabel *createdDateLabel;    
+    IBOutlet UILabel *updatedDateLabel; 
     IBOutlet UIButton *deleteButton;
     
     Barrage *barrage;

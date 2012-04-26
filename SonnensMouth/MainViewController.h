@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 das. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+
 #import "ActionsViewController.h"
 #import "PlaySoundUIButton.h"
 #import "PlayedSound.h"
 #import "NSManagedObject+Barrage.h"
 #import "NSManagedObject+PlayedSound.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, ActionsViewControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate>
+@interface MainViewController : UIViewController <ActionsViewControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate>
 {
     IBOutlet UIImageView *background;
     IBOutlet UISwitch *recordingSwitch;

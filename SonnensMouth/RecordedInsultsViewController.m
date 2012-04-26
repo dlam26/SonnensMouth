@@ -77,6 +77,8 @@
 
     self.navigationItem.title = @"Recordings";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
+
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 }
 
 
@@ -206,12 +208,9 @@
     static NSString *CellIdentifier = @"RecordingsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];
-    
-//    NSArray *sounds = [[b sounds] sortedArrayUsingDescriptors:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
-            
+    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];            
     cell.textLabel.text = b.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated %@", [b updatedAsString]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated %@   |   Sounds: %u", [b updatedAsString], [[b sounds] count]];
     return cell;
 }
 
@@ -227,9 +226,7 @@
     EditRecordedInsultViewController *e = [self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_EDIT_RECORDING_VIEW_CONTROLLER];
     e.barrage = selectedBarage;
     
-//    UIViewController *viewController = [[UIViewController alloc] init];
-    
-    [[self navigationController] pushViewController:e animated:YES];
+    [[self navigationController] pushViewController:e animated:YES];    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

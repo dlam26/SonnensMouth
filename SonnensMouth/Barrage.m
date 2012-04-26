@@ -20,7 +20,7 @@
 
 -(NSString *)createdAsString
 {
-        return [self __formatDate:self.updated];
+        return [self __formatDate:self.created];
 }
 
 -(NSString *)updatedAsString

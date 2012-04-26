@@ -38,13 +38,13 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -82,13 +82,14 @@
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {   
-    BOOL onSonnenSaidSoTab = self.selectedIndex == 0;
+    BOOL onSonnenSaidSoTab = self.selectedIndex == 1;
     
     if(onSonnenSaidSoTab) {
-        
-        SaidSoViewController *s = (SaidSoViewController *)self.selectedViewController;
+    
+        SaidSoViewController *s = (SaidSoViewController *) self.navigationController.topViewController;
         [s fit];
     }
+    
 }
 
 #pragma mark - Actions
