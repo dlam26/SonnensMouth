@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+
 #import "SonnensMouth.h"
 #import "Barrage.h"
 #import "RecordedInsultsViewController.h"
 
-@interface EditRecordedInsultViewController : UIViewController {
+@interface EditRecordedInsultViewController : UIViewController <MFMailComposeViewControllerDelegate> {
     
     IBOutlet UITextField *titleTextField;
     IBOutlet UILabel *createdDateLabel;    
@@ -24,8 +26,9 @@
 @property(nonatomic, retain) Barrage *barrage;
 
 -(void)hideInputs;
--(IBAction)save:(id)sender;
+-(IBAction)email:(id)sender;
 -(IBAction)play:(id)sender;
+-(IBAction)save:(id)sender;
 -(IBAction)deleteRecording:(id)sender;
 
 

@@ -11,6 +11,7 @@
 		1A04C8F51548874100873C7A /* EditRecordedInsultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */; };
 		1A04C8F915488B8D00873C7A /* delete_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C8F715488B8D00873C7A /* delete_button@2x.png */; };
 		1A04C8FA15488B8D00873C7A /* delete_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C8F815488B8D00873C7A /* delete_button.png */; };
+		1A04C8FC154927E100873C7A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04C8FB154927E000873C7A /* MessageUI.framework */; };
 		1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
 		1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
 		1A83A63A152BBF1600532D8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A639152BBF1600532D8E /* CoreGraphics.framework */; };
@@ -87,6 +88,7 @@
 		1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRecordedInsultViewController.m; sourceTree = "<group>"; };
 		1A04C8F715488B8D00873C7A /* delete_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_button@2x.png"; sourceTree = "<group>"; };
 		1A04C8F815488B8D00873C7A /* delete_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_button.png; sourceTree = "<group>"; };
+		1A04C8FB154927E000873C7A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1A83A631152BBF1600532D8E /* SonnensMouth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnensMouth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A635152BBF1600532D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A83A637152BBF1600532D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A04C8FC154927E100873C7A /* MessageUI.framework in Frameworks */,
 				1A022E03152D0D7000E42862 /* CoreFoundation.framework in Frameworks */,
 				1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */,
 				1A83A683152C259800532D8E /* AudioToolbox.framework in Frameworks */,
@@ -198,6 +201,7 @@
 		1A83A626152BBF1500532D8E = {
 			isa = PBXGroup;
 			children = (
+				1A04C8FB154927E000873C7A /* MessageUI.framework */,
 				1A83A63D152BBF1600532D8E /* SonnensMouth */,
 				1A83A665152BBF1700532D8E /* SonnensMouthTests */,
 				1A83A634152BBF1600532D8E /* Frameworks */,

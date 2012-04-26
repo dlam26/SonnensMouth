@@ -100,6 +100,26 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(IBAction)email:(id)sender
+{
+    if([MFMailComposeViewController canSendMail]) {
+        
+        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
+        mail.mailComposeDelegate = self;
+        [mail setSubject:@"I made a funny sound!"];
+        [mail setMessageBody:@"It's made of Chael Sonnen sound clips :P" isHTML:YES];
+
+        NSData *data = [barrage toData];
+        
+        [mail addAttachmentData:data mimeType:@"video/mp4" fileName:@"sonnen-sound.m4a"];
+     
+        [self presentModalViewController:mail animated:YES];
+    }
+    else {
+        // Can't send email, so don't do anything!
+    }
+}
+
 -(IBAction)play:(id)sender
 {
     [[SonnensMouth sonnensMouth] playBarrage:barrage];
@@ -123,6 +143,13 @@
         [self.barrage.managedObjectContext deleteObject:barrage];
         [self.navigationController popViewControllerAnimated:YES];
     }
+}
+
+#pragma mark -  <MFMailComposeViewControllerDelegate>
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    DebugLog(@"   error: %@", error);
 }
 
 

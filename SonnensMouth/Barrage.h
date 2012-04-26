@@ -10,6 +10,7 @@
 
 //  https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreData/Articles/cdRelationships.html
 
+#import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
@@ -24,9 +25,12 @@
 @property (nonatomic, retain) NSDate *created;
 @property (nonatomic, retain) NSDate *updated;
 
+
 -(NSString *)createdAsString;
 -(NSString *)updatedAsString;
 -(NSString *)__formatDate:(NSDate *)date;
 -(NSString *)getTitle;
+-(NSArray *)soundsAsArray;
+-(NSData *)toData;
 
 @end

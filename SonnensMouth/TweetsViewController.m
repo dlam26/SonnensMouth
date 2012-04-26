@@ -37,9 +37,9 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:TWEETS_API_URL]];
     
     NSURLConnection *conn = [NSURLConnection connectionWithRequest:req delegate:self];
-    [conn start];
+    [conn start];    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
-
 
 
 - (void)viewDidUnload
@@ -52,7 +52,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];    
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -216,6 +215,13 @@
 }
 
 #pragma mark - <NSURLConnection> delegate methods
+
+- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)redirectResponse
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
+    return request;
+}
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {

@@ -72,12 +72,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    DebugLog();
 
     self.navigationItem.title = @"Recordings";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
-
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
 }
 
