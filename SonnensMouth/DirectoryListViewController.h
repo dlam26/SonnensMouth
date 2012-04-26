@@ -18,5 +18,9 @@
 -(IBAction)viewDirectory:(id)sender;
 -(IBAction)putInPath:(id)sender;
 -(IBAction)putInDocumentDirectory:(id)sender;
+-(IBAction)putInTempDirectory:(id)sender;
+
+-(IBAction)playSonnenSound:(id)sender;
+-(IBAction)dataLength:(id)sender;
 
 @end

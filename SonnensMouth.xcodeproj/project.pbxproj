@@ -200,7 +200,6 @@
 		1A83A626152BBF1500532D8E = {
 			isa = PBXGroup;
 			children = (
-				1A04C8FB154927E000873C7A /* MessageUI.framework */,
 				1A83A63D152BBF1600532D8E /* SonnensMouth */,
 				1A83A665152BBF1700532D8E /* SonnensMouthTests */,
 				1A83A634152BBF1600532D8E /* Frameworks */,
@@ -220,6 +219,7 @@
 		1A83A634152BBF1600532D8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A04C8FB154927E000873C7A /* MessageUI.framework */,
 				1AC6D3B015428021004A74D0 /* CoreMedia.framework */,
 				1A022E02152D0D7000E42862 /* CoreFoundation.framework */,
 				1A83A681152C259800532D8E /* AudioToolbox.framework */,

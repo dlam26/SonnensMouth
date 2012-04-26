@@ -36,6 +36,7 @@
 #import "PlayedSound.h"
 #import "Barrage.h"
 
+@class Barrage;
 
 @interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
  

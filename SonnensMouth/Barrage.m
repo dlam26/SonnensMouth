@@ -50,7 +50,8 @@
  */
 -(NSData *)toData
 {
-    __block NSData *data;
+    NSData *data;
+    __block NSError *error;
     
     NSArray *soundsArray = [self soundsAsArray];
     
@@ -78,7 +79,7 @@
         }
         
         AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];        
-        NSError *error;
+
         
         [track insertEmptyTimeRange:CMTimeRangeMake(kCMTimeZero, CMTimeMake(sleepDuration, 1.0))];
         
@@ -87,28 +88,32 @@
     
     AVAssetExportSession *export = [[AVAssetExportSession alloc] initWithAsset:composition presetName:AVAssetExportPresetAppleM4A];
 
-    NSURL *url = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"/%@/sonnen-sound.m4a", NSTemporaryDirectory()]];
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@%@%@", NSTemporaryDirectory(), self.title, @".m4a"]];
     
     [export setOutputURL:url];
     [export setOutputFileType:AVFileTypeAppleM4A];     
     
     __block BOOL workedOrNo = NO;
     
-    [export exportAsynchronouslyWithCompletionHandler:^{        
+    [export exportAsynchronouslyWithCompletionHandler:^{
+
+//        NSLog(@"export.status: %d", export.status);
+        
         switch (export.status) {
-                
+            
             case AVAssetExportSessionStatusFailed:
+                DebugLog(@"export.error: %@", export.error);
                 break;                
             case AVAssetExportSessionStatusCompleted:
                 workedOrNo = YES;
-                data = [[NSFileManager defaultManager] contentsAtPath:[url absoluteString]];
                 break;
             default:
                 break;
         }
+        
     }];
     
-    NSLog(@"Barrage.m:111  toData()  did export work?  %d", workedOrNo);
+    data = [[NSFileManager defaultManager] contentsAtPath:[url path]];
     
     return data;
 }

@@ -71,4 +71,22 @@
     directoryInput.text = [paths objectAtIndex:0];
 }
 
+-(IBAction)putInTempDirectory:(id)sender
+{
+    directoryInput.text = NSTemporaryDirectory();
+}
+
+-(IBAction)playSonnenSound:(id)sender
+{
+    [[SonnensMouth sonnensMouth] playSound:@"sonnen-sound"];
+}
+
+-(IBAction)dataLength:(id)sender
+{
+    NSString *path = [NSString stringWithFormat:@"%@%@", NSTemporaryDirectory(), @"sonnen-sound.m4a"];
+    NSData *data = [[NSFileManager defaultManager] contentsAtPath:path];
+    
+    DebugLog(@"data length: %u", [data length]);
+}
+
 @end

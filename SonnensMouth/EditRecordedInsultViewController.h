@@ -20,6 +20,8 @@
     IBOutlet UILabel *updatedDateLabel; 
     IBOutlet UIButton *deleteButton;
     
+    MFMailComposeViewController *mailCompose;
+    
     Barrage *barrage;
 }
 

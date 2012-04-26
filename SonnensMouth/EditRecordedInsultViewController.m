@@ -104,16 +104,20 @@
 {
     if([MFMailComposeViewController canSendMail]) {
         
-        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
-        mail.mailComposeDelegate = self;
-        [mail setSubject:@"I made a funny sound!"];
-        [mail setMessageBody:@"It's made of Chael Sonnen sound clips :P" isHTML:YES];
+        mailCompose = [[MFMailComposeViewController alloc] init];
+        mailCompose.mailComposeDelegate = self;
+        [mailCompose setSubject:@"I made a funny sound!"];
+        [mailCompose setMessageBody:@"It's made of Chael Sonnen sound clips :P" isHTML:YES];
 
         NSData *data = [barrage toData];
         
-        [mail addAttachmentData:data mimeType:@"video/mp4" fileName:@"sonnen-sound.m4a"];
+        NSString *fileName = [NSString stringWithFormat:@"%@.m4a", [barrage title]];
+        
+        [mailCompose addAttachmentData:data mimeType:@"video/mp4" fileName:fileName];
+
+//        [mailCompose addAttachmentData:data mimeType:@"audio/mpeg3" fileName:@"sonnen-sound.mp3"];  // no work
      
-        [self presentModalViewController:mail animated:YES];
+        [self presentModalViewController:mailCompose animated:YES];
     }
     else {
         // Can't send email, so don't do anything!
@@ -150,6 +154,8 @@
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     DebugLog(@"   error: %@", error);
+    
+    [mailCompose dismissModalViewControllerAnimated:YES];
 }
 
 
