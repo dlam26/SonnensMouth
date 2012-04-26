@@ -74,6 +74,8 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    newInterfaceOrientation = interfaceOrientation;
+    
     // Return YES for supported orientations
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 //        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
@@ -82,6 +84,12 @@
     } else {
         return YES;
     }
+
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    background.image = background.image == smilingChael ? bustedUpChael : smilingChael;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

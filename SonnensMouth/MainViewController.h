@@ -15,16 +15,16 @@
 
 @interface MainViewController : UIViewController <ActionsViewControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate>
 {
-    IBOutlet UIImageView *background;
-    IBOutlet UISwitch *recordingSwitch;
-    IBOutlet UILabel *recordingLabel;
-    
+    IBOutlet UIImageView *background;    
     UIImage *smilingChael;
     UIImage *bustedUpChael;
-    
+    UIInterfaceOrientation newInterfaceOrientation;
+
+    IBOutlet UISwitch *recordingSwitch;
+    IBOutlet UILabel *recordingLabel;    
     BOOL isRecording;
-    NSMutableArray *playedSounds;
     NSDate *recordStart;
+    NSMutableArray *playedSounds;
     
     CGRect originalButtonFrame;
     
