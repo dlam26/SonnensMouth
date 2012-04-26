@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A022E03152D0D7000E42862 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A022E02152D0D7000E42862 /* CoreFoundation.framework */; };
+		1A04C8F51548874100873C7A /* EditRecordedInsultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */; };
+		1A04C8F915488B8D00873C7A /* delete_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C8F715488B8D00873C7A /* delete_button@2x.png */; };
+		1A04C8FA15488B8D00873C7A /* delete_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C8F815488B8D00873C7A /* delete_button.png */; };
 		1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
 		1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
 		1A83A63A152BBF1600532D8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A639152BBF1600532D8E /* CoreGraphics.framework */; };
@@ -81,6 +84,10 @@
 
 /* Begin PBXFileReference section */
 		1A022E02152D0D7000E42862 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1A04C8F31548874100873C7A /* EditRecordedInsultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRecordedInsultViewController.h; sourceTree = "<group>"; };
+		1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRecordedInsultViewController.m; sourceTree = "<group>"; };
+		1A04C8F715488B8D00873C7A /* delete_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_button@2x.png"; sourceTree = "<group>"; };
+		1A04C8F815488B8D00873C7A /* delete_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_button.png; sourceTree = "<group>"; };
 		1A83A631152BBF1600532D8E /* SonnensMouth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnensMouth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A635152BBF1600532D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A83A637152BBF1600532D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -237,6 +244,8 @@
 				1AB6CA5D15476FA300D7924B /* Barrage.h */,
 				1AB6CA5A15476FA300D7924B /* DirectoryListViewController.m */,
 				1AB6CA5B15476FA300D7924B /* DirectoryListViewController.h */,
+				1A04C8F31548874100873C7A /* EditRecordedInsultViewController.h */,
+				1A04C8F41548874100873C7A /* EditRecordedInsultViewController.m */,
 				1A83A655152BBF1700532D8E /* FlipsideViewController.h */,
 				1A83A656152BBF1700532D8E /* FlipsideViewController.m */,
 				1A83A649152BBF1600532D8E /* MainStoryboard_iPhone.storyboard */,
@@ -302,6 +311,8 @@
 		1A83A676152BD49500532D8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1A04C8F715488B8D00873C7A /* delete_button@2x.png */,
+				1A04C8F815488B8D00873C7A /* delete_button.png */,
 				1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */,
 				1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */,
 			);
@@ -440,6 +451,8 @@
 				1AB6CA5515476AA800D7924B /* this-guys-delusional.m4a in Resources */,
 				1AB6CA5715476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a in Resources */,
 				1AB6CA5915476E1F00D7924B /* do-you-remember-when-i-said.m4a in Resources */,
+				1A04C8F915488B8D00873C7A /* delete_button@2x.png in Resources */,
+				1A04C8FA15488B8D00873C7A /* delete_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +504,7 @@
 				1AB6CA6B15476FE300D7924B /* NSManagedObject+Barrage.m in Sources */,
 				1AB6CA6E15476FF200D7924B /* PlayedSound.m in Sources */,
 				1AB6CA701547701300D7924B /* MoreViewController.m in Sources */,
+				1A04C8F51548874100873C7A /* EditRecordedInsultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

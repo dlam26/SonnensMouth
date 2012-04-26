@@ -3,6 +3,7 @@
     <entity name="Barrage" representedClassName="Barrage" syncable="YES">
         <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="sounds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayedSound" inverseName="barrages" inverseEntity="PlayedSound" syncable="YES"/>
     </entity>
     <entity name="PlayedSound" representedClassName="PlayedSound" syncable="YES">
@@ -13,7 +14,7 @@
         <relationship name="barrages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Barrage" inverseName="sounds" inverseEntity="Barrage" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Barrage" positionX="-227" positionY="135" width="128" height="90"/>
+        <element name="Barrage" positionX="-227" positionY="135" width="128" height="105"/>
         <element name="PlayedSound" positionX="153" positionY="90" width="128" height="120"/>
     </elements>
 </model>

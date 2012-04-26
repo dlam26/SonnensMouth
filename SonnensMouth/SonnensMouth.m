@@ -126,6 +126,13 @@ static SonnensMouth* _sonnensMouth = nil;
     }
 }
 
+-(void)playBarrage:(Barrage *)barrage
+{
+    NSArray *sounds = [[barrage sounds] sortedArrayUsingDescriptors:[NSArray arrayWithObject: [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]]];        
+    
+    [self playArrayOfSounds:sounds withStart:barrage.created];
+}
+
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate
 {
     for (int i=0; i < [sounds count]; i++) {

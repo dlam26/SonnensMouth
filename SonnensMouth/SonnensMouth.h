@@ -23,6 +23,9 @@
 #define IDENTIFIER_DIRECTORY_LIST @"Directory List"
 #define IDENTIFIER_ABOUT @"About"
 
+// Used in the segue/link when you edit a recorded insult
+#define IDENTIFIER_EDIT_RECORDING_VIEW_CONTROLLER @"Edit Recording"
+
 //  #import <Foundation/Foundation.h>
 
 #import <CoreFoundation/CoreFoundation.h>
@@ -31,6 +34,7 @@
 #import <AVFoundation/AVAudioPlayer.h>
 
 #import "PlayedSound.h"
+#import "Barrage.h"
 
 
 @interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
@@ -44,6 +48,7 @@
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
 -(void)playSound:(NSString *)soundName;
+-(void)playBarrage:(Barrage *)barrage;
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate;
 
 +(UIAlertView *)newNoInternetConnectionAlertView;

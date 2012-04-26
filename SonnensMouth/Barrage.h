@@ -22,8 +22,11 @@
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSSet *sounds;     // of PlayedSound's
 @property (nonatomic, retain) NSDate *created;
+@property (nonatomic, retain) NSDate *updated;
 
 -(NSString *)createdAsString;
-
+-(NSString *)updatedAsString;
+-(NSString *)__formatDate:(NSDate *)date;
+-(NSString *)getTitle;
 
 @end

@@ -20,6 +20,7 @@
     newBarrage.title = title;
     newBarrage.sounds = sounds;
     newBarrage.created = [NSDate date];
+    newBarrage.updated = [NSDate date];
     return newBarrage;
 }
 

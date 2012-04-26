@@ -15,14 +15,30 @@
 @dynamic title;
 @dynamic sounds;
 @dynamic created;
+@dynamic updated;
 
 
 -(NSString *)createdAsString
 {
+        return [self __formatDate:self.updated];
+}
+
+-(NSString *)updatedAsString
+{
+    return [self __formatDate:self.updated];
+}
+
+-(NSString *)__formatDate:(NSDate *)date
+{
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
     [formatter setDateStyle:NSDateFormatterShortStyle];
-    return [formatter stringFromDate:self.created];
+    return [formatter stringFromDate:date];
+}
+
+-(NSString *)getTitle
+{
+    return self.title;
 }
 
 @end

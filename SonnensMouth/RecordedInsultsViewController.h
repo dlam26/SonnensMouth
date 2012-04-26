@@ -13,14 +13,17 @@
 #import "Barrage.h"
 #import "SonnensMouth.h"
 #import "ActionsViewController.h"
+#import "EditRecordedInsultViewController.h"
 
 
 @interface RecordedInsultsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate> {
     
     IBOutlet UITableView *recordings;
-    NSFetchedResultsController *fetchedResultController;
-
+    NSFetchedResultsController *fetchedResultController;    
+    Barrage *selectedBarage;
 }
+
+@property(nonatomic, retain) UITableView *recordings;
 
 - (IBAction)test:(id)sender;
 - (IBAction)playGeneratedFile:(id)sender;

@@ -7,10 +7,11 @@
 //
 
 #import "RecordedInsultsViewController.h"
-
 #import "NSManagedObject+Barrage.h"
 
 @implementation RecordedInsultsViewController
+
+@synthesize recordings;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,12 +39,8 @@
 }
 */
 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-    
     recordings.dataSource = self;
     recordings.delegate = self;
     
@@ -51,13 +48,14 @@
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Barrage"];
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES];
-    fetchRequest.sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-//    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"soundName = %@", @"blahh"];    
+    NSSortDescriptor *updatedSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"updated" ascending:NO];
+    NSSortDescriptor *titleSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES];
+    fetchRequest.sortDescriptors = [NSArray arrayWithObjects:updatedSortDescriptor, titleSortDescriptor, nil];
+    //    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"soundName = %@", @"blahh"];    
     NSString *cacheName = @"RecordedInsultsCache";
-
+    
     fetchedResultController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:cacheName];    
-//    fetchedResultController.delegate = self;    
+    //    fetchedResultController.delegate = self;    
     
     NSError *fetchError;
     [fetchedResultController performFetch:&fetchError];
@@ -65,6 +63,20 @@
     if (fetchError) {
         DebugLog(@"Got fetchError: %@", fetchError);
     }
+    
+    [recordings reloadData];
+}
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    DebugLog();
+
+    self.navigationItem.title = @"Recordings";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
 }
 
 
@@ -185,7 +197,8 @@
 {
 //    return [[[fetchedResultController sections] objectAtIndex:section] numberOfObjects];
     
-    return [[fetchedResultController fetchedObjects] count];
+    NSInteger count = [[fetchedResultController fetchedObjects] count];    
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -198,7 +211,7 @@
 //    NSArray *sounds = [[b sounds] sortedArrayUsingDescriptors:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
             
     cell.textLabel.text = b.title;
-    cell.detailTextLabel.text = [b createdAsString];    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated %@", [b updatedAsString]];
     return cell;
 }
 
@@ -208,20 +221,40 @@
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     DebugLog(@"Clicked on accessory at row #%d", indexPath.row);
+    
+    selectedBarage = [fetchedResultController objectAtIndexPath:indexPath];
+    
+    EditRecordedInsultViewController *e = [self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_EDIT_RECORDING_VIEW_CONTROLLER];
+    e.barrage = selectedBarage;
+    
+//    UIViewController *viewController = [[UIViewController alloc] init];
+    
+    [[self navigationController] pushViewController:e animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DebugLog(@"Clicked row #%d", indexPath.row);
     
-    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];
-    
-    if(b) {
-        NSArray *sounds = [[b sounds] sortedArrayUsingDescriptors:[NSArray arrayWithObject: [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]]];        
-        
-        [[SonnensMouth sonnensMouth] playArrayOfSounds:sounds withStart:b.created];
-    }
+    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];    
+    [[SonnensMouth sonnensMouth] playBarrage:b];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    /*
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:IDENTIFIER_SEGUE_EDIT_RECORDED_INSULT])
+    {
+        // Get reference to the destination view controller
+        EditRecordedInsultViewController *vc = (EditRecordedInsultViewController *)[segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        [vc setBarrage:selectedBarage];
+    }
+    */
+}
+
 
 
 @end
