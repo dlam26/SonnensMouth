@@ -204,9 +204,10 @@
         // stop recording
         isRecording = NO;
         recordingLabel.text = @"Not recording";
-        recordingLabel.textColor = [UIColor lightGrayColor];
-        
-        [self showSaveRecordingActionSheet];
+        recordingLabel.textColor = [UIColor lightGrayColor];        
+        if([playedSounds count] > 0) {
+            [self showSaveRecordingActionSheet];
+        }
     }
     
     // old stuff, when it just changed the background
@@ -281,10 +282,7 @@
     UIButton *soundButton = (UIButton *)sender;
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
 //    [soundButton sizeToFit];
-    
     soundButton.frame = originalButtonFrame;
-
-
 }
 
 -(IBAction)playSound:(id)sender
