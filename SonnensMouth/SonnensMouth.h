@@ -14,7 +14,7 @@
 #define DebugLog(...) do {} while (0)
 #endif
 
-#define USE_AV_AUDIO_PLAYER 0
+#define USE_AV_AUDIO_PLAYER 1
 
 #define TWEETS_API_URL @"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sonnench"
 

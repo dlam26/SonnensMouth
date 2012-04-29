@@ -70,6 +70,25 @@
 		1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */; };
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
+		64A5C6F6154D0BA60006D2A0 /* vitor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F4154D0BA60006D2A0 /* vitor.m4a */; };
+		64A5C6F7154D0BA60006D2A0 /* wanderlei2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */; };
+		64A5C6FC154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */; };
+		64A5C6FE154D125D0006D2A0 /* that-blows-me-away.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FD154D125D0006D2A0 /* that-blows-me-away.m4a */; };
+		64A5C700154D132E0006D2A0 /* really?.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FF154D132E0006D2A0 /* really?.m4a */; };
+		64A5C702154D13350006D2A0 /* I-AM-SHOCKED.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C701154D13350006D2A0 /* I-AM-SHOCKED.m4a */; };
+		64A5C704154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C703154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a */; };
+		64A5C706154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */; };
+		64A5C707154D179B0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */; };
+		64A5C708154D179B0006D2A0 /* I-AM-SHOCKED.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C701154D13350006D2A0 /* I-AM-SHOCKED.m4a */; };
+		64A5C709154D179B0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C703154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a */; };
+		64A5C70A154D179B0006D2A0 /* rar-rawr-nyah-well.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */; };
+		64A5C70B154D179B0006D2A0 /* really?.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FF154D132E0006D2A0 /* really?.m4a */; };
+		64A5C70C154D179B0006D2A0 /* that-blows-me-away.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FD154D125D0006D2A0 /* that-blows-me-away.m4a */; };
+		64A5C70D154D179B0006D2A0 /* vitor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F4154D0BA60006D2A0 /* vitor.m4a */; };
+		64A5C70E154D179B0006D2A0 /* wanderlei2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */; };
+		64A5C710154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */; };
+		64A5C711154D1BC80006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */; };
+		64A5C713154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +183,16 @@
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		64A5C6F4154D0BA60006D2A0 /* vitor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitor.m4a; sourceTree = "<group>"; };
+		64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei2.m4a; sourceTree = "<group>"; };
+		64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rar-rawr-nyah-well.m4a"; sourceTree = "<group>"; };
+		64A5C6FD154D125D0006D2A0 /* that-blows-me-away.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "that-blows-me-away.m4a"; sourceTree = "<group>"; };
+		64A5C6FF154D132E0006D2A0 /* really?.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "really?.m4a"; sourceTree = "<group>"; };
+		64A5C701154D13350006D2A0 /* I-AM-SHOCKED.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I-AM-SHOCKED.m4a"; sourceTree = "<group>"; };
+		64A5C703154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "my-rib-and-my-back-and-lalalala.m4a"; sourceTree = "<group>"; };
+		64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a"; sourceTree = "<group>"; };
+		64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "with-a-name-like-chael-you-dont-really-need-a-nickname.m4a"; sourceTree = "<group>"; };
+		64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,22 +355,32 @@
 				1A04C8FD15493AB600873C7A /* anderson-silva.m4a */,
 				1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
 				1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */,
+				64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
 				1A8423321543BA4C00582779 /* grease-saint-pierre.m4a */,
 				1A04C8FF15493AC800873C7A /* guess-what.m4a */,
 				1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */,
 				1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */,
 				1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */,
+				64A5C701154D13350006D2A0 /* I-AM-SHOCKED.m4a */,
 				1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */,
+				64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */,
 				1A04C90115493AE300873C7A /* im-like-facing-four-men.m4a */,
 				1A04C90215493AE300873C7A /* im-the-baddest-man-god-ever-made.m4a */,
 				1A84234615441A3200582779 /* lyoto-machida.m4a */,
 				1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */,
+				64A5C703154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a */,
 				1A8423381543C85700582779 /* never-piss-of-a-gangster.m4a */,
+				64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */,
+				64A5C6FF154D132E0006D2A0 /* really?.m4a */,
+				64A5C6FD154D125D0006D2A0 /* that-blows-me-away.m4a */,
 				1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */,
 				1A04C90515493B1700873C7A /* tried-to-feed-a-bus-a-carrot.m4a */,
+				64A5C6F4154D0BA60006D2A0 /* vitor.m4a */,
 				1A8423341543BD9400582779 /* wanderlei.m4a */,
+				64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */,
 				1A84234E154428DE00582779 /* whoahhh.m4a */,
+				64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */,
 				1A84233E1544113600582779 /* well-ah-eh-oh-i-dont-know-i-eh.m4a */,
 				1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */,
 			);
@@ -419,6 +458,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A5C711154D1BC80006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */,
+				64A5C707154D179B0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a in Resources */,
+				64A5C708154D179B0006D2A0 /* I-AM-SHOCKED.m4a in Resources */,
+				64A5C709154D179B0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a in Resources */,
+				64A5C70A154D179B0006D2A0 /* rar-rawr-nyah-well.m4a in Resources */,
+				64A5C70B154D179B0006D2A0 /* really?.m4a in Resources */,
+				64A5C70C154D179B0006D2A0 /* that-blows-me-away.m4a in Resources */,
+				64A5C70D154D179B0006D2A0 /* vitor.m4a in Resources */,
+				64A5C70E154D179B0006D2A0 /* wanderlei2.m4a in Resources */,
 				1A83A642152BBF1600532D8E /* InfoPlist.strings in Resources */,
 				1A83A64B152BBF1600532D8E /* MainStoryboard_iPhone.storyboard in Resources */,
 				1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */,
@@ -458,6 +506,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A83A66A152BBF1700532D8E /* InfoPlist.strings in Resources */,
+				64A5C6F6154D0BA60006D2A0 /* vitor.m4a in Resources */,
+				64A5C6F7154D0BA60006D2A0 /* wanderlei2.m4a in Resources */,
+				64A5C6FC154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a in Resources */,
+				64A5C6FE154D125D0006D2A0 /* that-blows-me-away.m4a in Resources */,
+				64A5C700154D132E0006D2A0 /* really?.m4a in Resources */,
+				64A5C702154D13350006D2A0 /* I-AM-SHOCKED.m4a in Resources */,
+				64A5C704154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a in Resources */,
+				64A5C706154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a in Resources */,
+				64A5C710154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */,
+				64A5C713154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

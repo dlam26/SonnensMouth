@@ -33,8 +33,11 @@
     NSString *messedUpFacePic = [[NSBundle mainBundle] pathForResource:@"sonnen_smiling_messedup" ofType:@"jpg"];
     
     smilingChael  = [UIImage imageWithContentsOfFile:smilingPic];
-    bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];    
-    background.image = bustedUpChael;
+    bustedUpChael = [UIImage imageWithContentsOfFile:messedUpFacePic];
+    
+    background.image = smilingChael;
+//    background.image = bustedUpChael;
+    
     [background.layer setOpacity:0.2];
     recordingLabel.textColor = [UIColor grayColor];
     

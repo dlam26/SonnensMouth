@@ -85,9 +85,7 @@ static SonnensMouth* _sonnensMouth = nil;
         if([fileURL checkResourceIsReachableAndReturnError:&err] == YES) {
             
             if(USE_AV_AUDIO_PLAYER) {
-                
-//                DebugLog(@"   Playing sound using AVAudioPlayer: \"%@\"", soundName);
-                
+                 
                 audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&err];
                 
                 if(err) {
@@ -109,9 +107,8 @@ static SonnensMouth* _sonnensMouth = nil;
                     }                    
                 }                
             }
-            else {
-//                DebugLog(@"   Playing sound using AudioToolbox: \"%@\"", soundName);
-                
+            else {                
+                // Allows more than one sound to be playing at the same time!
                 NSURL *soundEffectURL = [[NSBundle mainBundle] URLForResource: soundName withExtension:@"m4a"];
                 CFURLRef soundURL = (__bridge CFURLRef) soundEffectURL;
                 SystemSoundID soundID;
