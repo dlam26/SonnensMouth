@@ -89,6 +89,12 @@
 		64A5C710154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */; };
 		64A5C711154D1BC80006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */; };
 		64A5C713154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */; };
+		64A5C719154D291F0006D2A0 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C718154D291F0006D2A0 /* man.png */; };
+		64A5C71B154D29390006D2A0 /* man@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C71A154D29390006D2A0 /* man@2x.png */; };
+		64A5C71D154D2AA20006D2A0 /* fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C71C154D2AA20006D2A0 /* fire@2x.png */; };
+		64A5C71F154D2AAA0006D2A0 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C71E154D2AAA0006D2A0 /* fire.png */; };
+		64A5C723154D2D730006D2A0 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C721154D2D730006D2A0 /* twitter@2x.png */; };
+		64A5C725154D2E070006D2A0 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C724154D2E070006D2A0 /* twitter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +199,12 @@
 		64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a"; sourceTree = "<group>"; };
 		64A5C70F154D1AB90006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "with-a-name-like-chael-you-dont-really-need-a-nickname.m4a"; sourceTree = "<group>"; };
 		64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a"; sourceTree = "<group>"; };
+		64A5C718154D291F0006D2A0 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
+		64A5C71A154D29390006D2A0 /* man@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man@2x.png"; sourceTree = "<group>"; };
+		64A5C71C154D2AA20006D2A0 /* fire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire@2x.png"; sourceTree = "<group>"; };
+		64A5C71E154D2AAA0006D2A0 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		64A5C721154D2D730006D2A0 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		64A5C724154D2E070006D2A0 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,10 +350,16 @@
 		1A83A676152BD49500532D8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				64A5C71E154D2AAA0006D2A0 /* fire.png */,
+				64A5C71C154D2AA20006D2A0 /* fire@2x.png */,
+				64A5C718154D291F0006D2A0 /* man.png */,
+				64A5C71A154D29390006D2A0 /* man@2x.png */,
 				1A04C8F715488B8D00873C7A /* delete_button@2x.png */,
 				1A04C8F815488B8D00873C7A /* delete_button.png */,
 				1A83A67A152BDA2E00532D8E /* sonnen_smiling.jpg */,
 				1A83A678152BD4BF00532D8E /* sonnen_smiling_messedup.jpg */,
+				64A5C724154D2E070006D2A0 /* twitter.png */,
+				64A5C721154D2D730006D2A0 /* twitter@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -498,6 +516,12 @@
 				1A04C90315493AE400873C7A /* im-like-facing-four-men.m4a in Resources */,
 				1A04C90415493AE400873C7A /* im-the-baddest-man-god-ever-made.m4a in Resources */,
 				1A04C90615493B1700873C7A /* tried-to-feed-a-bus-a-carrot.m4a in Resources */,
+				64A5C719154D291F0006D2A0 /* man.png in Resources */,
+				64A5C71B154D29390006D2A0 /* man@2x.png in Resources */,
+				64A5C71D154D2AA20006D2A0 /* fire@2x.png in Resources */,
+				64A5C71F154D2AAA0006D2A0 /* fire.png in Resources */,
+				64A5C723154D2D730006D2A0 /* twitter@2x.png in Resources */,
+				64A5C725154D2E070006D2A0 /* twitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
