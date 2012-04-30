@@ -267,6 +267,9 @@
 
 -(IBAction)playSound:(id)sender
 {
+    // if a recording is playing via GCD, stop it
+    [SonnensMouth sonnensMouth].cancelPlaySound = YES;
+    
     PlaySoundUIButton *b = (PlaySoundUIButton *)sender;
     [[SonnensMouth sonnensMouth] playSound:b.soundName];
     

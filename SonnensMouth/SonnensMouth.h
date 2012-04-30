@@ -41,9 +41,14 @@
 @interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
  
     AVAudioPlayer *audioPlayer;
+    NSThread *playSoundThread;
+    NSOperation *playSoundOperation;
+
+    BOOL cancelPlaySound;
 }
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+@property (nonatomic) BOOL cancelPlaySound;
 
 
 +(SonnensMouth *)sonnensMouth;
@@ -51,6 +56,7 @@
 -(void)playSound:(NSString *)soundName;
 -(void)playBarrage:(Barrage *)barrage;
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate;
+
 
 +(UIAlertView *)newNoInternetConnectionAlertView;
 +(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage;

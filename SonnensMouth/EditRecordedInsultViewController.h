@@ -35,4 +35,7 @@
 -(IBAction)deleteRecording:(id)sender;
 
 
+-(IBAction)cancel:(id)sender;
+
+
 @end

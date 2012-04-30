@@ -12,7 +12,7 @@
 
 static SonnensMouth* _sonnensMouth = nil;
 
-@synthesize audioPlayer;
+@synthesize audioPlayer, cancelPlaySound;
 
 +(SonnensMouth *)sonnensMouth
 {
@@ -130,49 +130,61 @@ static SonnensMouth* _sonnensMouth = nil;
 
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate
 {
-    for (int i=0; i < [sounds count]; i++) {
+    cancelPlaySound = NO;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+    
+    dispatch_async(queue, ^{ 
         
-        PlayedSound *curr = [sounds objectAtIndex:i];
-        NSString *soundName = curr.soundName;
-        
-        //NSLog(@"SonnensMouthViewController.m:175   i:%d    Date: %@.  Time: %@.   Sound: %@", i, [dateFormat stringFromDate:when], [timeFormat stringFromDate:when], soundName);
-        
-        NSTimeInterval sleepDuration = 0.0;
-        
-        if(i == 0) {
-            // play sound after (when - recordStart) seconds
+        for (int i=0; i < [sounds count]; i++) {
             
-            sleepDuration = [curr.date timeIntervalSinceNow] - [startingDate timeIntervalSinceNow];
-        }
-        else {
-            // play sound after (when - prevWhen) seconds
-            PlayedSound *prevSound = [sounds objectAtIndex:i-1];
-            NSDate *prevWhen = prevSound.date;
+            if(cancelPlaySound)
+                break;
             
-            if(prevWhen) {
-                sleepDuration = [curr.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
+            PlayedSound *curr = [sounds objectAtIndex:i];
+            NSString *soundName = curr.soundName;
+            
+            //NSLog(@"SonnensMouthViewController.m:175   i:%d    Date: %@.  Time: %@.   Sound: %@", i, [dateFormat stringFromDate:when], [timeFormat stringFromDate:when], soundName);
+            
+            NSTimeInterval sleepDuration = 0.0;
+            
+            if(i == 0) {
+                // play sound after (when - recordStart) seconds
+                
+                sleepDuration = [curr.date timeIntervalSinceNow] - [startingDate timeIntervalSinceNow];
             }
+            else {
+                // play sound after (when - prevWhen) seconds
+                PlayedSound *prevSound = [sounds objectAtIndex:i-1];
+                NSDate *prevWhen = prevSound.date;
+                
+                if(prevWhen) {
+                    sleepDuration = [curr.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
+                }
+            }
+            
+            //NSLog(@"SonnensMouthViewController.m:197  playRecording()   sleeping for %f seconds", sleepDuration);
+            
+            [NSThread sleepForTimeInterval:sleepDuration];
+            
+            [[SonnensMouth sonnensMouth] playSound:soundName];
         }
-        
-        //NSLog(@"SonnensMouthViewController.m:197  playRecording()   sleeping for %f seconds", sleepDuration);
-        
-        [NSThread sleepForTimeInterval:sleepDuration];
-        
-        [[SonnensMouth sonnensMouth] playSound:soundName];
-    }
+    });
+
 }
+
 
 
 #pragma mark - <AVAudioPlayerDelegate>
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    DebugLog(@"successufully: %u", flag);
+//    DebugLog(@"successufully: %u", flag);
 }
 
 - (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error
 {
-    DebugLog(@"error: %@", error);
+//    DebugLog(@"error: %@", error);
 }
 
 - (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player
