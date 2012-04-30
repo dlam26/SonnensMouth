@@ -200,7 +200,9 @@ static SonnensMouth* _sonnensMouth = nil;
 
         playingLastSoundInBarrage = NO;
         
-        playBarrageCompleteBlock();
+        if(playBarrageCompleteBlock) {
+            playBarrageCompleteBlock();
+        }
     }
 }
 
