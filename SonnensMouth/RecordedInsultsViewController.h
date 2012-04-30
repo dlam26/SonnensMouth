@@ -19,14 +19,15 @@
 @interface RecordedInsultsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate> {
     
     IBOutlet UITableView *recordings;
+    IBOutlet UIBarButtonItem *stopPlayingRecordingButton;
+    
     NSFetchedResultsController *fetchedResultController;    
     Barrage *selectedBarage;
 }
 
 @property(nonatomic, retain) UITableView *recordings;
 
-- (IBAction)test:(id)sender;
-- (IBAction)playGeneratedFile:(id)sender;
 - (IBAction)done:(id)sender;
+- (IBAction)stopPlayingRecording:(id)sender;
     
 @end

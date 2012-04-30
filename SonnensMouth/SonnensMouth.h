@@ -36,6 +36,8 @@
 #import "PlayedSound.h"
 #import "Barrage.h"
 
+typedef void (^CompleteBlock)();
+
 @class Barrage;
 
 @interface SonnensMouth : NSObject <AVAudioPlayerDelegate> {
@@ -45,16 +47,24 @@
     NSOperation *playSoundOperation;
 
     BOOL cancelPlaySound;
+    BOOL playingLastSoundInBarrage;
+    
+    CompleteBlock playBarrageCompleteBlock;
 }
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (nonatomic) BOOL cancelPlaySound;
+@property (nonatomic) BOOL playingLastSoundInBarrage;
+
+
 
 
 +(SonnensMouth *)sonnensMouth;
 +(void)setSonnensMouth:(SonnensMouth *)sonnensMouth;
 -(void)playSound:(NSString *)soundName;
 -(void)playBarrage:(Barrage *)barrage;
+-(void)playBarrage:(Barrage *)barrage thenDoThisWhenItsDone:(CompleteBlock)completeBlock;
+
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate;
 
 

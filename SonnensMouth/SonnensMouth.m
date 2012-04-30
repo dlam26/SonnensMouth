@@ -12,7 +12,7 @@
 
 static SonnensMouth* _sonnensMouth = nil;
 
-@synthesize audioPlayer, cancelPlaySound;
+@synthesize audioPlayer, cancelPlaySound, playingLastSoundInBarrage;
 
 +(SonnensMouth *)sonnensMouth
 {
@@ -125,18 +125,28 @@ static SonnensMouth* _sonnensMouth = nil;
 
 -(void)playBarrage:(Barrage *)barrage
 {
+//    [self playArrayOfSounds:[barrage soundsAsArray] withStart:barrage.created];
+    
+    [self playBarrage:barrage thenDoThisWhenItsDone:nil];
+}
+
+-(void)playBarrage:(Barrage *)barrage thenDoThisWhenItsDone:(CompleteBlock)completeBlock
+{
+    playBarrageCompleteBlock = completeBlock;
+    
     [self playArrayOfSounds:[barrage soundsAsArray] withStart:barrage.created];
 }
 
 -(void)playArrayOfSounds:(NSArray *)sounds withStart:(NSDate *)startingDate
 {
-    cancelPlaySound = NO;
-    
+    cancelPlaySound  = NO;
+    playingLastSoundInBarrage = NO;        
+    NSUInteger soundsCount = [sounds count];    
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     
     dispatch_async(queue, ^{ 
         
-        for (int i=0; i < [sounds count]; i++) {
+        for (int i=0; i < soundsCount; i++) {
             
             if(cancelPlaySound)
                 break;
@@ -163,6 +173,11 @@ static SonnensMouth* _sonnensMouth = nil;
                 }
             }
             
+            if(i == soundsCount-1) {
+                // on the last sound                
+                playingLastSoundInBarrage = YES;
+            }
+            
             //NSLog(@"SonnensMouthViewController.m:197  playRecording()   sleeping for %f seconds", sleepDuration);
             
             [NSThread sleepForTimeInterval:sleepDuration];
@@ -170,7 +185,6 @@ static SonnensMouth* _sonnensMouth = nil;
             [[SonnensMouth sonnensMouth] playSound:soundName];
         }
     });
-
 }
 
 
@@ -180,6 +194,14 @@ static SonnensMouth* _sonnensMouth = nil;
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
 //    DebugLog(@"successufully: %u", flag);
+    
+    if(playingLastSoundInBarrage) {
+        DebugLog(@"Finished playing the last sound!");
+
+        playingLastSoundInBarrage = NO;
+        
+        playBarrageCompleteBlock();
+    }
 }
 
 - (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error

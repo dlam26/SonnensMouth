@@ -97,7 +97,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tqf-ds-3ov" userLabel="BLUE-&quot;Foreman&quot;?" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="248" y="171" width="69" height="18"/>
+                                <rect key="frame" x="238" y="130" width="69" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -121,7 +121,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kld-a8-HPb" userLabel="BLUE-nickname?" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="240" y="140" width="79" height="18"/>
+                                <rect key="frame" x="228" y="156" width="79" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -877,36 +877,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lEL-dA-xkE">
-                                <rect key="frame" x="35" y="318" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="test">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="test:" destination="ode-mO-hNw" eventType="touchUpInside" id="eNy-DT-kgY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TD5-7l-ZKI">
-                                <rect key="frame" x="128" y="318" width="180" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="play generated sound">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playGeneratedFile:" destination="ode-mO-hNw" eventType="touchUpInside" id="oqo-z8-Fua"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="L1G-bf-Mr1">
                                 <rect key="frame" x="0.0" y="0.0" width="325" height="302"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -947,9 +917,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recordings" id="vvx-8l-FBh"/>
-                    <navigationItem key="navigationItem" id="15w-qO-DRO"/>
+                    <navigationItem key="navigationItem" id="15w-qO-DRO">
+                        <barButtonItem key="rightBarButtonItem" title="Stop" id="RrR-3w-exH">
+                            <color key="tintColor" red="1" green="0.22538602352142334" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="recordings" destination="L1G-bf-Mr1" id="4v1-Q9-SbL"/>
+                        <outlet property="stopPlayingRecordingButton" destination="RrR-3w-exH" id="eaY-8k-siR"/>
                     </connections>
                 </viewController>
             </objects>
@@ -1298,6 +1273,88 @@
         <image name="man.png" width="26" height="26"/>
         <image name="twitter.png" width="21" height="26"/>
     </resources>
+    <classes>
+        <class className="ActionsViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActionsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="actionsDelegate"/>
+            </relationships>
+        </class>
+        <class className="DirectoryListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DirectoryListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dataLength:"/>
+                <relationship kind="action" name="playSonnenSound:"/>
+                <relationship kind="action" name="putInDocumentDirectory:"/>
+                <relationship kind="action" name="putInPath:"/>
+                <relationship kind="action" name="putInTempDirectory:"/>
+                <relationship kind="action" name="viewDirectory:"/>
+                <relationship kind="outlet" name="directoryInput" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="viewButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="EditRecordedInsultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditRecordedInsultViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="deleteRecording:"/>
+                <relationship kind="action" name="email:"/>
+                <relationship kind="action" name="play:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="createdDateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="lengthLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="updatedDateLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="makeButtonTextBig:"/>
+                <relationship kind="action" name="makeButtonTextSmall:"/>
+                <relationship kind="action" name="playSound:"/>
+                <relationship kind="action" name="toggleRecording:"/>
+                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="recordingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="recordingSwitch" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="MoreViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+            </relationships>
+        </class>
+        <class className="PlaySoundUIButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySoundUIButton.h"/>
+        </class>
+        <class className="RecordedInsultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecordedInsultsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="stopPlayingRecording:"/>
+                <relationship kind="outlet" name="recordings" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="stopPlayingRecordingButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="SaidSoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SaidSoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="nextQuote:"/>
+                <relationship kind="outlet" name="sonnenSaidSoWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="TweetsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openInSafari:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
