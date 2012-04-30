@@ -17,4 +17,9 @@
 @dynamic soundData;
 @dynamic barrages;
 
+-(NSString *)getBundleFilePath
+{
+    return [[NSBundle mainBundle] pathForResource:self.soundName ofType:@"m4a"];
+}
+
 @end

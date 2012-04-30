@@ -13,11 +13,12 @@
 #import "Barrage.h"
 #import "RecordedInsultsViewController.h"
 
-@interface EditRecordedInsultViewController : UIViewController <MFMailComposeViewControllerDelegate> {
+@interface EditRecordedInsultViewController : UIViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate> {
     
     IBOutlet UITextField *titleTextField;
-    IBOutlet UILabel *createdDateLabel;    
-    IBOutlet UILabel *updatedDateLabel; 
+    IBOutlet UILabel *createdDateLabel;
+    IBOutlet UILabel *updatedDateLabel;
+    IBOutlet UILabel *lengthLabel;
     IBOutlet UIButton *deleteButton;
     
     MFMailComposeViewController *mailCompose;

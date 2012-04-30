@@ -34,10 +34,58 @@
     return [formatter stringFromDate:date];
 }
 
--(NSString *)getTitle
+/*  
+    Returns a string like "1:36" indicating the sound length in minutes and seconds
+ */
+-(NSString *)durationAsString
 {
-    return self.title;
+    NSString *durationString = @"0:00";
+    NSTimeInterval duration, sleepDuration = 0.0;  //this is just a typedef to double, in seconds
+
+    NSArray *soundsArray = [self soundsAsArray];
+    
+    for (int i = 0; i < [soundsArray count]; i++) {        
+        
+        PlayedSound *sound = [soundsArray objectAtIndex:i];
+        NSString *soundFilePath = [sound getBundleFilePath];       
+        NSData *soundData = [[NSFileManager defaultManager] contentsAtPath:soundFilePath];
+        NSError *err = nil;
+        AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithData:soundData error:&err];
+
+        if(!err) {
+            duration += audioPlayer.duration;
+
+#if DURATION_INCLUDE_SLEEP_TIME
+            if(i > 0) {                
+                PlayedSound *prevSound = [soundsArray objectAtIndex:i-1];
+                NSDate *prevWhen       = prevSound.date;
+                
+                if(prevWhen) {
+                    sleepDuration += [sound.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
+                }
+            }
+#endif
+        }
+        else {
+            DebugLog(@"Couldn't calculate length, error opening sound: %@", sound.soundName);
+            duration = -1;
+            break;
+        }
+    }
+        
+    if(duration != -1) {
+        
+        duration = duration + sleepDuration;
+
+        // http://stackoverflow.com/questions/2558995/how-can-i-define-nstimeinterval-to-mmss-format-in-iphone
+        NSTimeInterval minutes = floor(duration / 60);
+        NSTimeInterval seconds = round(duration - minutes * 60);    
+        durationString = [NSString stringWithFormat:@"%.0f:%.0f", floor(minutes), seconds];
+    }
+    
+    return durationString;
 }
+
 
 -(NSArray *)soundsAsArray
 {

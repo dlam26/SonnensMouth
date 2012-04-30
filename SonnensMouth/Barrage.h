@@ -15,6 +15,8 @@
 #import <CoreData/CoreData.h>
 #import "SonnensMouth.h"
 
+#define DURATION_INCLUDE_SLEEP_TIME 0
+
 @class PlayedSound;
 
 @interface Barrage : NSManagedObject {
@@ -30,7 +32,7 @@
 -(NSString *)createdAsString;
 -(NSString *)updatedAsString;
 -(NSString *)__formatDate:(NSDate *)date;
--(NSString *)getTitle;
+-(NSString *)durationAsString;
 -(NSArray *)soundsAsArray;
 -(NSData *)toData;
 

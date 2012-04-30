@@ -54,9 +54,11 @@
     [deleteButton setTitle:@"Delete Recording" forState:UIControlStateNormal];
     deleteButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
     
-    titleTextField.text   = [barrage getTitle];
+    titleTextField.text   = [barrage title];
+    titleTextField.delegate = self;
     createdDateLabel.text = [barrage createdAsString];
     updatedDateLabel.text = [barrage updatedAsString];
+    lengthLabel.text      = [barrage durationAsString];
     
     // hide keyboard when tapping off a focused text field
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputs)];
@@ -97,7 +99,7 @@
         DebugLog(@"Error persisting barrage: %@", err);
     }
      
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(IBAction)email:(id)sender
@@ -149,7 +151,20 @@
     }
 }
 
-#pragma mark -  <MFMailComposeViewControllerDelegate>
+#pragma mark - <UITextFieldDelegate>
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if(textField == titleTextField) {
+        [self save:textField];
+        [textField resignFirstResponder];
+    }       
+    
+    return YES;
+}
+
+
+#pragma mark - <MFMailComposeViewControllerDelegate>
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {

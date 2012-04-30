@@ -15,10 +15,13 @@
     
 }
 
-@property (nonatomic, retain) NSString * soundName;
+@property (nonatomic, retain) NSString *soundName;
 @property (nonatomic, retain) NSDate *date;
 @property (nonatomic, retain) NSNumber *order;
 @property (nonatomic, retain) NSData *soundData;
 @property (nonatomic, retain) NSManagedObject *barrages;
+
+
+-(NSString *)getBundleFilePath;
 
 @end

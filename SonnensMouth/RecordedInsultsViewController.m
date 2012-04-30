@@ -207,7 +207,7 @@
 
     Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];            
     cell.textLabel.text = b.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated %@   |   Sounds: %u", [b updatedAsString], [[b sounds] count]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated: %@\nDuration: %@     Sounds: %u", [b updatedAsString], [b durationAsString], [[b sounds] count]];
     return cell;
 }
 
