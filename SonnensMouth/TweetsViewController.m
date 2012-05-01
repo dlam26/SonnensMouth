@@ -146,13 +146,13 @@
         return @"less than a minute ago";
     } else if (ti < 3600) {
         int diff = round(ti / 60);
-        return [NSString stringWithFormat:@"%d minutes ago", diff];
+        return [NSString stringWithFormat:@"%d minutes ago", diff, diff == 1 ? @"minute" : @"minutes"];
     } else if (ti < 86400) {
         int diff = round(ti / 60 / 60);
-        return[NSString stringWithFormat:@"%d hours ago", diff];
+        return[NSString stringWithFormat:@"%d %@ ago", diff, diff == 1 ? @"hour" : @"hours"];
     } else if (ti < 2629743) {
         int diff = round(ti / 60 / 60 / 24);
-        return[NSString stringWithFormat:@"%d days ago", diff];
+        return[NSString stringWithFormat:@"%d %@ ago", diff, diff == 1 ? @"day" : @"days"];
     } else {
         NSDateFormatter *dayAndMonthFormat = [[NSDateFormatter alloc] init];
         [dayAndMonthFormat setDateFormat:@"dd MMM"];            
