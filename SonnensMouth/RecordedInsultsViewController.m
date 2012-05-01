@@ -64,6 +64,8 @@
         DebugLog(@"Got fetchError: %@", fetchError);
     }
     
+    savedRecordingsCount = [[fetchedResultController fetchedObjects] count];
+    
     [recordings reloadData];
     
     // hide the stop recording button until one is played
@@ -121,9 +123,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 //    return [[[fetchedResultController sections] objectAtIndex:section] numberOfObjects];
-    
-    NSInteger count = [[fetchedResultController fetchedObjects] count];    
-    return count;
+        
+    if (savedRecordingsCount > 0) {
+        return savedRecordingsCount;
+    }
+    else {
+        return 1;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -131,9 +137,19 @@
     static NSString *CellIdentifier = @"RecordingsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];            
-    cell.textLabel.text = b.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated: %@\nDuration: %@     Sounds: %u", [b updatedAsString], [b durationAsString], [[b sounds] count]];
+    if(savedRecordingsCount == 0 && indexPath.row == 0) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.accessoryView  = nil;
+        cell.accessoryType  = UITableViewCellAccessoryNone;
+        cell.textLabel.text = @"No recordings yet.";
+        cell.detailTextLabel.text = nil;
+    }
+    else {
+        Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];            
+        cell.textLabel.text = b.title;
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Updated: %@\nDuration: %@     Sounds: %u", [b updatedAsString], [b durationAsString], [[b sounds] count]];
+    }
+
     return cell;
 }
 
@@ -156,19 +172,20 @@
 {
 //    DebugLog(@"Clicked row #%d", indexPath.row);
     
-    Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];    
-//    [[SonnensMouth sonnensMouth] playBarrage:b];
-    
-    [[SonnensMouth sonnensMouth] playBarrage:b thenDoThisWhenItsDone:^(void) {        
-        // Will enter here if the Stop/Cancel button wasn't pressed.
+    if(savedRecordingsCount > 0) {
+        Barrage *b = [fetchedResultController objectAtIndexPath:indexPath];    
         
-        //DebugLog(@"IN COMPLETIONG BLOCK!!!!");        
-        self.navigationItem.rightBarButtonItem = nil; 
-    }];
-    
-    self.navigationItem.rightBarButtonItem = stopPlayingRecordingButton;
-    self.navigationItem.rightBarButtonItem.action = @selector(stopPlayingRecording:);
-    self.navigationItem.rightBarButtonItem.target = self;
+        [[SonnensMouth sonnensMouth] playBarrage:b thenDoThisWhenItsDone:^(void) {        
+            // Will enter here if the Stop/Cancel button wasn't pressed.
+            
+            //DebugLog(@"IN COMPLETIONG BLOCK!!!!");        
+            self.navigationItem.rightBarButtonItem = nil; 
+        }];
+        
+        self.navigationItem.rightBarButtonItem = stopPlayingRecordingButton;
+        self.navigationItem.rightBarButtonItem.action = @selector(stopPlayingRecording:);
+        self.navigationItem.rightBarButtonItem.target = self;        
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

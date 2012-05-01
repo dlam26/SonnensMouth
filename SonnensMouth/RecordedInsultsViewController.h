@@ -23,6 +23,8 @@
     
     NSFetchedResultsController *fetchedResultController;    
     Barrage *selectedBarage;
+    
+    NSInteger savedRecordingsCount;
 }
 
 @property(nonatomic, retain) UITableView *recordings;
