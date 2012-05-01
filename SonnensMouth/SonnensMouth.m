@@ -34,7 +34,7 @@ static SonnensMouth* _sonnensMouth = nil;
 
 +(UIAlertView *)newNoInternetConnectionAlertView
 {    
-    return [SonnensMouth newNoInternetConnectionAlertView:@"Error loading, check if you have an internet connection."];
+    return [SonnensMouth newNoInternetConnectionAlertView:@"Doh, couldn't load! Check if you have an internet connection."];
 }
 
 +(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage

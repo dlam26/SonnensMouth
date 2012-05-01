@@ -119,6 +119,9 @@
     
     webViewLoads--;
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
+    UIAlertView *av = [SonnensMouth newNoInternetConnectionAlertView];
+    [av show];
 }
 
 

@@ -138,12 +138,6 @@
 }
 
 
--(IBAction)cancel:(id)sender
-{
-    DebugLog();
-    [SonnensMouth sonnensMouth].cancelPlaySound = YES;
-}
-
 #pragma mark - <UIAlertViewDelegate>
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
