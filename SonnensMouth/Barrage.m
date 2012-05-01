@@ -78,9 +78,9 @@
         duration = duration + sleepDuration;
 
         // http://stackoverflow.com/questions/2558995/how-can-i-define-nstimeinterval-to-mmss-format-in-iphone
-        NSTimeInterval minutes = floor(duration / 60);
-        NSTimeInterval seconds = round(duration - minutes * 60);    
-        durationString = [NSString stringWithFormat:@"%.0f:%.0f", floor(minutes), seconds];
+        long minutes = (long) duration / 60;
+        long seconds = (long) duration % 60;        
+        durationString = [NSString stringWithFormat:@"%01d:%02d", minutes, seconds];
     }
     
     return durationString;
