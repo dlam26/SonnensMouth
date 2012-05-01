@@ -194,8 +194,8 @@
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon-57x57.png"; sourceTree = "<group>"; };
-		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon-114x114.png"; sourceTree = "<group>"; };
+		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-57x57.png"; path = "../appicon-57x57.png"; sourceTree = "<group>"; };
+		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-114x114.png"; path = "../appicon-114x114.png"; sourceTree = "<group>"; };
 		64A5C6F4154D0BA60006D2A0 /* vitor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitor.m4a; sourceTree = "<group>"; };
 		64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei2.m4a; sourceTree = "<group>"; };
 		64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rar-rawr-nyah-well.m4a"; sourceTree = "<group>"; };
@@ -248,8 +248,6 @@
 		1A83A626152BBF1500532D8E = {
 			isa = PBXGroup;
 			children = (
-				1ADC4F30154FA42100681C00 /* appicon-114x114.png */,
-				1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */,
 				1A83A63D152BBF1600532D8E /* SonnensMouth */,
 				1A83A665152BBF1700532D8E /* SonnensMouthTests */,
 				1A83A634152BBF1600532D8E /* Frameworks */,
@@ -359,6 +357,8 @@
 		1A83A676152BD49500532D8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1ADC4F30154FA42100681C00 /* appicon-114x114.png */,
+				1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */,
 				64A5C71E154D2AAA0006D2A0 /* fire.png */,
 				64A5C71C154D2AA20006D2A0 /* fire@2x.png */,
 				64A5C718154D291F0006D2A0 /* man.png */,
