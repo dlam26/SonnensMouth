@@ -11,7 +11,7 @@
 
 @implementation RecordedInsultsViewController
 
-@synthesize recordings;
+@synthesize recordings, justPerformedSave;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -70,6 +70,16 @@
     
     // hide the stop recording button until one is played
     self.navigationItem.rightBarButtonItem = nil;
+    
+    if(justPerformedSave) {
+        DebugLog(@"Just saved a recording... so opening edit screen!");
+     
+        // TODO  5/2/12  figure out how to show edit page
+        //
+        //    justPerformedSave is set from prepareForSegue() in MainViewController.m:127
+        //    ...maybe it should just push a modal view controller there
+        //
+    }
 }
 
 

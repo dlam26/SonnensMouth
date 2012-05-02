@@ -22,6 +22,8 @@
 
     IBOutlet UISwitch *recordingSwitch;
     IBOutlet UILabel *recordingLabel;    
+    IBOutlet UIButton *gotoTabbarButton;
+    
     BOOL isRecording;
     NSDate *recordStart;
     NSMutableArray *playedSounds;

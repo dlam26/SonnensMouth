@@ -96,6 +96,8 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    DebugLog();
     
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
@@ -109,50 +111,32 @@
     else if ([[segue identifier] isEqualToString:@"tweets"]) {
         
     }
-    else if ([[segue identifier] isEqualToString:@"tabbar"]) {
-        ActionsViewController *avc = segue.destinationViewController;
-        avc.selectedIndex   = actionsViewController.selectedIndex;
+    else if ([[segue identifier] isEqualToString:IDENTIFIER_SEGUE_TO_ACTIONS_VIEW_CONTROLLER]) {
+        
+        ActionsViewController *avc = (ActionsViewController *) segue.destinationViewController;
         avc.actionsDelegate = self;
+        
+        if ([sender class] == [UIActionSheet class]) {
+            // then we just saved a recording from MainViewController.m:280
+            // ...so open the edit recording page
+           
+            avc.selectedIndex = 0;
+            
+            UINavigationController *nav = (UINavigationController *) avc.selectedViewController;
+            
+            RecordedInsultsViewController *rvc = (RecordedInsultsViewController *) nav.topViewController;
+            
+            rvc.justPerformedSave = YES;
+        }
+        else {
+            avc.selectedIndex = actionsViewController.selectedIndex;
+        }
     }
     else {        
         DebugLog(@"did segue with unknown identifier: %@", [segue identifier]);
     }
 }
 
-
-
-#pragma mark - <UIActionSheetDelegate>
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    DebugLog(@"Clicked button #%d", buttonIndex);
-    
-    if(buttonIndex == 0) {
-        // save it in core data!
-
-        id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
-        
-        
-        // persist all the played sounds and the barrage!
-        
-        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize       
-        
-        [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:[NSSet setWithArray:playedSounds] inManagedObjectContext:context];
-        NSError *err = nil;
-         
-         if(![context save:&err]) {
-             DebugLog(@"Error persisting recording: %@", err);
-         }
-    }
-    else if(buttonIndex == 1) {
-        // clicked the preview button        
-        [self previewRecording];
-        [self showSaveRecordingActionSheet];
-    }
-    else {
-        
-    }
-}
 
 
 
@@ -278,6 +262,48 @@
         PlayedSound *newPlayedSound = [NSManagedObject insertPlayedSoundWithName:b.soundName orWithSoundData:nil andOrder:[NSNumber numberWithInteger:[playedSounds count]] inManagedObjectContext:context];
         [playedSounds addObject:newPlayedSound];
 
+    }
+}
+
+
+
+
+#pragma mark - <UIActionSheetDelegate>
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    DebugLog(@"Clicked button #%d", buttonIndex);
+    
+    if(buttonIndex == 0) {
+        // save it in core data!
+        
+        id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];
+                
+        // persist all the played sounds and the barrage!
+        
+        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize       
+        
+        [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:[NSSet setWithArray:playedSounds] inManagedObjectContext:context];
+        NSError *err = nil;
+        
+        if(![context save:&err]) {
+            DebugLog(@"Error persisting recording: %@", err);
+        }
+        else {
+            // open the edit sound page
+            
+//            [gotoTabbarButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+            
+            [self performSegueWithIdentifier:IDENTIFIER_SEGUE_TO_ACTIONS_VIEW_CONTROLLER sender:actionSheet];
+        }
+    }
+    else if(buttonIndex == 1) {
+        // clicked the preview button        
+        [self previewRecording];
+        [self showSaveRecordingActionSheet];
+    }
+    else {
+        
     }
 }
 

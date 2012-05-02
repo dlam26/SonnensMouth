@@ -25,9 +25,12 @@
     Barrage *selectedBarage;
     
     NSInteger savedRecordingsCount;
+    
+    BOOL justPerformedSave;
 }
 
 @property(nonatomic, retain) UITableView *recordings;
+@property(nonatomic) BOOL justPerformedSave;
 
 - (IBAction)done:(id)sender;
 - (IBAction)stopPlayingRecording:(id)sender;

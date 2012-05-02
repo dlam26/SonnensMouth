@@ -19,6 +19,7 @@
     IBOutlet UILabel *createdDateLabel;
     IBOutlet UILabel *updatedDateLabel;
     IBOutlet UILabel *lengthLabel;
+    IBOutlet UILabel *soundsCountLabel;
     IBOutlet UIButton *deleteButton;
     
     UIBarButtonItem *stopPlayingRecordingButton;
@@ -33,7 +34,7 @@
 -(void)hideInputs;
 -(IBAction)email:(id)sender;
 -(IBAction)play:(id)sender;
--(IBAction)save:(id)sender;
+-(IBAction)saveDetails:(id)sender;
 -(IBAction)deleteRecording:(id)sender;
 
 @end

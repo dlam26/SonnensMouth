@@ -22,6 +22,7 @@
 // identifier in Interface Builder
 #define IDENTIFIER_DIRECTORY_LIST @"Directory List"
 #define IDENTIFIER_ABOUT @"About"
+#define IDENTIFIER_SEGUE_TO_ACTIONS_VIEW_CONTROLLER @"tabbar"
 
 // Used in the segue/link when you edit a recorded insult
 #define IDENTIFIER_EDIT_RECORDING_VIEW_CONTROLLER @"Edit Recording"

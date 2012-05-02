@@ -59,6 +59,7 @@
     createdDateLabel.text = [barrage createdAsString];
     updatedDateLabel.text = [barrage updatedAsString];
     lengthLabel.text      = [barrage durationAsString];
+    soundsCountLabel.text = [NSString stringWithFormat:@"%u", [[barrage sounds] count]];
     
     // Make a hidden red 'Stop' button in the nav bar 
     
@@ -92,7 +93,7 @@
 
 #pragma mark - IBAction's
 
--(IBAction)save:(id)sender
+-(IBAction)saveDetails:(id)sender
 {
     DebugLog();    
     [barrage setTitle:titleTextField.text];
@@ -168,7 +169,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if(textField == titleTextField) {
-        [self save:textField];
+        [self saveDetails:textField];
         [textField resignFirstResponder];
     }       
     

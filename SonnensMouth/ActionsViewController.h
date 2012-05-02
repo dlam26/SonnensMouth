@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SaidSoViewController.h"
+#import "RecordedInsultsViewController.h"
 
 @class ActionsViewController;
 
