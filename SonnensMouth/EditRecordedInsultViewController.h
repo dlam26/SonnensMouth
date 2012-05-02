@@ -31,7 +31,7 @@
 
 @property(nonatomic, retain) Barrage *barrage;
 
--(void)hideInputs;
+-(void)hideInputsAndSave;
 -(IBAction)email:(id)sender;
 -(IBAction)play:(id)sender;
 -(IBAction)saveDetails:(id)sender;

@@ -67,7 +67,7 @@
     stopPlayingRecordingButton.tintColor = [UIColor redColor];
     
     // hide keyboard when tapping off a focused text field
-    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputs)];
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputsAndSave)];
     tapGr.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapGr];
 }
@@ -86,9 +86,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(void)hideInputs
+-(void)hideInputsAndSave;
 {
-    [titleTextField resignFirstResponder];
+    [titleTextField resignFirstResponder];    
+    [self saveDetails:nil];
 }
 
 #pragma mark - IBAction's
@@ -134,7 +135,10 @@
 {
     self.navigationItem.rightBarButtonItem = stopPlayingRecordingButton;
     
-    [[SonnensMouth sonnensMouth] playBarrage:barrage];
+    [[SonnensMouth sonnensMouth] playBarrage:barrage thenDoThisWhenItsDone:^(void) {        
+        self.navigationItem.rightBarButtonItem = nil; 
+    }];
+    
 }
 
 -(IBAction)deleteRecording:(id)sender
