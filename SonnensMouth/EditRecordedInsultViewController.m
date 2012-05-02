@@ -60,6 +60,11 @@
     updatedDateLabel.text = [barrage updatedAsString];
     lengthLabel.text      = [barrage durationAsString];
     
+    // Make a hidden red 'Stop' button in the nav bar 
+    
+    stopPlayingRecordingButton = [[UIBarButtonItem alloc] initWithTitle:@"Stop" style:UIBarButtonItemStyleBordered target:self action:@selector(stopPlayingRecording:)];
+    stopPlayingRecordingButton.tintColor = [UIColor redColor];
+    
     // hide keyboard when tapping off a focused text field
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputs)];
     tapGr.cancelsTouchesInView = NO;
@@ -92,9 +97,9 @@
     DebugLog();    
     [barrage setTitle:titleTextField.text];
     [barrage setUpdated:[NSDate date]];
-         
-    NSError *err = nil;
-     
+    updatedDateLabel.text = [barrage updatedAsString];
+             
+    NSError *err = nil;     
     if(![[barrage managedObjectContext] save:&err]) {
         DebugLog(@"Error persisting barrage: %@", err);
     }
@@ -104,15 +109,13 @@
 
 -(IBAction)email:(id)sender
 {
-    if([MFMailComposeViewController canSendMail]) {
-        
+    if([MFMailComposeViewController canSendMail]) {        
         mailCompose = [[MFMailComposeViewController alloc] init];
-        mailCompose.mailComposeDelegate = self;
-        [mailCompose setSubject:@"I made a funny sound!"];
-        [mailCompose setMessageBody:@"It's made of Chael Sonnen sound clips :P" isHTML:YES];
+        [mailCompose setMailComposeDelegate:self];
+        [mailCompose setSubject:@"Listen to this..."];
+        [mailCompose setMessageBody:@"It's made up of Chael Sonnen sound clips :P" isHTML:YES];
 
-        NSData *data = [barrage toData];
-        
+        NSData *data       = [barrage toData];        
         NSString *fileName = [NSString stringWithFormat:@"%@.m4a", [barrage title]];
         
         [mailCompose addAttachmentData:data mimeType:@"video/mp4" fileName:fileName];
@@ -128,6 +131,8 @@
 
 -(IBAction)play:(id)sender
 {
+    self.navigationItem.rightBarButtonItem = stopPlayingRecordingButton;
+    
     [[SonnensMouth sonnensMouth] playBarrage:barrage];
 }
 
@@ -135,6 +140,13 @@
 { 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Really delete?" message:@"This will delete the recording permanently!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
     [alertView show];
+}
+
+// Copied and pasted from RecordedInsultsViewController.m:108
+- (IBAction)stopPlayingRecording:(id)sender
+{
+    self.navigationItem.rightBarButtonItem = nil;
+    [SonnensMouth sonnensMouth].cancelPlaySound = YES;
 }
 
 

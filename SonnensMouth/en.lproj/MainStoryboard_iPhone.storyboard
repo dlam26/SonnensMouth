@@ -1038,25 +1038,9 @@
                                     <action selector="email:" destination="eKF-kK-Ydv" eventType="touchUpInside" id="Prx-QB-q5I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hn0-od-0de">
-                                <rect key="frame" x="116" y="228" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="cancel">
-                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancel:" destination="eKF-kK-Ydv" eventType="touchUpInside" id="6T2-Ur-hFL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lYI-rV-bKn"/>
                     <connections>
                         <outlet property="createdDateLabel" destination="uDm-e4-YYg" id="rfa-hW-yCp"/>
                         <outlet property="deleteButton" destination="OuP-8b-jaE" id="0fx-fL-yFp"/>
@@ -1297,7 +1281,6 @@
         <class className="EditRecordedInsultViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditRecordedInsultViewController.h"/>
             <relationships>
-                <relationship kind="action" name="cancel:"/>
                 <relationship kind="action" name="deleteRecording:"/>
                 <relationship kind="action" name="email:"/>
                 <relationship kind="action" name="play:"/>

@@ -105,9 +105,9 @@
     [[avc actionsDelegate] actionsViewControllerDidFinish:avc];
 }
 
+// Copied and pasted to EditRecordedInsultViewController.m:141
 - (IBAction)stopPlayingRecording:(id)sender
 {
-    DebugLog();
     self.navigationItem.rightBarButtonItem = nil;
     [SonnensMouth sonnensMouth].cancelPlaySound = YES;
 }

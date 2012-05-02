@@ -21,6 +21,8 @@
     IBOutlet UILabel *lengthLabel;
     IBOutlet UIButton *deleteButton;
     
+    UIBarButtonItem *stopPlayingRecordingButton;
+    
     MFMailComposeViewController *mailCompose;
     
     Barrage *barrage;
