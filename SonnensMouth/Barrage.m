@@ -92,6 +92,21 @@
     return [[self sounds] sortedArrayUsingDescriptors:[NSArray arrayWithObject: [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]]];        
 }
 
+// http://stackoverflow.com/questions/586370/how-can-i-reverse-a-nsarray-in-objective-c
+-(NSArray *)soundsAsArrayReversed
+{
+    NSMutableArray *soundsReversed = [[NSMutableArray alloc] init];
+    NSMutableArray *sounds = [[NSMutableArray alloc] initWithArray:self.soundsAsArray];
+    NSEnumerator *enumerator = [sounds reverseObjectEnumerator];
+    
+    for(id element in enumerator) {
+        [soundsReversed addObject:element];
+    }
+    
+    return soundsReversed;
+
+}
+
 /*
     Converts the sounds in this barrage to an NSData so you can play it via AudioToolbox
     or AVAudioPlayer or sumthin ^^ 
@@ -101,45 +116,60 @@
     NSData *data;
     __block NSError *error;
     
-    NSArray *soundsArray = [self soundsAsArray];
+    NSArray *soundsArray = [self soundsAsArrayReversed];
     
     AVMutableComposition *composition = [AVMutableComposition composition];
     AVMutableCompositionTrack *track  = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];    
-    NSTimeInterval sleepDuration = 0.0;
     
     for (int i=0; i < [soundsArray count]; i++) {
         
         PlayedSound *curr = [soundsArray objectAtIndex:i];
+        NSTimeInterval sleepDuration = 0.0;
         
         NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[curr soundName] ofType:@"m4a"]];
         
+        NSTimeInterval secondTimeInterval = 0.0;
+        
         // Calculate sleep duration        
         if(i == 0) {            
-            sleepDuration = [curr.date timeIntervalSinceNow] - [self.created timeIntervalSinceNow];
+            secondTimeInterval = [self.created timeIntervalSinceNow];
         }
         else {
             PlayedSound *prevSound = [soundsArray objectAtIndex:i-1];
             NSDate *prevWhen       = prevSound.date;
             
             if(prevWhen) {
-                sleepDuration = [curr.date timeIntervalSinceNow] - [prevWhen timeIntervalSinceNow];
+                secondTimeInterval = [prevWhen timeIntervalSinceNow];
             }
         }
         
+        sleepDuration = [curr.date timeIntervalSinceNow] - secondTimeInterval;
+        
         AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];        
 
+          // 5/2/12 for some reason this can be negative, and the sleep seems too long
+        sleepDuration = fabs(sleepDuration / 2.0); 
+        
+        DebugLog(@"i: %d   sleepDuration: %f   curr.date: %fc   secondTimeInterval: %f", i, sleepDuration, [curr.date timeIntervalSinceNow], secondTimeInterval );
         
         [track insertEmptyTimeRange:CMTimeRangeMake(kCMTimeZero, CMTimeMake(sleepDuration, 1.0))];
         
         [track insertTimeRange:CMTimeRangeMake(kCMTimeZero, asset.duration) ofTrack:[[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:asset.duration error:&error];
     }
     
+    // seems to be 1.5 seconds of dead space at start of generated sound file no matter what
+    // ...so remove it
+    [track removeTimeRange:CMTimeRangeMake(kCMTimeZero, CMTimeMake(1.5, 1.0))];
+    
     AVAssetExportSession *export = [[AVAssetExportSession alloc] initWithAsset:composition presetName:AVAssetExportPresetAppleM4A];
 
     NSURL *url = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@%@%@", NSTemporaryDirectory(), self.title, @".m4a"]];
     
+    DebugLog(@"Saving NSData audio file to temporary directory: %@", url);
+    
     [export setOutputURL:url];
-    [export setOutputFileType:AVFileTypeAppleM4A];     
+    [export setOutputFileType:AVFileTypeAppleM4A];
+    
     
     __block BOOL workedOrNo = NO;
     

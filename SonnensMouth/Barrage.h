@@ -34,6 +34,7 @@
 -(NSString *)__formatDate:(NSDate *)date;
 -(NSString *)durationAsString;
 -(NSArray *)soundsAsArray;
+-(NSArray *)soundsAsArrayReversed;
 -(NSData *)toData;
 
 @end

@@ -148,13 +148,14 @@ static SonnensMouth* _sonnensMouth = nil;
         
         for (int i=0; i < soundsCount; i++) {
             
-            if(cancelPlaySound)
+            if(cancelPlaySound) {
                 break;
+            }
             
             PlayedSound *curr = [sounds objectAtIndex:i];
             NSString *soundName = curr.soundName;
             
-            //NSLog(@"SonnensMouthViewController.m:175   i:%d    Date: %@.  Time: %@.   Sound: %@", i, [dateFormat stringFromDate:when], [timeFormat stringFromDate:when], soundName);
+//            DebugLog(@"   i:%d    sound: %@", i, soundName);
             
             NSTimeInterval sleepDuration = 0.0;
             
@@ -174,7 +175,7 @@ static SonnensMouth* _sonnensMouth = nil;
             }
             
             if(i == soundsCount-1) {
-                // on the last sound                
+                // on the last sound... for clean up to be done in audioPlayerDidFinishPlaying()
                 playingLastSoundInBarrage = YES;
             }
             
@@ -196,7 +197,6 @@ static SonnensMouth* _sonnensMouth = nil;
 //    DebugLog(@"successufully: %u", flag);
     
     if(playingLastSoundInBarrage) {
-        DebugLog(@"Finished playing the last sound!");
 
         playingLastSoundInBarrage = NO;
         

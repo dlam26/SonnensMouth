@@ -96,7 +96,6 @@
 
 -(IBAction)saveDetails:(id)sender
 {
-    DebugLog();    
     [barrage setTitle:titleTextField.text];
     [barrage setUpdated:[NSDate date]];
     updatedDateLabel.text = [barrage updatedAsString];

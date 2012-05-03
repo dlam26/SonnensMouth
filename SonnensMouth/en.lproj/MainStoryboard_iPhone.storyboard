@@ -945,8 +945,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" minimumFontSize="10" id="Fr0-Mj-fx5">
-                                <rect key="frame" x="52" y="47" width="31" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Fr0-Mj-fx5">
+                                <rect key="frame" x="52" y="49" width="37" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -967,8 +967,8 @@
                                     <action selector="deleteRecording:" destination="eKF-kK-Ydv" eventType="touchUpInside" id="Fnv-rm-WeC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Created" lineBreakMode="tailTruncation" minimumFontSize="10" id="l5H-YL-jQE" userLabel="Label - Created">
-                                <rect key="frame" x="23" y="83" width="61" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Created:" lineBreakMode="tailTruncation" minimumFontSize="10" id="l5H-YL-jQE" userLabel="Label - Created">
+                                <rect key="frame" x="23" y="83" width="66" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -981,8 +981,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Updated" lineBreakMode="tailTruncation" minimumFontSize="10" id="cyZ-HJ-aC8" userLabel="Label - Updated">
-                                <rect key="frame" x="19" y="112" width="67" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Updated:" lineBreakMode="tailTruncation" minimumFontSize="10" id="cyZ-HJ-aC8" userLabel="Label - Updated">
+                                <rect key="frame" x="19" y="112" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -995,14 +995,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Duration" lineBreakMode="tailTruncation" minimumFontSize="10" id="FTU-E9-rZ6" userLabel="Label - Length">
-                                <rect key="frame" x="21" y="141" width="65" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Duration:" lineBreakMode="tailTruncation" minimumFontSize="10" id="FTU-E9-rZ6" userLabel="Label - Length">
+                                <rect key="frame" x="21" y="141" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sounds" lineBreakMode="tailTruncation" minimumFontSize="10" id="WJk-5o-GhB" userLabel="Label - SoundCount">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sounds:" lineBreakMode="tailTruncation" minimumFontSize="10" id="WJk-5o-GhB" userLabel="Label - SoundCount">
                                 <rect key="frame" x="158" y="141" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
