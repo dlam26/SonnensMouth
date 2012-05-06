@@ -38,8 +38,6 @@
     background.image = smilingChael;
 //    background.image = bustedUpChael;
     
-//    [background.layer setOpacity:0.2];
-    
     [UIView animateWithDuration:2.0 animations:^{        
         background.layer.opacity = 0.2;
     }];
@@ -236,15 +234,16 @@
     UIButton *soundButton = (UIButton *)sender;
     originalButtonFrame = soundButton.frame;
     originalButtonTitleLabelFont = soundButton.titleLabel.font;
-        
+    originalButtonColor = soundButton.titleLabel.textColor;
+
+    // make it big
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
-
-    // FIXME this dosent work to maintain the same font color for some reason =
-    soundButton.titleLabel.textColor = soundButton.titleLabel.textColor;
+    soundButton.titleLabel.textColor = originalButtonColor;   // FIXME ...dosen't work
+    [soundButton sizeToFit];
     
-    CGFloat newRightBound = [self calculateRightBound:soundButton];
-
     // Calculate x-axis adjustment so that it dosen't get cut off to the right or left
+/*
+    CGFloat newRightBound = [self calculateRightBound:soundButton];
     CGFloat adjustment = 0.0;
     CGFloat additionalRightAdjustment = 60.0;
     
@@ -254,13 +253,15 @@
     
     CGRect widerFrame = CGRectMake(originalButtonFrame.origin.x-adjustment, originalButtonFrame.origin.y, originalButtonFrame.size.width*2, originalButtonFrame.size.height);
     
-    DebugLog(@"original frame: %@    new frame: %@", 
+    DebugLog(@"original frame: %@    new frame: %@  newRightBound: %f",
              NSStringFromCGRect(originalButtonFrame), 
-             NSStringFromCGRect(widerFrame));
+             NSStringFromCGRect(widerFrame),
+             newRightBound);
     
     soundButton.frame = widerFrame;
-    
+*/    
     [self.view bringSubviewToFront:soundButton];
+
 }
 
 -(IBAction)makeButtonTextSmall:(id)sender

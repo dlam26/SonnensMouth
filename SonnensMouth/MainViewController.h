@@ -30,6 +30,7 @@
     
     UIFont *originalButtonTitleLabelFont;
     CGRect originalButtonFrame;
+    UIColor *originalButtonColor;
     
     ActionsViewController *actionsViewController;
 }
