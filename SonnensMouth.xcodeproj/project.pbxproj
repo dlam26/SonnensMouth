@@ -57,7 +57,6 @@
 		1A84235115442F4600582779 /* anderson-anderson.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A84235015442F4400582779 /* anderson-anderson.m4a */; };
 		1A92B826153D3EAD001BE1C7 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */; };
 		1A92B82E153E8902001BE1C7 /* SaidSoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */; };
-		1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */; };
 		1AB6CA5515476AA800D7924B /* this-guys-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */; };
 		1AB6CA5715476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */; };
 		1AB6CA5915476E1F00D7924B /* do-you-remember-when-i-said.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */; };
@@ -77,6 +76,9 @@
 		1AE8AD331555F3F900E88EED /* cherl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD301555F3F900E88EED /* cherl.ttf */; };
 		1AE8AD341555F3F900E88EED /* denmark.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD311555F3F900E88EED /* denmark.ttf */; };
 		1AE8AD351555F3F900E88EED /* platsch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD321555F3F900E88EED /* platsch.ttf */; };
+		1AE8AD371556257900E88EED /* did-you-know.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD361556257900E88EED /* did-you-know.m4a */; };
+		1AE8AD39155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD38155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a */; };
+		1AE8AD3B155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD3A155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */; };
 		64A5C6F6154D0BA60006D2A0 /* vitor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F4154D0BA60006D2A0 /* vitor.m4a */; };
 		64A5C6F7154D0BA60006D2A0 /* wanderlei2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */; };
 		64A5C6FC154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */; };
@@ -176,7 +178,6 @@
 		1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
 		1A92B82C153E8901001BE1C7 /* SaidSoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaidSoViewController.h; sourceTree = "<group>"; };
 		1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaidSoViewController.m; sourceTree = "<group>"; };
-		1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chael-p-sonnen-and-the-p-stands-for-perfection.m4a"; sourceTree = "<group>"; };
 		1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "this-guys-delusional.m4a"; sourceTree = "<group>"; };
 		1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ah-eh-oh-uh-ah-uhm.m4a"; sourceTree = "<group>"; };
 		1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do-you-remember-when-i-said.m4a"; sourceTree = "<group>"; };
@@ -204,6 +205,9 @@
 		1AE8AD301555F3F900E88EED /* cherl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cherl.ttf; sourceTree = "<group>"; };
 		1AE8AD311555F3F900E88EED /* denmark.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = denmark.ttf; sourceTree = "<group>"; };
 		1AE8AD321555F3F900E88EED /* platsch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = platsch.ttf; sourceTree = "<group>"; };
+		1AE8AD361556257900E88EED /* did-you-know.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "did-you-know.m4a"; sourceTree = "<group>"; };
+		1AE8AD38155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-dont-do-trashtalking-at-least-in-my-estimation.m4a"; sourceTree = "<group>"; };
+		1AE8AD3A155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chael-p-sonnen-and-the-p-stands-for-perfection.m4a"; sourceTree = "<group>"; };
 		64A5C6F4154D0BA60006D2A0 /* vitor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitor.m4a; sourceTree = "<group>"; };
 		64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei2.m4a; sourceTree = "<group>"; };
 		64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rar-rawr-nyah-well.m4a"; sourceTree = "<group>"; };
@@ -390,7 +394,8 @@
 				1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */,
 				1A84235015442F4400582779 /* anderson-anderson.m4a */,
 				1A04C8FD15493AB600873C7A /* anderson-silva.m4a */,
-				1A92B835153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
+				1AE8AD3A155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */,
+				1AE8AD361556257900E88EED /* did-you-know.m4a */,
 				1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */,
 				64A5C705154D16BC0006D2A0 /* dont-use-a-line-that-you-got-out-of-your-mothers-medicine-cabinet.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
@@ -400,6 +405,7 @@
 				1A84234A15441FB400582779 /* hes-not-qualified-to-make-a-sandwhich.m4a */,
 				1A842344154418E200582779 /* i-am-a-gangster-from-america.m4a */,
 				64A5C701154D13350006D2A0 /* I-AM-SHOCKED.m4a */,
+				1AE8AD38155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a */,
 				1A8423361543BEF400582779 /* i-heard-that-dur-dur-dur.m4a */,
 				1A807F50154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a */,
 				64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */,
@@ -521,7 +527,6 @@
 				1A83A64E152BBF1600532D8E /* MainStoryboard_iPad.storyboard in Resources */,
 				1A83A679152BD4BF00532D8E /* sonnen_smiling_messedup.jpg in Resources */,
 				1A83A67B152BDA2E00532D8E /* sonnen_smiling.jpg in Resources */,
-				1A92B836153EE003001BE1C7 /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
 				1A83A694152C6A3800532D8E /* erect-statue-and-bow.m4a in Resources */,
 				1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */,
 				1A8423331543BA4C00582779 /* grease-saint-pierre.m4a in Resources */,
@@ -560,6 +565,9 @@
 				1AE8AD331555F3F900E88EED /* cherl.ttf in Resources */,
 				1AE8AD341555F3F900E88EED /* denmark.ttf in Resources */,
 				1AE8AD351555F3F900E88EED /* platsch.ttf in Resources */,
+				1AE8AD371556257900E88EED /* did-you-know.m4a in Resources */,
+				1AE8AD39155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a in Resources */,
+				1AE8AD3B155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

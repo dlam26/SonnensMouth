@@ -28,6 +28,7 @@
     NSDate *recordStart;
     NSMutableArray *playedSounds;
     
+    UIFont *originalButtonTitleLabelFont;
     CGRect originalButtonFrame;
     
     ActionsViewController *actionsViewController;

@@ -38,7 +38,12 @@
     background.image = smilingChael;
 //    background.image = bustedUpChael;
     
-    [background.layer setOpacity:0.2];
+//    [background.layer setOpacity:0.2];
+    
+    [UIView animateWithDuration:2.0 animations:^{        
+        background.layer.opacity = 0.2;
+    }];
+        
     recordingLabel.textColor = [UIColor grayColor];
     
     /*
@@ -92,7 +97,19 @@
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
+    /*
+    [UIView animateWithDuration:1.0 animations:^{
+        background.layer.opacity = 1.0;
+    }];
+     */
+    
     background.image = background.image == smilingChael ? bustedUpChael : smilingChael;
+    
+    /*
+    [UIView animateWithDuration:1.0 animations:^{
+        background.layer.opacity = 0.2;
+    }];
+     */
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -218,6 +235,7 @@
 {
     UIButton *soundButton = (UIButton *)sender;
     originalButtonFrame = soundButton.frame;
+    originalButtonTitleLabelFont = soundButton.titleLabel.font;
         
     soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:20.0];
 
@@ -236,6 +254,10 @@
     
     CGRect widerFrame = CGRectMake(originalButtonFrame.origin.x-adjustment, originalButtonFrame.origin.y, originalButtonFrame.size.width*2, originalButtonFrame.size.height);
     
+    DebugLog(@"original frame: %@    new frame: %@", 
+             NSStringFromCGRect(originalButtonFrame), 
+             NSStringFromCGRect(widerFrame));
+    
     soundButton.frame = widerFrame;
     
     [self.view bringSubviewToFront:soundButton];
@@ -244,14 +266,7 @@
 -(IBAction)makeButtonTextSmall:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
-  
-    // if using the default font
-//    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
-
-    // using Platsch   ...see PlaySoundUIButton.m:24
-    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:18];
-    
-//    [soundButton sizeToFit];
+    soundButton.titleLabel.font = originalButtonTitleLabelFont;
     soundButton.frame = originalButtonFrame;
 }
 
