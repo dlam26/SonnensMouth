@@ -244,7 +244,13 @@
 -(IBAction)makeButtonTextSmall:(id)sender
 {
     UIButton *soundButton = (UIButton *)sender;
-    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
+  
+    // if using the default font
+//    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:14.0];
+
+    // using Platsch   ...see PlaySoundUIButton.m:24
+    soundButton.titleLabel.font = [soundButton.titleLabel.font fontWithSize:18];
+    
 //    [soundButton sizeToFit];
     soundButton.frame = originalButtonFrame;
 }

@@ -12,4 +12,17 @@
 
 @synthesize soundName;
 
+-(void)awakeFromNib {
+    [super awakeFromNib];   
+    
+    // debug by typing [UIFont familyNames in GDB to see what to put here: 
+    
+//    self.titleLabel.font = [UIFont fontWithName:@"Cheri Liney" size:14];  // cherl.ttf
+    
+//    self.titleLabel.font = [UIFont fontWithName:@"Denmark" size:14];  // denmark.ttf
+    
+    self.titleLabel.font = [UIFont fontWithName:@"PLATSCH" size:18];  // platsch.ttf
+}
+
+
 @end

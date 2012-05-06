@@ -64,5 +64,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>denmark.ttf</string>
+		<string>cherl.ttf</string>
+		<string>platsch.ttf</string>
+	</array>
 </dict>
 </plist>

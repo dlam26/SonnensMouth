@@ -73,6 +73,10 @@
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
 		1ADC4F2E154FA41D00681C00 /* appicon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */; };
 		1ADC4F31154FA42100681C00 /* appicon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F30154FA42100681C00 /* appicon-114x114.png */; };
+		1AE8AD291555E94F00E88EED /* NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD281555E94F00E88EED /* NOTES */; };
+		1AE8AD331555F3F900E88EED /* cherl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD301555F3F900E88EED /* cherl.ttf */; };
+		1AE8AD341555F3F900E88EED /* denmark.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD311555F3F900E88EED /* denmark.ttf */; };
+		1AE8AD351555F3F900E88EED /* platsch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD321555F3F900E88EED /* platsch.ttf */; };
 		64A5C6F6154D0BA60006D2A0 /* vitor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F4154D0BA60006D2A0 /* vitor.m4a */; };
 		64A5C6F7154D0BA60006D2A0 /* wanderlei2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */; };
 		64A5C6FC154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */; };
@@ -196,6 +200,10 @@
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-57x57.png"; path = "../appicon-57x57.png"; sourceTree = "<group>"; };
 		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-114x114.png"; path = "../appicon-114x114.png"; sourceTree = "<group>"; };
+		1AE8AD281555E94F00E88EED /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
+		1AE8AD301555F3F900E88EED /* cherl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cherl.ttf; sourceTree = "<group>"; };
+		1AE8AD311555F3F900E88EED /* denmark.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = denmark.ttf; sourceTree = "<group>"; };
+		1AE8AD321555F3F900E88EED /* platsch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = platsch.ttf; sourceTree = "<group>"; };
 		64A5C6F4154D0BA60006D2A0 /* vitor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitor.m4a; sourceTree = "<group>"; };
 		64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei2.m4a; sourceTree = "<group>"; };
 		64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rar-rawr-nyah-well.m4a"; sourceTree = "<group>"; };
@@ -325,12 +333,14 @@
 		1A83A63E152BBF1600532D8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AE8AD2F1555F3E400E88EED /* fonts */,
 				1A83A677152BD4A100532D8E /* sounds */,
 				1A83A676152BD49500532D8E /* images */,
 				1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */,
 				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
 				1A83A643152BBF1600532D8E /* main.m */,
 				1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */,
+				1AE8AD281555E94F00E88EED /* NOTES */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -413,6 +423,16 @@
 				1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */,
 			);
 			name = sounds;
+			sourceTree = "<group>";
+		};
+		1AE8AD2F1555F3E400E88EED /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1AE8AD301555F3F900E88EED /* cherl.ttf */,
+				1AE8AD311555F3F900E88EED /* denmark.ttf */,
+				1AE8AD321555F3F900E88EED /* platsch.ttf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +556,10 @@
 				1A807F51154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a in Resources */,
 				1ADC4F2E154FA41D00681C00 /* appicon-57x57.png in Resources */,
 				1ADC4F31154FA42100681C00 /* appicon-114x114.png in Resources */,
+				1AE8AD291555E94F00E88EED /* NOTES in Resources */,
+				1AE8AD331555F3F900E88EED /* cherl.ttf in Resources */,
+				1AE8AD341555F3F900E88EED /* denmark.ttf in Resources */,
+				1AE8AD351555F3F900E88EED /* platsch.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
