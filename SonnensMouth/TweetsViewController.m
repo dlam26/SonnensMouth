@@ -256,7 +256,7 @@
     [tableView setNeedsDisplay];
 }
 
-// TODO: show UIAlertView if it fails
+
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];

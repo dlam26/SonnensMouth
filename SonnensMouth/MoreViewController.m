@@ -61,7 +61,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 4;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,24 +72,24 @@
     // Configure the cell...
     
     switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"Cell 0";
+        case VOICE_OF_REASON_ROW:
+            cell.textLabel.text = @"Buy Chael's book";
             break;
             
-        case 1:
-            cell.textLabel.text = @"Cell 1";
+        case FIGHT_RECORD_ROW:
+            cell.textLabel.text = @"Fight Record";
             break;
-            
+/*            
         case DIRECTORY_LIST_ROW:
             cell.textLabel.text = @"Directory List";
             break;
-            
+*/            
         case ABOUT_LIST_ROW:
             cell.textLabel.text = @"About";
             break;
             
         default:
-            cell.textLabel.text = @"Cell title set in default!";
+            cell.textLabel.text = @"";
             break;
     }
     
@@ -148,16 +148,27 @@
      */
         
     switch (indexPath.row) {    
+            
+        case VOICE_OF_REASON_ROW:            
+            [self showBookWebView];            
+            break;
+            
+        case FIGHT_RECORD_ROW:
+            [self showFightRecordWebView];
+            break;
+
+            
+            /*
         case DIRECTORY_LIST_ROW:
             [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:IDENTIFIER_DIRECTORY_LIST] animated:YES];            
             self.navigationItem.title = @"Directory List";
             break;
-        case ABOUT_LIST_ROW:
-            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"About"] animated:YES];
-            self.navigationItem.title = @"About";
+             */
+        case ABOUT_LIST_ROW:            
+            [self showAboutView];
             break;
         default:
-            DebugLog();
+            DebugLog(@"Doh, entered default of switch()");
             break;
     }
 }
@@ -169,5 +180,67 @@
     ActionsViewController *avc = (ActionsViewController *)[self tabBarController];    
     [[avc actionsDelegate] actionsViewControllerDidFinish:avc];
 }
+
+-(void)showAboutView
+{
+    UIViewController *aboutController = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];    
+    aboutController.title = @"About";
+    [self.navigationController pushViewController:aboutController animated:YES];
+}
+
+-(void)showBookWebView
+{
+    [self showWebViewAt:@"http://www.amazon.com/The-Voice-Reason-V-I-P-Enlightenment/dp/1936608545" withTitle:@"Chael's Book"];
+}
+
+-(void)showFightRecordWebView
+{
+    [self showWebViewAt:@"http://www.sherdog.com/fighter/Chael-Sonnen-4112" withTitle:@"Fight Record"];
+}
+
+-(void)showWebViewAt:(NSString *)address withTitle:(NSString *)title
+{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:address]];
+    
+    webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    webView.delegate = self;
+    webView.scalesPageToFit = YES;
+    [webView loadRequest:request];
+    
+    webViewController = [[UIViewController alloc] init];
+    webViewController.view = webView;
+    webViewController.title = title;
+    
+    webViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Open in Safari" style:UIBarButtonItemStyleBordered target:self action:@selector(openInSafari)];    
+
+    
+    [self.navigationController pushViewController:webViewController animated:YES]; 
+}
+
+-(void)openInSafari
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[webView.request URL].absoluteString]];
+}
+
+#pragma mark - <UIWebViewDelegate>
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
+    UIAlertView *av = [SonnensMouth newNoInternetConnectionAlertView];    
+    [av show];
+}
+
 
 @end
