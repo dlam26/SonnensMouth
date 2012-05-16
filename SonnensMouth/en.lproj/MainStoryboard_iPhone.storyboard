@@ -1131,6 +1131,10 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aHm-kO-CBL" id="bAp-88-cQG"/>
+                            <outlet property="delegate" destination="aHm-kO-CBL" id="ASJ-Lh-hYP"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="More" id="d4n-j8-sIR"/>
                 </tableViewController>
@@ -1269,23 +1273,57 @@
         <scene sceneID="Qhv-5Y-G3H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOI-cd-ucc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="About" id="Iys-no-2Jc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="About" id="Iys-no-2Jc" userLabel="About view controller" customClass="AboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGf-aF-oqR">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About/settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="dJ2-Cv-WsR">
-                                <rect key="frame" x="129" y="112" width="112" height="21"/>
+                            <navigationBar contentMode="scaleToFill" id="FD4-Iq-MvZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.30035144090652466" green="0.33152174949645996" blue="0.31946995854377747" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="swg-nk-Gp8"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="gT8-Aa-qIV">
+                                <rect key="frame" x="15" y="3" width="214" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I8g-Cq-u1E">
+                                <rect key="frame" x="50" y="309" width="221" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Send feedback">
+                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendFeedback:" destination="Iys-no-2Jc" eventType="touchUpInside" id="c45-5j-xsQ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A silly application for fans of the charasmatic and oft outspoken Chael Sonnen." id="0tu-to-c7D">
+                                <rect key="frame" x="20" y="62" width="280" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.3333333432674408" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.3333333432674408" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="Hs0-XP-PuT"/>
                     <navigationItem key="navigationItem" id="GVn-q2-OkB"/>
+                    <connections>
+                        <outlet property="appVersion" destination="gT8-Aa-qIV" id="q9I-bA-e94"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1682" y="850"/>
@@ -1296,89 +1334,6 @@
         <image name="man.png" width="26" height="26"/>
         <image name="twitter.png" width="21" height="26"/>
     </resources>
-    <classes>
-        <class className="ActionsViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActionsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="actionsDelegate"/>
-            </relationships>
-        </class>
-        <class className="DirectoryListViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DirectoryListViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="dataLength:"/>
-                <relationship kind="action" name="playSonnenSound:"/>
-                <relationship kind="action" name="putInDocumentDirectory:"/>
-                <relationship kind="action" name="putInPath:"/>
-                <relationship kind="action" name="putInTempDirectory:"/>
-                <relationship kind="action" name="viewDirectory:"/>
-                <relationship kind="outlet" name="directoryInput" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="viewButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="EditRecordedInsultViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditRecordedInsultViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="deleteRecording:"/>
-                <relationship kind="action" name="email:"/>
-                <relationship kind="action" name="play:"/>
-                <relationship kind="action" name="saveDetails:"/>
-                <relationship kind="outlet" name="createdDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="lengthLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="soundsCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="updatedDateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="makeButtonTextBig:"/>
-                <relationship kind="action" name="makeButtonTextSmall:"/>
-                <relationship kind="action" name="playSound:"/>
-                <relationship kind="action" name="toggleRecording:"/>
-                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="gotoTabbarButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="recordingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="recordingSwitch" candidateClass="UISwitch"/>
-            </relationships>
-        </class>
-        <class className="MoreViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-            </relationships>
-        </class>
-        <class className="PlaySoundUIButton" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySoundUIButton.h"/>
-        </class>
-        <class className="RecordedInsultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecordedInsultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="stopPlayingRecording:"/>
-                <relationship kind="outlet" name="recordings" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="stopPlayingRecordingButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="SaidSoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SaidSoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="nextQuote:"/>
-                <relationship kind="outlet" name="sonnenSaidSoWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="TweetsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="openInSafari:"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

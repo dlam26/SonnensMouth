@@ -183,7 +183,7 @@
 
 -(void)showAboutView
 {
-    UIViewController *aboutController = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];    
+    AboutViewController *aboutController = [self.storyboard instantiateViewControllerWithIdentifier:@"About"];    
     aboutController.title = @"About";
     [self.navigationController pushViewController:aboutController animated:YES];
 }

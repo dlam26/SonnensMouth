@@ -10,6 +10,7 @@
 #import "SonnensMouth.h"
 #import "DirectoryListViewController.h"
 #import "ActionsViewController.h"
+#import "AboutViewController.h"
 
 #define VOICE_OF_REASON_ROW 0 
 #define FIGHT_RECORD_ROW 1
