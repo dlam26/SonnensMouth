@@ -108,7 +108,7 @@
     }
     
     if([tweets count] == 0) {
-        cell.textLabel.text = @"Loading Chaels tweets...";  
+        cell.textLabel.text = @"Loading tweets...";  
     }
     else {
         NSDictionary *tweet = [tweets objectAtIndex:indexPath.row];
@@ -117,13 +117,28 @@
         NSString *text      = [tweet objectForKey:@"text"];        
         NSString *createdAtString = [self dateDiff:createdAt];
         
-        cell.textLabel.text      = [NSString stringWithFormat:@"%@ - %@", createdAtString, text];
+        cell.textLabel.text      = [NSString stringWithFormat:@"%@\n%@", createdAtString, text];
         cell.textLabel.textColor = [UIColor darkGrayColor];
     }
 
 //    cell.textLabel.text = [NSString stringWithFormat:@"Cell #%d", indexPath.row];
     
     return cell;
+}
+
+/*
+    TODO  5/15/12   Calculate cell height so that it fits all of the tweet text!
+ 
+ */
+-(CGFloat)tableView:(UITableView *)tv heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [self tableView:tv cellForRowAtIndexPath:indexPath];
+    
+    NSString *text = cell.textLabel.text; //[[menuList objectAtIndex:indexPath.row] objectForKey:@"status"];
+    CGFloat height = [text sizeWithFont:cell.textLabel.font constrainedToSize:CGSizeMake(240,70) lineBreakMode:UILineBreakModeWordWrap].height;
+    //return MAX(height, MinHeight);
+    
+    return height+30;     
 }
 
 /*
