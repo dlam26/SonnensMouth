@@ -18,6 +18,7 @@
 		1A04C90415493AE400873C7A /* im-the-baddest-man-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C90215493AE300873C7A /* im-the-baddest-man-god-ever-made.m4a */; };
 		1A04C90615493B1700873C7A /* tried-to-feed-a-bus-a-carrot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A04C90515493B1700873C7A /* tried-to-feed-a-bus-a-carrot.m4a */; };
 		1A4B9A91156399D100E826F1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B9A90156399D100E826F1 /* AboutViewController.m */; };
+		1A4B9A941563AF5500E826F1 /* im-the-baddest-sombitch-god-ever-made.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A4B9A931563AF5500E826F1 /* im-the-baddest-sombitch-god-ever-made.m4a */; };
 		1A807F51154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1A807F50154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a */; };
 		1A83A636152BBF1600532D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A635152BBF1600532D8E /* UIKit.framework */; };
 		1A83A638152BBF1600532D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83A637152BBF1600532D8E /* Foundation.framework */; };
@@ -133,6 +134,7 @@
 		1A04C90515493B1700873C7A /* tried-to-feed-a-bus-a-carrot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tried-to-feed-a-bus-a-carrot.m4a"; sourceTree = "<group>"; };
 		1A4B9A8F156399D100E826F1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1A4B9A90156399D100E826F1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		1A4B9A931563AF5500E826F1 /* im-the-baddest-sombitch-god-ever-made.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "im-the-baddest-sombitch-god-ever-made.m4a"; sourceTree = "<group>"; };
 		1A807F50154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a"; sourceTree = "<group>"; };
 		1A83A631152BBF1600532D8E /* SonnensMouth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnensMouth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A635152BBF1600532D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -418,6 +420,7 @@
 				64A5C712154D1C620006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a */,
 				1A04C90115493AE300873C7A /* im-like-facing-four-men.m4a */,
 				1A04C90215493AE300873C7A /* im-the-baddest-man-god-ever-made.m4a */,
+				1A4B9A931563AF5500E826F1 /* im-the-baddest-sombitch-god-ever-made.m4a */,
 				1A84234615441A3200582779 /* lyoto-machida.m4a */,
 				1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */,
 				64A5C703154D13EB0006D2A0 /* my-rib-and-my-back-and-lalalala.m4a */,
@@ -577,6 +580,7 @@
 				1AE8AD39155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a in Resources */,
 				1AE8AD3B155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a in Resources */,
 				1AE8AD3F1556643500E88EED /* thats-how-you-threaten-somebody-dummy.m4a in Resources */,
+				1A4B9A941563AF5500E826F1 /* im-the-baddest-sombitch-god-ever-made.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
