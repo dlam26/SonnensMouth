@@ -196,14 +196,13 @@
 -(void)showFightRecordWebView
 {
 //    NSString *sherdogURL = @"http://m.sherdog.com/fighter/Chael-Sonnen-4112";
-    NSString *sherdogRecordURL = @"http://m.sherdog.com/fighter/record/Chael-Sonnen-4112";
-    
+    NSString *sherdogRecordURL = @"http://m.sherdog.com/fighter/record/Chael-Sonnen-4112";    
     [self showWebViewAt:sherdogRecordURL withTitle:@"Fight Record"];
 }
 
 -(void)showWebViewAt:(NSString *)address withTitle:(NSString *)title
-{
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:address]];
+{    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:address] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10.0];
     
     webView = [[UIWebView alloc] initWithFrame:self.view.frame];
     webView.delegate = self;

@@ -51,7 +51,7 @@
     webViewLoads = 0;
     
     NSURL *url = [NSURL URLWithString:@"http://chaelsonnensaidso.com/"];
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:5.0];
     [sonnenSaidSoWebView loadRequest:req];
     
     [super viewDidLoad];
