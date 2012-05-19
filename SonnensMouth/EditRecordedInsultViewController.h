@@ -22,6 +22,8 @@
     IBOutlet UILabel *lengthLabel;
     IBOutlet UILabel *soundsCountLabel;
     IBOutlet UIButton *deleteButton;
+    IBOutlet UIButton *emailButton;
+    IBOutlet UIButton *playButton;
     
     UIBarButtonItem *stopPlayingRecordingButton;
     

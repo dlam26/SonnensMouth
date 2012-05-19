@@ -61,8 +61,7 @@
     lengthLabel.text      = [barrage durationAsString];
     soundsCountLabel.text = [NSString stringWithFormat:@"%u", [[barrage sounds] count]];
     
-    // Make a hidden red 'Stop' button in the nav bar 
-    
+    // Make a hidden red 'Stop' button in the nav bar     
     stopPlayingRecordingButton = [[UIBarButtonItem alloc] initWithTitle:@"Stop" style:UIBarButtonItemStyleBordered target:self action:@selector(stopPlayingRecording:)];
     stopPlayingRecordingButton.tintColor = [UIColor redColor];
     
@@ -70,6 +69,7 @@
     UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideInputsAndSave)];
     tapGr.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapGr];
+    
 }
 
 

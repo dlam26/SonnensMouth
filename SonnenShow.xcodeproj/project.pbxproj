@@ -149,15 +149,15 @@
 		1A4B9AA11564FB3400E826F1 /* wow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wow.m4a; sourceTree = "<group>"; };
 		1A4B9AA3156502FD00E826F1 /* hes-a-nuiscence-hes-annoying-and-dosent-have-any-fans.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hes-a-nuiscence-hes-annoying-and-dosent-have-any-fans.m4a"; sourceTree = "<group>"; };
 		1A807F50154E356600522C48 /* if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "if-you-want-a-piece-of-me-just-say-my-name-destinys-child.m4a"; sourceTree = "<group>"; };
-		1A83A631152BBF1600532D8E /* SonnensMouth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnensMouth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A83A631152BBF1600532D8E /* SonnenShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnenShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A635152BBF1600532D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A83A637152BBF1600532D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A83A639152BBF1600532D8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1A83A63B152BBF1600532D8E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnensMouth-Info.plist"; sourceTree = "<group>"; };
+		1A83A63F152BBF1600532D8E /* SonnenShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnenShow-Info.plist"; sourceTree = "<group>"; };
 		1A83A641152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A83A643152BBF1600532D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonnensMouth-Prefix.pch"; sourceTree = "<group>"; };
+		1A83A645152BBF1600532D8E /* SonnenShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SonnenShow-Prefix.pch"; sourceTree = "<group>"; };
 		1A83A646152BBF1600532D8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A83A647152BBF1600532D8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A83A64A152BBF1600532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		1A83A650152BBF1700532D8E /* SonnensMouth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SonnensMouth.xcdatamodel; sourceTree = "<group>"; };
 		1A83A652152BBF1700532D8E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1A83A653152BBF1700532D8E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnensMouthTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A83A65D152BBF1700532D8E /* SonnenShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnenShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A83A65E152BBF1700532D8E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1A83A667152BBF1700532D8E /* SonnensMouthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SonnensMouthTests-Info.plist"; sourceTree = "<group>"; };
 		1A83A669152BBF1700532D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -290,8 +290,8 @@
 		1A83A632152BBF1600532D8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A83A631152BBF1600532D8E /* SonnensMouth.app */,
-				1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */,
+				1A83A631152BBF1600532D8E /* SonnenShow.app */,
+				1A83A65D152BBF1700532D8E /* SonnenShowTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,10 +362,10 @@
 				1AE8AD2F1555F3E400E88EED /* fonts */,
 				1A83A677152BD4A100532D8E /* sounds */,
 				1A83A676152BD49500532D8E /* images */,
-				1A83A63F152BBF1600532D8E /* SonnensMouth-Info.plist */,
+				1A83A63F152BBF1600532D8E /* SonnenShow-Info.plist */,
 				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
 				1A83A643152BBF1600532D8E /* main.m */,
-				1A83A645152BBF1600532D8E /* SonnensMouth-Prefix.pch */,
+				1A83A645152BBF1600532D8E /* SonnenShow-Prefix.pch */,
 				1AE8AD281555E94F00E88EED /* NOTES */,
 			);
 			name = "Supporting Files";
@@ -475,9 +475,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A83A630152BBF1600532D8E /* SonnensMouth */ = {
+		1A83A630152BBF1600532D8E /* SonnenShow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouth" */;
+			buildConfigurationList = 1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnenShow" */;
 			buildPhases = (
 				1A83A62D152BBF1600532D8E /* Sources */,
 				1A83A62E152BBF1600532D8E /* Frameworks */,
@@ -487,14 +487,14 @@
 			);
 			dependencies = (
 			);
-			name = SonnensMouth;
+			name = SonnenShow;
 			productName = SonnensMouth;
-			productReference = 1A83A631152BBF1600532D8E /* SonnensMouth.app */;
+			productReference = 1A83A631152BBF1600532D8E /* SonnenShow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A83A65C152BBF1700532D8E /* SonnensMouthTests */ = {
+		1A83A65C152BBF1700532D8E /* SonnenShowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouthTests" */;
+			buildConfigurationList = 1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnenShowTests" */;
 			buildPhases = (
 				1A83A658152BBF1700532D8E /* Sources */,
 				1A83A659152BBF1700532D8E /* Frameworks */,
@@ -506,9 +506,9 @@
 			dependencies = (
 				1A83A664152BBF1700532D8E /* PBXTargetDependency */,
 			);
-			name = SonnensMouthTests;
+			name = SonnenShowTests;
 			productName = SonnensMouthTests;
-			productReference = 1A83A65D152BBF1700532D8E /* SonnensMouthTests.octest */;
+			productReference = 1A83A65D152BBF1700532D8E /* SonnenShowTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -520,7 +520,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = dlam.me;
 			};
-			buildConfigurationList = 1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnensMouth" */;
+			buildConfigurationList = 1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnenShow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -532,8 +532,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A83A630152BBF1600532D8E /* SonnensMouth */,
-				1A83A65C152BBF1700532D8E /* SonnensMouthTests */,
+				1A83A630152BBF1600532D8E /* SonnenShow */,
+				1A83A65C152BBF1700532D8E /* SonnenShowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -685,7 +685,7 @@
 /* Begin PBXTargetDependency section */
 		1A83A664152BBF1700532D8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A83A630152BBF1600532D8E /* SonnensMouth */;
+			target = 1A83A630152BBF1600532D8E /* SonnenShow */;
 			targetProxy = 1A83A663152BBF1700532D8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -747,7 +747,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "Chael Sonnen";
+				PRODUCT_NAME = "Sonnen Show";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -768,7 +768,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "Chael Sonnen";
+				PRODUCT_NAME = "Sonnen Show";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -779,10 +779,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
-				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnenShow-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouth/SonnenShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SonnenShow;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -791,10 +791,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
-				INFOPLIST_FILE = "SonnensMouth/SonnensMouth-Info.plist";
+				GCC_PREFIX_HEADER = "SonnensMouth/SonnenShow-Prefix.pch";
+				INFOPLIST_FILE = "SonnensMouth/SonnenShow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SonnenShow;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -810,7 +810,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
 				INFOPLIST_FILE = "SonnensMouthTests/SonnensMouthTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SonnenShowTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -827,7 +827,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SonnensMouth/SonnensMouth-Prefix.pch";
 				INFOPLIST_FILE = "SonnensMouthTests/SonnensMouthTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SonnenShowTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -836,7 +836,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnensMouth" */ = {
+		1A83A62B152BBF1500532D8E /* Build configuration list for PBXProject "SonnenShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A83A66E152BBF1700532D8E /* Debug */,
@@ -845,7 +845,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouth" */ = {
+		1A83A670152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnenShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A83A671152BBF1700532D8E /* Debug */,
@@ -854,7 +854,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnensMouthTests" */ = {
+		1A83A673152BBF1700532D8E /* Build configuration list for PBXNativeTarget "SonnenShowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A83A674152BBF1700532D8E /* Debug */,

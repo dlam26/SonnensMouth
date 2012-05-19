@@ -44,10 +44,13 @@
     [super viewDidLoad];
     
     id version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    id appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     
-    appVersion.text = [NSString stringWithFormat:@"SonnensMouth %@", version];
+    appVersion.text = [NSString stringWithFormat:@"%@ %@", appName, version];
     
     recordingLabel.hidden = YES;
+    recordNameButton.hidden = YES;
+    playNameButton.hidden = YES;
 }
 
 

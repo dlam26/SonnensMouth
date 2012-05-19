@@ -291,9 +291,7 @@
 #pragma mark - <UIActionSheetDelegate>
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    DebugLog(@"Clicked button #%d", buttonIndex);
-    
+{    
     if(buttonIndex == 0) {
         // save it in core data!
         
@@ -301,7 +299,7 @@
                 
         // persist all the played sounds and the barrage!
         
-        NSString *newBarrageTitle = @"New Barrage!";   // TODO- let user customize       
+        NSString *newBarrageTitle = @"untitled rant";   // TODO- let user customize       
         
         [NSManagedObject insertBarrageWithTtitle:newBarrageTitle andSounds:[NSSet setWithArray:playedSounds] inManagedObjectContext:context];
         NSError *err = nil;
