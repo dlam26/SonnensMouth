@@ -10,6 +10,15 @@
 
 @implementation AboutViewController
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        recorder = [[AVAudioRecorder alloc] initWithURL:[SonnensMouth getRecordedNameURL] settings:nil error:nil];        
+        [recorder setDelegate:self];
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -68,6 +77,23 @@
     [mailCompose dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark - <AVAudioRecorderDelegate>
+
+- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
+{
+    DebugLog();
+}
+
+- (void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError *)error
+{
+    DebugLog();
+}
+
+- (void)audioRecorderBeginInterruption:(AVAudioRecorder *)recorder
+{
+    DebugLog();
+}
+
 #pragma mark - IBAction's
 
 -(IBAction)sendFeedback:(id)sender
@@ -84,6 +110,32 @@
     else {
         // Can't send email, so don't do anything!
     }
+}
+
+// TODO
+-(IBAction)recordName:(id)sender
+{
+//    recordNameButton.enabled = NO;
+//    playNameButton.enabled = NO;
+    
+    // e.g. record for just long enough to say your name
+    BOOL recordWasSuccessful = [recorder recordForDuration:1.75];  
+    
+    DebugLog(@"recordWasSuccessful: %d", recordWasSuccessful);
+}
+
+// TODO
+-(IBAction)playName:(id)sender
+{
+    DebugLog();
+    
+//    recordNameButton.enabled = NO;
+//    playNameButton.enabled = NO;
+    
+    NSError *err;
+    
+    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[SonnensMouth getRecordedNameURL] error:&err];    
+    [player play];
 }
 
 @end

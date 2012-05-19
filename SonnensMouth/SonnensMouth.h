@@ -72,6 +72,8 @@ typedef void (^CompleteBlock)();
 +(UIAlertView *)newNoInternetConnectionAlertView;
 +(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage;
 
++(NSURL *)getRecordedNameURL;
+
 @end
 
 #endif

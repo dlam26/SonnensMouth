@@ -216,4 +216,16 @@ static SonnensMouth* _sonnensMouth = nil;
     DebugLog();
 }
 
+// http://www.techotopia.com/index.php/Recording_Audio_on_an_iPhone_with_AVAudioRecorder_(iOS_4)
++(NSURL *)getRecordedNameURL
+{
+    NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(
+                                                   NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docsDir = [dirPaths objectAtIndex:0];
+    NSString *soundFilePath = [docsDir stringByAppendingPathComponent:@"recordedName.m4a"];   
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    
+    return soundFileURL;
+}
+
 @end

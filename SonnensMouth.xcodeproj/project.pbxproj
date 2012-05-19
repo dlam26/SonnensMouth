@@ -196,8 +196,8 @@
 		1A92B825153D3EAD001BE1C7 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
 		1A92B82C153E8901001BE1C7 /* SaidSoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaidSoViewController.h; sourceTree = "<group>"; };
 		1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaidSoViewController.m; sourceTree = "<group>"; };
-		1AAF39C21565FF4300E2AA11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1AAF39C51565FF4800E2AA11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1AAF39C21565FF4300E2AA11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		1AAF39C51565FF4800E2AA11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "this-guys-delusional.m4a"; sourceTree = "<group>"; };
 		1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ah-eh-oh-uh-ah-uhm.m4a"; sourceTree = "<group>"; };
 		1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do-you-remember-when-i-said.m4a"; sourceTree = "<group>"; };
@@ -280,8 +280,6 @@
 		1A83A626152BBF1500532D8E = {
 			isa = PBXGroup;
 			children = (
-				1AAF39C51565FF4800E2AA11 /* Default@2x.png */,
-				1AAF39C21565FF4300E2AA11 /* Default.png */,
 				1A83A63D152BBF1600532D8E /* SonnensMouth */,
 				1A83A665152BBF1700532D8E /* SonnensMouthTests */,
 				1A83A634152BBF1600532D8E /* Frameworks */,
@@ -395,6 +393,8 @@
 		1A83A676152BD49500532D8E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1AAF39C51565FF4800E2AA11 /* Default@2x.png */,
+				1AAF39C21565FF4300E2AA11 /* Default.png */,
 				1ADC4F30154FA42100681C00 /* appicon-114x114.png */,
 				1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */,
 				64A5C71E154D2AAA0006D2A0 /* fire.png */,

@@ -1404,8 +1404,38 @@
                                     <action selector="sendFeedback:" destination="Iys-no-2Jc" eventType="touchUpInside" id="c45-5j-xsQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bte-lw-Mzb">
+                                <rect key="frame" x="50" y="189" width="221" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Record Name">
+                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordName:" destination="Iys-no-2Jc" eventType="touchUpInside" id="ygz-HS-lXD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lvl-Dq-pgu">
+                                <rect key="frame" x="50" y="248" width="221" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Play Name">
+                                    <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playName:" destination="Iys-no-2Jc" eventType="touchUpInside" id="7r3-7V-yWH"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A silly application for fans of the charasmatic and oft outspoken Chael Sonnen." id="0tu-to-c7D">
-                                <rect key="frame" x="20" y="62" width="280" height="225"/>
+                                <rect key="frame" x="20" y="62" width="280" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.3333333432674408" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1419,6 +1449,8 @@
                     <navigationItem key="navigationItem" id="GVn-q2-OkB"/>
                     <connections>
                         <outlet property="appVersion" destination="gT8-Aa-qIV" id="q9I-bA-e94"/>
+                        <outlet property="playNameButton" destination="Lvl-Dq-pgu" id="Gpm-E7-Lbj"/>
+                        <outlet property="recordNameButton" destination="bte-lw-Mzb" id="4X4-ai-etA"/>
                     </connections>
                 </viewController>
             </objects>
@@ -1434,8 +1466,12 @@
         <class className="AboutViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
             <relationships>
+                <relationship kind="action" name="playName:"/>
+                <relationship kind="action" name="recordName:"/>
                 <relationship kind="action" name="sendFeedback:"/>
                 <relationship kind="outlet" name="appVersion" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playNameButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recordNameButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="ActionsViewController" superclassName="UITabBarController">

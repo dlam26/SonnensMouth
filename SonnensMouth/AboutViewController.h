@@ -8,16 +8,25 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import <AVFoundation/AVFoundation.h>
 #import "SonnensMouth.h"
 
-@interface AboutViewController : UIViewController <MFMailComposeViewControllerDelegate> {
+@interface AboutViewController : UIViewController <MFMailComposeViewControllerDelegate, AVAudioRecorderDelegate> {
     
     IBOutlet UILabel *appVersion;
     
     MFMailComposeViewController *mailCompose;
+    
+    AVAudioRecorder *recorder;
+    NSError *recorderError;
+    
+    IBOutlet UIButton *recordNameButton;
+    IBOutlet UIButton *playNameButton;
 }
 
 -(IBAction)sendFeedback:(id)sender;
 
+-(IBAction)recordName:(id)sender;
+-(IBAction)playName:(id)sender;
 
 @end
