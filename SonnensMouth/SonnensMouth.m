@@ -222,7 +222,7 @@ static SonnensMouth* _sonnensMouth = nil;
     NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(
                                                    NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsDir = [dirPaths objectAtIndex:0];
-    NSString *soundFilePath = [docsDir stringByAppendingPathComponent:@"recordedName.m4a"];   
+    NSString *soundFilePath = [docsDir stringByAppendingPathComponent:@"recordedName.alac"];   
     NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
     
     return soundFileURL;

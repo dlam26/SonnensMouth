@@ -10,14 +10,6 @@
 
 @implementation AboutViewController
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        recorder = [[AVAudioRecorder alloc] initWithURL:[SonnensMouth getRecordedNameURL] settings:nil error:nil];        
-        [recorder setDelegate:self];
-    }
-    return self;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,6 +46,8 @@
     id version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
     
     appVersion.text = [NSString stringWithFormat:@"SonnensMouth %@", version];
+    
+    recordingLabel.hidden = YES;
 }
 
 
@@ -82,11 +76,13 @@
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
 {
     DebugLog();
+    recordingLabel.hidden = YES;
 }
 
 - (void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError *)error
 {
     DebugLog();
+    recordingLabel.hidden = YES;
 }
 
 - (void)audioRecorderBeginInterruption:(AVAudioRecorder *)recorder
@@ -113,21 +109,44 @@
 }
 
 // TODO
+/*
+ 
+    http://stackoverflow.com/questions/4259078/osstatus-error-1718449215
+ */ 
 -(IBAction)recordName:(id)sender
 {
 //    recordNameButton.enabled = NO;
 //    playNameButton.enabled = NO;
     
+    recordingLabel.hidden = NO;
+    
+    NSError *recorderError;
+    NSMutableDictionary *settings = [NSMutableDictionary dictionary];
+    [settings setValue:[NSNumber numberWithInt:kAudioFormatAppleLossless] forKey:AVFormatIDKey];
+//    [settings setValue:[NSNumber numberWithInt:kAudioFormatAppleIMA4] forKey:AVFormatIDKey];
+    [settings setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
+    [settings setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];
+    [settings setValue:[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+    [settings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+    [settings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
+    
+
+    
+    recorder = [[AVAudioRecorder alloc] initWithURL:[SonnensMouth getRecordedNameURL] settings:settings error:&recorderError];
+    [recorder setDelegate:self];
+    
+    
     // e.g. record for just long enough to say your name
+    BOOL prepareWasSuccessful = [recorder prepareToRecord];
     BOOL recordWasSuccessful = [recorder recordForDuration:1.75];  
     
-    DebugLog(@"recordWasSuccessful: %d", recordWasSuccessful);
+    DebugLog(@"prepareWasSuccessful: %d   recordWasSuccessful: %d   recorderError: %@", prepareWasSuccessful, recordWasSuccessful, [recorderError description]);
 }
 
 // TODO
 -(IBAction)playName:(id)sender
 {
-    DebugLog();
+
     
 //    recordNameButton.enabled = NO;
 //    playNameButton.enabled = NO;
@@ -136,6 +155,8 @@
     
     AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[SonnensMouth getRecordedNameURL] error:&err];    
     [player play];
+    
+    DebugLog(@"  err: %@", err);
 }
 
 @end

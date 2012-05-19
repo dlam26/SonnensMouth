@@ -18,10 +18,10 @@
     MFMailComposeViewController *mailCompose;
     
     AVAudioRecorder *recorder;
-    NSError *recorderError;
     
     IBOutlet UIButton *recordNameButton;
     IBOutlet UIButton *playNameButton;
+    IBOutlet UILabel *recordingLabel;
 }
 
 -(IBAction)sendFeedback:(id)sender;
