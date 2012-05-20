@@ -1,0 +1,6 @@
+
+1.  5/20/12   Generated sound file dosen't obey interruptions, 
+
+...so it'll always play a sound file to the end, even if it was interrupted by pressing another sound!
+
+So the sound in the preview is different than the one you email!

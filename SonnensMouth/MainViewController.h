@@ -12,6 +12,7 @@
 #import "PlayedSound.h"
 #import "NSManagedObject+Barrage.h"
 #import "NSManagedObject+PlayedSound.h"
+#import "SonnensMouth.h"
 
 @interface MainViewController : UIViewController <ActionsViewControllerDelegate, UIPopoverControllerDelegate, UIActionSheetDelegate>
 {

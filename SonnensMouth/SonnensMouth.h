@@ -18,6 +18,7 @@
 
 #define TWEETS_API_URL @"http://api.twitter.com/1/statuses/user_timeline.json?screen_name=sonnench"
 
+#define MAX_RECORDING_SOUNDS 30
 
 // identifier in Interface Builder
 #define IDENTIFIER_DIRECTORY_LIST @"Directory List"

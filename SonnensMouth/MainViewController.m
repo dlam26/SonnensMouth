@@ -278,10 +278,18 @@
     [[SonnensMouth sonnensMouth] playSound:b.soundName];
     
     if (isRecording) {  
+        
         id context = [(id)[[UIApplication sharedApplication] delegate] managedObjectContext];        
         PlayedSound *newPlayedSound = [NSManagedObject insertPlayedSoundWithName:b.soundName orWithSoundData:nil andOrder:[NSNumber numberWithInteger:[playedSounds count]] inManagedObjectContext:context];
         [playedSounds addObject:newPlayedSound];
+        
+        // 5/20/12  if we're over MAX_RECORDING_SOUNDS, stop recording
+        if([playedSounds count] > MAX_RECORDING_SOUNDS) {            
 
+            recordingSwitch.on = NO;
+            
+            [self toggleRecording:recordingSwitch];
+        }
     }
 }
 

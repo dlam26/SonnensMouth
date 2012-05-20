@@ -847,6 +847,7 @@
                         <outlet property="background" destination="hUX-y7-mUC" id="TAL-TO-zwd"/>
                         <outlet property="gotoTabbarButton" destination="adS-ho-hAG" id="4Ay-7o-xk2"/>
                         <outlet property="recordingLabel" destination="bht-R6-9S1" id="mfp-G6-e40"/>
+                        <outlet property="recordingSwitch" destination="PxM-uJ-8VO" id="EoD-eJ-zwG"/>
                     </connections>
                 </viewController>
             </objects>

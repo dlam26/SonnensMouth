@@ -124,13 +124,16 @@
     for (int i=0; i < [soundsArray count]; i++) {
         
         PlayedSound *curr = [soundsArray objectAtIndex:i];
+        PlayedSound *next;
         NSTimeInterval sleepDuration = 0.0;
-        
-        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[curr soundName] ofType:@"m4a"]];
-        
         NSTimeInterval secondTimeInterval = 0.0;
+        BOOL atLastSound = i == soundsArray.count-1;
+
+        if(!atLastSound) {
+            next = [soundsArray objectAtIndex:i+1];
+        }
         
-        // Calculate sleep duration        
+        // Calculate sleep duration
         if(i == 0) {            
             secondTimeInterval = [self.created timeIntervalSinceNow];
         }
@@ -144,17 +147,43 @@
         }
         
         sleepDuration = [curr.date timeIntervalSinceNow] - secondTimeInterval;
+        sleepDuration = fabs(sleepDuration / 2.0);  // 5/2/12 for some reason this can be negative, and the sleep seems too long
         
-        AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];        
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[curr soundName] ofType:@"m4a"]];
+        AVURLAsset *playedSoundAsset = [[AVURLAsset alloc] initWithURL:url options:nil];
 
-          // 5/2/12 for some reason this can be negative, and the sleep seems too long
-        sleepDuration = fabs(sleepDuration / 2.0); 
+        CMTime playedsoundDuration = playedSoundAsset.duration;
         
-        DebugLog(@"i: %d   sleepDuration: %f   curr.date: %fc   secondTimeInterval: %f", i, sleepDuration, [curr.date timeIntervalSinceNow], secondTimeInterval );
+        //
+        // FIXME  5/20/12   Sound interruptions aren't handled by the code
+        //                  ...below code was that start to an attempt to 
+        //                  computer when a sound was interrupted so I could
+        //                  calculate the proper duration to pass to 
+        //                  AVMutableCompositionTrack insertTimeRange:
+        //
+        /*
+        BOOL isInterrupted = NO;
+        
+        // check if the current sound was interrupted by the next
+        if(next) {
+            CMTime t = [playedSoundAsset duration];
+            NSTimeInterval dur = t.value / t.timescale;
+            NSDate *currSoundEnd = [curr.date dateByAddingTimeInterval:dur];
+
+            isInterrupted = currSoundEnd > next.date;
+            
+            if (isInterrupted) {
+                NSTimeInterval intervalz = [currSoundEnd timeIntervalSinceDate:next.date];                
+                playedsoundDuration = CMTimeMake(intervalz, 1.0);
+            }
+        }
+        
+        DebugLog(@"i: %d   sleepDuration: %f   curr.date: %fc   secondTimeInterval: %f  isInterrupted: %d", i, sleepDuration, [curr.date timeIntervalSinceNow], secondTimeInterval, isInterrupted );
+        */
         
         [track insertEmptyTimeRange:CMTimeRangeMake(kCMTimeZero, CMTimeMake(sleepDuration, 1.0))];
-        
-        [track insertTimeRange:CMTimeRangeMake(kCMTimeZero, asset.duration) ofTrack:[[asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:asset.duration error:&error];
+
+        [track insertTimeRange:CMTimeRangeMake(kCMTimeZero, playedsoundDuration) ofTrack:[[playedSoundAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:playedsoundDuration error:&error];
     }
     
     // seems to be 1.5 seconds of dead space at start of generated sound file no matter what

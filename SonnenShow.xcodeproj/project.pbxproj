@@ -67,6 +67,7 @@
 		1A92B82E153E8902001BE1C7 /* SaidSoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */; };
 		1AAF39C31565FF4300E2AA11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF39C21565FF4300E2AA11 /* Default.png */; };
 		1AAF39C61565FF4800E2AA11 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF39C51565FF4800E2AA11 /* Default@2x.png */; };
+		1AB6BC6A1568D8690042453C /* BUGS in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6BC691568D8680042453C /* BUGS */; };
 		1AB6CA5515476AA800D7924B /* this-guys-delusional.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */; };
 		1AB6CA5715476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */; };
 		1AB6CA5915476E1F00D7924B /* do-you-remember-when-i-said.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */; };
@@ -198,6 +199,7 @@
 		1A92B82D153E8901001BE1C7 /* SaidSoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaidSoViewController.m; sourceTree = "<group>"; };
 		1AAF39C21565FF4300E2AA11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		1AAF39C51565FF4800E2AA11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		1AB6BC691568D8680042453C /* BUGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BUGS; path = ../BUGS; sourceTree = "<group>"; };
 		1AB6CA5415476AA800D7924B /* this-guys-delusional.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "this-guys-delusional.m4a"; sourceTree = "<group>"; };
 		1AB6CA5615476AB500D7924B /* ah-eh-oh-uh-ah-uhm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ah-eh-oh-uh-ah-uhm.m4a"; sourceTree = "<group>"; };
 		1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do-you-remember-when-i-said.m4a"; sourceTree = "<group>"; };
@@ -316,6 +318,8 @@
 		1A83A63D152BBF1600532D8E /* SonnensMouth */ = {
 			isa = PBXGroup;
 			children = (
+				1AB6BC691568D8680042453C /* BUGS */,
+				1AE8AD281555E94F00E88EED /* NOTES */,
 				1A4B9A8F156399D100E826F1 /* AboutViewController.h */,
 				1A4B9A90156399D100E826F1 /* AboutViewController.m */,
 				1AB6CA6015476FC500D7924B /* ActionsViewController.m */,
@@ -366,7 +370,6 @@
 				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
 				1A83A643152BBF1600532D8E /* main.m */,
 				1A83A645152BBF1600532D8E /* SonnenShow-Prefix.pch */,
-				1AE8AD281555E94F00E88EED /* NOTES */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				1A4B9AA4156502FD00E826F1 /* hes-a-nuiscence-hes-annoying-and-dosent-have-any-fans.m4a in Resources */,
 				1AAF39C31565FF4300E2AA11 /* Default.png in Resources */,
 				1AAF39C61565FF4800E2AA11 /* Default@2x.png in Resources */,
+				1AB6BC6A1568D8690042453C /* BUGS in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
