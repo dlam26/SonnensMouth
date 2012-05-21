@@ -52,7 +52,7 @@
     recordNameButton.hidden = YES;
     playNameButton.hidden = YES;
     
-    aboutBlurb.text = NSLocalizedString(@"About", nil);
+    aboutBlurb.text = NSLocalizedString(@"About", @"Description of what the app is about");
 }
 
 

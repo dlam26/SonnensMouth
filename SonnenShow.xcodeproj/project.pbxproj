@@ -225,7 +225,6 @@
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1AD9DCDA156A48990054E89C /* dummy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummy.m4a; sourceTree = "<group>"; };
 		1AD9DCE9156A5DC40054E89C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1AD9DCF8156A67650054E89C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-57x57.png"; path = "../appicon-57x57.png"; sourceTree = "<group>"; };
 		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-114x114.png"; path = "../appicon-114x114.png"; sourceTree = "<group>"; };
 		1AE8AD281555E94F00E88EED /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
@@ -236,6 +235,9 @@
 		1AE8AD38155626F900E88EED /* i-dont-do-trashtalking-at-least-in-my-estimation.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "i-dont-do-trashtalking-at-least-in-my-estimation.m4a"; sourceTree = "<group>"; };
 		1AE8AD3A155628A400E88EED /* chael-p-sonnen-and-the-p-stands-for-perfection.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chael-p-sonnen-and-the-p-stands-for-perfection.m4a"; sourceTree = "<group>"; };
 		1AE8AD3E1556643500E88EED /* thats-how-you-threaten-somebody-dummy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "thats-how-you-threaten-somebody-dummy.m4a"; sourceTree = "<group>"; };
+		642302A3156AD1A600042AC5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-BR"; path = "pt-BR.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
+		642302A4156AD6BE00042AC5 /* pt-BR */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		642302AA156ADFB500042AC5 /* pt-BR */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		64A5C6F4154D0BA60006D2A0 /* vitor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitor.m4a; sourceTree = "<group>"; };
 		64A5C6F5154D0BA60006D2A0 /* wanderlei2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wanderlei2.m4a; sourceTree = "<group>"; };
 		64A5C6FB154D0EC40006D2A0 /* rar-rawr-nyah-well.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rar-rawr-nyah-well.m4a"; sourceTree = "<group>"; };
@@ -368,12 +370,11 @@
 		1A83A63E152BBF1600532D8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1AD9DCE0156A5D320054E89C /* en */,
-				1AD9DCE1156A5D400054E89C /* pt_BR */,
 				1AE8AD2F1555F3E400E88EED /* fonts */,
 				1A83A677152BD4A100532D8E /* sounds */,
 				1A83A676152BD49500532D8E /* images */,
 				1A83A63F152BBF1600532D8E /* SonnenShow-Info.plist */,
+				1AD9DCE8156A5DC40054E89C /* Localizable.strings */,
 				1A83A640152BBF1600532D8E /* InfoPlist.strings */,
 				1A83A643152BBF1600532D8E /* main.m */,
 				1A83A645152BBF1600532D8E /* SonnenShow-Prefix.pch */,
@@ -471,22 +472,6 @@
 				1A84234C1544234D00582779 /* you-could-download-an-app-on-your-iphone-and-replace.m4a */,
 			);
 			name = sounds;
-			sourceTree = "<group>";
-		};
-		1AD9DCE0156A5D320054E89C /* en */ = {
-			isa = PBXGroup;
-			children = (
-				1AD9DCE8156A5DC40054E89C /* Localizable.strings */,
-			);
-			name = en;
-			sourceTree = "<group>";
-		};
-		1AD9DCE1156A5D400054E89C /* pt_BR */ = {
-			isa = PBXGroup;
-			children = (
-				1AD9DCF7156A67650054E89C /* Localizable.strings */,
-			);
-			name = pt_BR;
 			sourceTree = "<group>";
 		};
 		1AE8AD2F1555F3E400E88EED /* fonts */ = {
@@ -727,6 +712,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A83A641152BBF1600532D8E /* en */,
+				642302A4156AD6BE00042AC5 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -735,6 +721,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A83A64A152BBF1600532D8E /* en */,
+				642302A3156AD1A600042AC5 /* pt-BR */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -759,14 +746,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1AD9DCE9156A5DC40054E89C /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		1AD9DCF7156A67650054E89C /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AD9DCF8156A67650054E89C /* pt-BR */,
+				642302AA156ADFB500042AC5 /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
