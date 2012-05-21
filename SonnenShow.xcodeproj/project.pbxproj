@@ -81,6 +81,7 @@
 		1AC6D3A815427596004A74D0 /* RecordedInsultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */; };
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
+		1AD9DCDB156A48990054E89C /* dummy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AD9DCDA156A48990054E89C /* dummy.m4a */; };
 		1ADC4F2E154FA41D00681C00 /* appicon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */; };
 		1ADC4F31154FA42100681C00 /* appicon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F30154FA42100681C00 /* appicon-114x114.png */; };
 		1AE8AD291555E94F00E88EED /* NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD281555E94F00E88EED /* NOTES */; };
@@ -221,6 +222,7 @@
 		1AC6D3A715427596004A74D0 /* RecordedInsultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordedInsultsViewController.m; sourceTree = "<group>"; };
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1AD9DCDA156A48990054E89C /* dummy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummy.m4a; sourceTree = "<group>"; };
 		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-57x57.png"; path = "../appicon-57x57.png"; sourceTree = "<group>"; };
 		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-114x114.png"; path = "../appicon-114x114.png"; sourceTree = "<group>"; };
 		1AE8AD281555E94F00E88EED /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 				1A4B9A991564AACD00E826F1 /* chael-sonnen-show.m4a */,
 				1AE8AD361556257900E88EED /* did-you-know.m4a */,
 				1AB6CA5815476E1F00D7924B /* do-you-remember-when-i-said.m4a */,
+				1AD9DCDA156A48990054E89C /* dummy.m4a */,
 				1A83A693152C6A3800532D8E /* erect-statue-and-bow.m4a */,
 				1A04C8FF15493AC800873C7A /* guess-what.m4a */,
 				1A84233C1543D38700582779 /* he-tried-to-feed-a-bus-a-carrot.m4a */,
@@ -612,6 +615,7 @@
 				1AAF39C31565FF4300E2AA11 /* Default.png in Resources */,
 				1AAF39C61565FF4800E2AA11 /* Default@2x.png in Resources */,
 				1AB6BC6A1568D8690042453C /* BUGS in Resources */,
+				1AD9DCDB156A48990054E89C /* dummy.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
