@@ -22,6 +22,8 @@
     IBOutlet UIButton *recordNameButton;
     IBOutlet UIButton *playNameButton;
     IBOutlet UILabel *recordingLabel;
+    
+    IBOutlet UITextView *aboutBlurb;
 }
 
 -(IBAction)sendFeedback:(id)sender;

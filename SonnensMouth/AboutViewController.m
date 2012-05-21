@@ -51,6 +51,8 @@
     recordingLabel.hidden = YES;
     recordNameButton.hidden = YES;
     playNameButton.hidden = YES;
+    
+    aboutBlurb.text = NSLocalizedString(@"About", nil);
 }
 
 

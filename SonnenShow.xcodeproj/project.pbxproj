@@ -82,6 +82,7 @@
 		1AC6D3AF15427806004A74D0 /* joo-jeet-su.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */; };
 		1AC6D3B115428021004A74D0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6D3B015428021004A74D0 /* CoreMedia.framework */; };
 		1AD9DCDB156A48990054E89C /* dummy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AD9DCDA156A48990054E89C /* dummy.m4a */; };
+		1AD9DCF5156A667B0054E89C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD9DCE8156A5DC40054E89C /* Localizable.strings */; };
 		1ADC4F2E154FA41D00681C00 /* appicon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */; };
 		1ADC4F31154FA42100681C00 /* appicon-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADC4F30154FA42100681C00 /* appicon-114x114.png */; };
 		1AE8AD291555E94F00E88EED /* NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8AD281555E94F00E88EED /* NOTES */; };
@@ -223,6 +224,8 @@
 		1AC6D3AE15427806004A74D0 /* joo-jeet-su.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joo-jeet-su.m4a"; sourceTree = "<group>"; };
 		1AC6D3B015428021004A74D0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1AD9DCDA156A48990054E89C /* dummy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummy.m4a; sourceTree = "<group>"; };
+		1AD9DCE9156A5DC40054E89C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1AD9DCF8156A67650054E89C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ADC4F2D154FA41C00681C00 /* appicon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-57x57.png"; path = "../appicon-57x57.png"; sourceTree = "<group>"; };
 		1ADC4F30154FA42100681C00 /* appicon-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-114x114.png"; path = "../appicon-114x114.png"; sourceTree = "<group>"; };
 		1AE8AD281555E94F00E88EED /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
@@ -365,6 +368,8 @@
 		1A83A63E152BBF1600532D8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AD9DCE0156A5D320054E89C /* en */,
+				1AD9DCE1156A5D400054E89C /* pt_BR */,
 				1AE8AD2F1555F3E400E88EED /* fonts */,
 				1A83A677152BD4A100532D8E /* sounds */,
 				1A83A676152BD49500532D8E /* images */,
@@ -468,6 +473,22 @@
 			name = sounds;
 			sourceTree = "<group>";
 		};
+		1AD9DCE0156A5D320054E89C /* en */ = {
+			isa = PBXGroup;
+			children = (
+				1AD9DCE8156A5DC40054E89C /* Localizable.strings */,
+			);
+			name = en;
+			sourceTree = "<group>";
+		};
+		1AD9DCE1156A5D400054E89C /* pt_BR */ = {
+			isa = PBXGroup;
+			children = (
+				1AD9DCF7156A67650054E89C /* Localizable.strings */,
+			);
+			name = pt_BR;
+			sourceTree = "<group>";
+		};
 		1AE8AD2F1555F3E400E88EED /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +553,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt_BR,
+				"pt-BR",
 			);
 			mainGroup = 1A83A626152BBF1500532D8E;
 			productRefGroup = 1A83A632152BBF1600532D8E /* Products */;
@@ -549,6 +572,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD9DCF5156A667B0054E89C /* Localizable.strings in Resources */,
 				64A5C726154D30650006D2A0 /* ill-give-em-all-beatings-and-put-them-back-on-the-shelf.m4a in Resources */,
 				64A5C711154D1BC80006D2A0 /* with-a-name-like-chael-you-dont-really-need-a-nickname.m4a in Resources */,
 				64A5C708154D179B0006D2A0 /* I-AM-SHOCKED.m4a in Resources */,
@@ -729,6 +753,22 @@
 				1A83A669152BBF1700532D8E /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AD9DCE8156A5DC40054E89C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD9DCE9156A5DC40054E89C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1AD9DCF7156A67650054E89C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD9DCF8156A67650054E89C /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

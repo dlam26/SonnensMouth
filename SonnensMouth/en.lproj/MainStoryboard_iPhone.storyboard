@@ -1463,7 +1463,7 @@
                                     <action selector="playName:" destination="Iys-no-2Jc" eventType="touchUpInside" id="7r3-7V-yWH"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A silly application for fans of the charasmatic and oft outspoken Chael Sonnen." id="0tu-to-c7D">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="localized about text goes here" id="0tu-to-c7D">
                                 <rect key="frame" x="20" y="73" width="280" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.3333333432674408" alpha="1" colorSpace="calibratedWhite"/>
@@ -1484,6 +1484,7 @@
                     <tabBarItem key="tabBarItem" title="About" id="Hs0-XP-PuT"/>
                     <navigationItem key="navigationItem" id="GVn-q2-OkB"/>
                     <connections>
+                        <outlet property="aboutBlurb" destination="0tu-to-c7D" id="tuP-dK-XG5"/>
                         <outlet property="appVersion" destination="gT8-Aa-qIV" id="q9I-bA-e94"/>
                         <outlet property="playNameButton" destination="Lvl-Dq-pgu" id="Gpm-E7-Lbj"/>
                         <outlet property="recordNameButton" destination="bte-lw-Mzb" id="4X4-ai-etA"/>
@@ -1506,6 +1507,7 @@
                 <relationship kind="action" name="playName:"/>
                 <relationship kind="action" name="recordName:"/>
                 <relationship kind="action" name="sendFeedback:"/>
+                <relationship kind="outlet" name="aboutBlurb" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="appVersion" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="playNameButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="recordNameButton" candidateClass="UIButton"/>
