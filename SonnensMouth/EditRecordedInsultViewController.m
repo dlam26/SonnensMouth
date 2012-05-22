@@ -46,6 +46,8 @@
     
     self.title = @"Edit";
     
+    barrage.emailDelegate = self;
+    
     [deleteButton setBackgroundImage:[[UIImage imageNamed:@"delete_button.png"]
                          stretchableImageWithLeftCapWidth:8.0f
                                              topCapHeight:0.0f]
@@ -110,23 +112,43 @@
 
 -(IBAction)email:(id)sender
 {
-    if([MFMailComposeViewController canSendMail]) {        
+    if([MFMailComposeViewController canSendMail]) {
+        
         mailCompose = [[MFMailComposeViewController alloc] init];
         [mailCompose setMailComposeDelegate:self];
         [mailCompose setSubject:@"Listen to this..."];
         [mailCompose setMessageBody:@"It's made up of Chael Sonnen sound clips :P" isHTML:YES];
 
-        NSData *data       = [barrage toData];        
-        NSString *fileName = [NSString stringWithFormat:@"%@.m4a", [barrage title]];
+        // this does the data export asynchrnously, and loads
+        // it into barrageData via <EmailBarrageDelegate>
+        [barrage toData:self];
         
-        [mailCompose addAttachmentData:data mimeType:@"video/mp4" fileName:fileName];
+        UIView *loadingBox = [SonnensMouth newLoadingBox:@"Building..."];
+        [self.view addSubview:loadingBox];
+        
+        // XXX block until its done
+        while(!doneExporting) {
+            [NSThread sleepForTimeInterval:0.5];
+            DebugLog(@"Not done exporting....");
+        }
+        
+        [loadingBox removeFromSuperview];
+        
+        if([barrageData length] == 0) {
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Crap x_x" message:@"Barrage data file had 0 bytes =(" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];   
+            [av show];
+        }
+        else {
+            NSString *fileName = [NSString stringWithFormat:@"%@.m4a", [barrage title]];
+            [mailCompose addAttachmentData:barrageData mimeType:@"video/mp4" fileName:fileName];
 
-//        [mailCompose addAttachmentData:data mimeType:@"audio/mpeg3" fileName:@"sonnen-sound.mp3"];  // no work
-     
-        [self presentModalViewController:mailCompose animated:YES];
+            [self presentModalViewController:mailCompose animated:YES];
+        }
     }
     else {
         // Can't send email, so don't do anything!
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Can't send email" message:@"Doh, can't send email from this device." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];   
+        [av show];
     }
 }
 
@@ -185,9 +207,35 @@
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     DebugLog(@"   error: %@", error);
-    
+
     [mailCompose dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark - <EmailBarrageDelegate>
+
+-(void)emailBarrage:(NSData *)barrageData
+{
+    DebugLog();
+}
+
+-(void)setIsDoneExporting:(BOOL)done
+{
+    doneExporting = done;
+}
+
+-(BOOL)isDoneExporting
+{
+    return doneExporting;
+}
+
+-(void)setData:(NSData *)data
+{
+    barrageData = data;
+}
+
+-(NSData *)getData
+{
+    return barrageData;
+}
 
 @end

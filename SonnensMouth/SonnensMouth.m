@@ -228,4 +228,32 @@ static SonnensMouth* _sonnensMouth = nil;
     return soundFileURL;
 }
 
+/*    Returns a UIView showing a translucent gray box containing a spinning 
+ UIActivityIndcatorView in the middle of it
+ 
+ http://stackoverflow.com/questions/3490991/big-activity-indicator-on-iphone
+ */
++(UIView *)newLoadingBox:(NSString *)loadingBoxText
+{
+    UIView *loading = [[UIView alloc] initWithFrame:CGRectMake(100, 200, 120, 120)];     
+    loading.layer.cornerRadius = 15; 
+    loading.opaque = NO; 
+    loading.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.6f];
+    
+    UILabel *loadLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 25, 110, 22)];    
+    loadLabel.text = loadingBoxText;
+    loadLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    loadLabel.textAlignment = UITextAlignmentCenter;
+    loadLabel.textColor = [UIColor colorWithWhite:1.0f alpha:1.0f];
+    loadLabel.backgroundColor = [UIColor clearColor];
+    [loading addSubview:loadLabel];
+     
+    UIActivityIndicatorView *spinning = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    spinning.frame = CGRectMake(42, 54, 37, 37);
+    [spinning startAnimating];
+    [loading addSubview:spinning];
+    
+    return loading;
+}
+
 @end

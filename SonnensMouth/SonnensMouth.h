@@ -28,6 +28,8 @@
 // Used in the segue/link when you edit a recorded insult
 #define IDENTIFIER_EDIT_RECORDING_VIEW_CONTROLLER @"Edit Recording"
 
+#define NOTIFICATION_SHOW_BARRAGE_EMAIL_DIALOG @"Email Barrage"
+
 //  #import <Foundation/Foundation.h>
 
 #import <CoreFoundation/CoreFoundation.h>
@@ -74,6 +76,7 @@ typedef void (^CompleteBlock)();
 +(UIAlertView *)newNoInternetConnectionAlertView:(NSString *)errorMessage;
 
 +(NSURL *)getRecordedNameURL;
++(UIView *)newLoadingBox:(NSString *)loadingBoxText;
 
 @end
 

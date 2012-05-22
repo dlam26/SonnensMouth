@@ -14,13 +14,14 @@
 #import "Barrage.h"
 #import "RecordedInsultsViewController.h"
 
-@interface EditRecordedInsultViewController : UIViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate> {
+@interface EditRecordedInsultViewController : UIViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate, EmailBarrageDelegate> {
     
     IBOutlet UITextField *titleTextField;
     IBOutlet UILabel *createdDateLabel;
     IBOutlet UILabel *updatedDateLabel;
     IBOutlet UILabel *lengthLabel;
     IBOutlet UILabel *soundsCountLabel;
+    IBOutlet UILabel *messageQueuedLabel;
     IBOutlet UIButton *deleteButton;
     IBOutlet UIButton *emailButton;
     IBOutlet UIButton *playButton;
@@ -30,6 +31,9 @@
     MFMailComposeViewController *mailCompose;
     
     Barrage *barrage;
+    
+    BOOL doneExporting;
+    NSData *barrageData;
 }
 
 @property(nonatomic, retain) Barrage *barrage;

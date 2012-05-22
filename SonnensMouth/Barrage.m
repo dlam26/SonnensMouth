@@ -16,6 +16,9 @@
 @dynamic created;
 @dynamic updated;
 
+@synthesize emailDelegate;
+
+
 -(NSString *)createdAsString
 {
     return [self __formatDate:self.created];
@@ -111,9 +114,10 @@
     Converts the sounds in this barrage to an NSData so you can play it via AudioToolbox
     or AVAudioPlayer or sumthin ^^ 
  */
--(NSData *)toData
+//-(NSData *)toData
+-(NSData *)toData:(id <EmailBarrageDelegate>)delegate
 {
-    NSData *data;
+    __block NSData *data;
     __block NSError *error;
     
     NSArray *soundsArray = [self soundsAsArrayReversed];
@@ -192,37 +196,61 @@
     
     AVAssetExportSession *export = [[AVAssetExportSession alloc] initWithAsset:composition presetName:AVAssetExportPresetAppleM4A];
 
-    NSURL *url = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@%@%@", NSTemporaryDirectory(), self.title, @".m4a"]];
+    // 5/21/12  export session failing with error if the file exists, so make a random number
+    int randomNumber = arc4random() % 12345;
+    
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@%@%d%@", NSTemporaryDirectory(), self.title, randomNumber, @".m4a"]];
     
     DebugLog(@"Saving NSData audio file to temporary directory: %@", url);
     
+    
     [export setOutputURL:url];
     [export setOutputFileType:AVFileTypeAppleM4A];
-    
-    
+        
     __block BOOL workedOrNo = NO;
     
     [export exportAsynchronouslyWithCompletionHandler:^{
 
-//        NSLog(@"export.status: %d", export.status);
+        DebugLog(@"export.status: %d", export.status);
         
         switch (export.status) {
             
             case AVAssetExportSessionStatusFailed:
                 DebugLog(@"export.error: %@", export.error);
+                [delegate setIsDoneExporting:YES];
                 break;                
             case AVAssetExportSessionStatusCompleted:
+                DebugLog(@"AVAssetExportSessionStatusCompleted");
                 workedOrNo = YES;
+                
+                data = [[NSFileManager defaultManager] contentsAtPath:[url path]];
+                
+                DebugLog(@"[url path]: %@    data length: %u", [url path], [data length]);
+                
+//                [delegate emailBarrage:data];
+                
+                [delegate setData:data];
+                [delegate setIsDoneExporting:YES];
+                
                 break;
+            case AVAssetExportSessionStatusExporting:
+                DebugLog(@"AVAssetExportSessionStatusExporting");
+            case AVAssetExportSessionStatusUnknown:
+                DebugLog(@"AVAssetExportSessionStatusUnknown");
+            case AVAssetExportSessionStatusCancelled:
+                DebugLog(@"AVAssetExportSessionStatusCancelled");
+                [delegate setIsDoneExporting:YES];
+            case AVAssetExportSessionStatusWaiting:
+                DebugLog(@"AVAssetExportSessionStatusWaiting");
             default:
+                DebugLog(@"In default somehow!!!1  export.status: %d", export.status);
                 break;
         }
         
     }];
     
-    data = [[NSFileManager defaultManager] contentsAtPath:[url path]];
-    
     return data;
 }
+
 
 @end

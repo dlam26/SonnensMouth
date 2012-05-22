@@ -50,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Uil-JW-g1C" userLabel="GREEN-anderson silva" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="20" y="10" width="108" height="18"/>
+                                <rect key="frame" x="20" y="10" width="108" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -74,7 +74,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="ATe-x9-FZa" userLabel="GREEN-anderson x2" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="3" y="41" width="90" height="18"/>
+                                <rect key="frame" x="3" y="41" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -98,7 +98,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="flt-Ib-uuD" userLabel="GREEN-vitor" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="141" y="10" width="43" height="18"/>
+                                <rect key="frame" x="141" y="10" width="43" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="8na-iE-3Uf" userLabel="GREEN-Wanderlei" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="212" y="10" width="78" height="18"/>
+                                <rect key="frame" x="212" y="10" width="78" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -146,7 +146,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="p8l-98-pp7" userLabel="GREEN-Chael P Sonnen" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="106" y="41" width="109" height="18"/>
+                                <rect key="frame" x="106" y="41" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -170,7 +170,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="IEj-gB-qRT" userLabel="GREEN-chael sonnen show" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="224" y="41" width="96" height="18"/>
+                                <rect key="frame" x="224" y="41" width="96" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -194,7 +194,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Q7U-Gz-19Q" userLabel="PURPLE-do you remember..." customClass="PlaySoundUIButton">
-                                <rect key="frame" x="0.0" y="76" width="204" height="18"/>
+                                <rect key="frame" x="0.0" y="76" width="204" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -218,7 +218,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="qmk-Wp-PY8" userLabel="PURPLE-that blows me away" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="180" y="140" width="135" height="18"/>
+                                <rect key="frame" x="180" y="135" width="135" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -242,7 +242,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="e9d-62-CcD" userLabel="PURPLE-ahh you know.." customClass="PlaySoundUIButton">
-                                <rect key="frame" x="219" y="89" width="91" height="18"/>
+                                <rect key="frame" x="219" y="87" width="91" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -266,7 +266,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Ljg-EH-pnq" userLabel="PURPLE-guess what" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="149" y="108" width="82" height="18"/>
+                                <rect key="frame" x="149" y="108" width="82" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -290,7 +290,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="jlb-8K-TT2" userLabel="PURPLE-did you know" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="30" y="114" width="98" height="18"/>
+                                <rect key="frame" x="30" y="113" width="98" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -314,7 +314,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Q3s-ic-a1U" userLabel="PURPLE-really?" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="7" y="140" width="58" height="18"/>
+                                <rect key="frame" x="7" y="140" width="58" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -338,7 +338,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="KCc-Tw-abB" userLabel="PURPLE-shocked!" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="73" y="140" width="99" height="18"/>
+                                <rect key="frame" x="73" y="140" width="99" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -362,7 +362,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="Rr2-1n-91Z" userLabel="ORANGE-this guy is delusional" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="-2" y="178" width="81" height="18"/>
+                                <rect key="frame" x="-2" y="177" width="81" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -434,7 +434,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="mZP-Da-32i" userLabel="ORANGE-hes not qualified to make a sandwhich" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="191" y="197" width="55" height="18"/>
+                                <rect key="frame" x="191" y="197" width="55" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -458,7 +458,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="auP-qU-2I1" userLabel="ORANGE-dummy" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="265" y="261" width="55" height="18"/>
+                                <rect key="frame" x="265" y="256" width="55" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -530,7 +530,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ti-Kc-dEk" userLabel="BLUE-gangster #1" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="27" y="270" width="76" height="18"/>
+                                <rect key="frame" x="27" y="268" width="76" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -578,7 +578,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AM9-nO-Cea" userLabel="BLUE-trashtalk?" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="121" y="277" width="79" height="18"/>
+                                <rect key="frame" x="121" y="274" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -602,7 +602,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="cv8-5a-0Eg" userLabel="BLUE-download app to replace" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="2" y="329" width="137" height="18"/>
+                                <rect key="frame" x="2" y="329" width="137" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -626,7 +626,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="bb1-xi-N4Q" userLabel="BLUE-somebody says that you must fight him" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="193" y="339" width="122" height="18"/>
+                                <rect key="frame" x="193" y="339" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -698,7 +698,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="bhP-8t-hYU" userLabel="YELLOW-rawr rawr i wanna fight you" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="83" y="405" width="79" height="18"/>
+                                <rect key="frame" x="83" y="403" width="79" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -722,7 +722,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="IZi-Tt-duy" userLabel="YELLOW-rib+back+lalala" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="0.0" y="438" width="103" height="18"/>
+                                <rect key="frame" x="0.0" y="436" width="103" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -746,7 +746,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="oby-QJ-FjF" userLabel="YELLOW-whoaaa" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="111" y="439" width="71" height="18"/>
+                                <rect key="frame" x="111" y="437" width="71" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -770,7 +770,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="ZRi-JQ-PaS" userLabel="YELLOW-wow" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="142" y="363" width="46" height="18"/>
+                                <rect key="frame" x="142" y="360" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -794,7 +794,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="H9h-0D-gqn" userLabel="YELLOW-ah •eh•oh" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="0.0" y="405" width="69" height="18"/>
+                                <rect key="frame" x="0.0" y="402" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -818,7 +818,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" id="56k-0O-Eu4" userLabel="YELLOW-i•heard•dur•dur" customClass="PlaySoundUIButton">
-                                <rect key="frame" x="203" y="374" width="117" height="18"/>
+                                <rect key="frame" x="203" y="374" width="117" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
@@ -1205,6 +1205,13 @@
                                     <action selector="email:" destination="eKF-kK-Ydv" eventType="touchUpInside" id="Prx-QB-q5I"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Message queued for delivery!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qHi-fJ-cKx">
+                                <rect key="frame" x="35" y="230" width="224" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </view>
@@ -1213,6 +1220,7 @@
                         <outlet property="deleteButton" destination="OuP-8b-jaE" id="0fx-fL-yFp"/>
                         <outlet property="emailButton" destination="hoz-Y4-QAv" id="tzM-Uy-5Wt"/>
                         <outlet property="lengthLabel" destination="NEV-aV-UFE" id="tdI-oT-qgk"/>
+                        <outlet property="messageQueuedLabel" destination="qHi-fJ-cKx" id="c1c-in-kNL"/>
                         <outlet property="playButton" destination="aah-jI-u2a" id="Dp0-EQ-L2r"/>
                         <outlet property="soundsCountLabel" destination="2lh-qJ-0bm" id="1UB-Ct-2wi"/>
                         <outlet property="titleTextField" destination="pJg-An-fmQ" id="xb3-Bq-HXY"/>
@@ -1430,8 +1438,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I8g-Cq-u1E">
-                                <rect key="frame" x="50" y="309" width="221" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="42" y="402" width="221" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Send feedback">
                                     <color key="titleColor" red="0.19607843458652496" green="0.30980393290519714" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
@@ -1445,7 +1453,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bte-lw-Mzb">
-                                <rect key="frame" x="50" y="189" width="221" height="38"/>
+                                <rect key="frame" x="203" y="242" width="221" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Record Name">
@@ -1460,7 +1468,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lvl-Dq-pgu">
-                                <rect key="frame" x="50" y="248" width="221" height="38"/>
+                                <rect key="frame" x="196" y="288" width="221" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="Play Name">
@@ -1474,16 +1482,16 @@
                                     <action selector="playName:" destination="Iys-no-2Jc" eventType="touchUpInside" id="7r3-7V-yWH"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A silly application for fans of the charasmatic and oft outspoken Chael Sonnen." id="0tu-to-c7D">
-                                <rect key="frame" x="20" y="73" width="280" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="app description loaded from Localizable.strings" id="0tu-to-c7D">
+                                <rect key="frame" x="20" y="57" width="280" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recording..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yC5-x3-uMY">
-                                <rect key="frame" x="238" y="429" width="93" height="21"/>
+                                <rect key="frame" x="248" y="347" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1556,6 +1564,7 @@
                 <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="emailButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="lengthLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="messageQueuedLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="soundsCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
